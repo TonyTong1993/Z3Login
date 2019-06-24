@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Z3Login'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Z3Login.'
+  s.summary          = 'Z3Login help user construct login for zzht'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,11 +32,14 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Z3Login/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Z3Login' => ['Z3Login/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'Z3Login' => ['Z3Login/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.dependency 'Z3Network','~> 0.0.1'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'MBProgressHUD', '~> 1.1.0'
+   s.dependency 'YYModel', '~> 1.0.4'
+   
 end

@@ -13,7 +13,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* Z3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* Z3AppDelegate.m */; };
-		6003F5A7195388D20070C39A /* Z3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* Z3ViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,8 +21,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6793D87F099AA1010E92AED9 /* Pods_Z3Login_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		D91330D856270B322763C639 /* Pods_Z3Login_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FA7AEBB6647FF139261296 /* Pods_Z3Login_Tests.framework */; };
+		EB44211322B37B85007B6DCF /* Z3TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */; };
+		EB44211622B37CE7007B6DCF /* Z3Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = EB44211522B37CE7007B6DCF /* Z3Theme.m */; };
+		EBB51BE722B1193600EB031C /* appmenulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBB51BE622B1193600EB031C /* appmenulist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		6003F59B195388D20070C39A /* Z3Login-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Z3Login-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* Z3AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3AppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* Z3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3AppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* Z3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3ViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* Z3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3ViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* Z3Login_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Z3Login_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -57,15 +55,16 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79FA745F46807F88B29CE383 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		7E3AD0AF035898FD47028156 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79FA745F46807F88B29CE383 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7E3AD0AF035898FD47028156 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9788AB0C39673B24C34C0D89 /* Pods-Z3Login_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Login_Example.debug.xcconfig"; path = "Target Support Files/Pods-Z3Login_Example/Pods-Z3Login_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A431D9752A08B88C5692BDE0 /* Z3Login.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Z3Login.podspec; path = ../Z3Login.podspec; sourceTree = "<group>"; };
+		A431D9752A08B88C5692BDE0 /* Z3Login.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Z3Login.podspec; path = ../Z3Login.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z3Login_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDBA9A2E4DA732A7D4651D55 /* Pods-Z3Login_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Login_Tests.release.xcconfig"; path = "Target Support Files/Pods-Z3Login_Tests/Pods-Z3Login_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D883B687293AFF34FA753C6A /* Pods-Z3Login_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Login_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Z3Login_Tests/Pods-Z3Login_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F2FA7AEBB6647FF139261296 /* Pods_Z3Login_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z3Login_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB44211122B37B85007B6DCF /* Z3TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3TabBarViewController.h; sourceTree = "<group>"; };
+		EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3TabBarViewController.m; sourceTree = "<group>"; };
+		EB44211422B37CE7007B6DCF /* Z3Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3Theme.h; sourceTree = "<group>"; };
+		EB44211522B37CE7007B6DCF /* Z3Theme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3Theme.m; sourceTree = "<group>"; };
+		EBB51BE622B1193600EB031C /* appmenulist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appmenulist.plist; sourceTree = "<group>"; };
 		FC0977A161D0F26F8DBA931B /* Pods-Z3Login_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Login_Example.release.xcconfig"; path = "Target Support Files/Pods-Z3Login_Example/Pods-Z3Login_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +87,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				D91330D856270B322763C639 /* Pods_Z3Login_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +122,6 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */,
-				F2FA7AEBB6647FF139261296 /* Pods_Z3Login_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,14 +129,16 @@
 		6003F593195388D20070C39A /* Example for Z3Login */ = {
 			isa = PBXGroup;
 			children = (
+				EBB51BE622B1193600EB031C /* appmenulist.plist */,
 				6003F59C195388D20070C39A /* Z3AppDelegate.h */,
 				6003F59D195388D20070C39A /* Z3AppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* Z3ViewController.h */,
-				6003F5A6195388D20070C39A /* Z3ViewController.m */,
+				EB44211122B37B85007B6DCF /* Z3TabBarViewController.h */,
+				EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				EB44211422B37CE7007B6DCF /* Z3Theme.h */,
+				EB44211522B37CE7007B6DCF /* Z3Theme.m */,
 			);
 			name = "Example for Z3Login";
 			path = Z3Login;
@@ -190,10 +189,7 @@
 			children = (
 				9788AB0C39673B24C34C0D89 /* Pods-Z3Login_Example.debug.xcconfig */,
 				FC0977A161D0F26F8DBA931B /* Pods-Z3Login_Example.release.xcconfig */,
-				D883B687293AFF34FA753C6A /* Pods-Z3Login_Tests.debug.xcconfig */,
-				CDBA9A2E4DA732A7D4651D55 /* Pods-Z3Login_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -223,7 +219,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Z3Login_Tests" */;
 			buildPhases = (
-				F60D8B9A9F1D5DE0E71928DF /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -258,6 +253,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,10 +273,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				EBB51BE722B1193600EB031C /* appmenulist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,37 +298,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Z3Login_Example/Pods-Z3Login_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 				"${BUILT_PRODUCTS_DIR}/Z3Login/Z3Login.framework",
+				"${BUILT_PRODUCTS_DIR}/Z3Network/Z3Network.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Z3Login.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Z3Network.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Z3Login_Example/Pods-Z3Login_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F60D8B9A9F1D5DE0E71928DF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Z3Login_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F62D9D7DF12AED79E2BE5513 /* [CP] Check Pods Manifest.lock */ = {
@@ -364,8 +346,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB44211622B37CE7007B6DCF /* Z3Theme.m in Sources */,
 				6003F59E195388D20070C39A /* Z3AppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* Z3ViewController.m in Sources */,
+				EB44211322B37B85007B6DCF /* Z3TabBarViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,7 +504,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D883B687293AFF34FA753C6A /* Pods-Z3Login_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -545,7 +527,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDBA9A2E4DA732A7D4651D55 /* Pods-Z3Login_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

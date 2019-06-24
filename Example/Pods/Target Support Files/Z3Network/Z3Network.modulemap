@@ -1,0 +1,6 @@
+framework module Z3Network {
+  umbrella header "Z3Network-umbrella.h"
+
+  export *
+  module * { export * }
+}
