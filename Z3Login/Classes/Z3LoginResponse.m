@@ -10,7 +10,7 @@
 #import "Z3User.h"
 #import "Z3AppMenu.h"
 #import "Z3MobileConfig.h"
-#import "YYModel.h"
+#import <YYKit/YYKit.h>
 #import "Z3LoginPrivate.h"
 @implementation Z3LoginResponse
 - (void)toModel {
@@ -115,7 +115,7 @@
     
     NSMutableArray *mmenus = [NSMutableArray arrayWithCapacity:5];
     for (NSDictionary *json in tabs) {
-        Z3AppMenu *menu = [Z3AppMenu yy_modelWithJSON:json];
+        Z3AppMenu *menu = [Z3AppMenu modelWithJSON:json];
         [mmenus addObject:menu];
     }
     [[Z3MobileConfig shareConfig] setMenus:[mmenus copy]];

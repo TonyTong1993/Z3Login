@@ -1,9 +1,9 @@
 {
   "name": "Z3Login",
   "version": "0.1.0",
-  "summary": "A short description of Z3Login.",
+  "summary": "Z3Login help user construct login for zzht",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Tony Tony/Z3Login",
+  "homepage": "https://github.com/TonyTong1993/Z3Login",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Tony Tony": "tongwanhua1993@163.com"
   },
   "source": {
-    "git": "https://github.com/Tony Tony/Z3Login.git",
+    "git": "https://github.com/TonyTong1993/Z3Login.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -28,11 +28,8 @@
     "Z3Network": [
       "~> 0.0.1"
     ],
-    "MBProgressHUD": [
-      "~> 1.1.0"
-    ],
-    "YYModel": [
-      "~> 1.0.4"
+    "Z3CommonLib": [
+      "~> 0.1.1"
     ]
   }
 }

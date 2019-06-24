@@ -45,8 +45,7 @@
                          @"key",
                          @"value",nil];
 
-       BOOL isParse = [self.xmlParser parse];
-       NSAssert(isParse, @"data format is not match xml");
+       [self.xmlParser parse];
     }
 }
 

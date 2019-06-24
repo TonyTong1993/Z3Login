@@ -131,7 +131,7 @@
     }
     [testURL appendString:@"/rest/userService/login"];
     NSString *url = [testURL copy];
-    self.request = [[Z3LoginRequest alloc] initWithAbsoluteURL:url method:GET parameter:nil success:^(__kindof Z3BaseResponse * _Nonnull response) {
+    self.request = [[Z3LoginRequest alloc] initWithAbsoluteURL:url method:GET parameter:@{} success:^(__kindof Z3BaseResponse * _Nonnull response) {
         [self showToast:@"连接成功"];
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
         [self showToast:@"连接失败"];

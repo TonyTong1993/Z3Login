@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Tony Tony/Z3Login'
+  s.homepage         = 'https://github.com/TonyTong1993/Z3Login'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tony Tony' => 'tongwanhua1993@163.com' }
-  s.source           = { :git => 'https://github.com/Tony Tony/Z3Login.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/TonyTong1993/Z3Login.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -38,8 +38,6 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.dependency 'Z3Network','~> 0.0.1'
-  # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'MBProgressHUD', '~> 1.1.0'
-   s.dependency 'YYModel', '~> 1.0.4'
-   
+   s.dependency 'Z3CommonLib', '~> 0.1.1'
+
 end
