@@ -1,19 +1,21 @@
 //
-//  ZZLoginSettingViewController.m
-//  OutWork
+//  Z3HUDLoginSettingViewController.m
+//  Z3Login_Example
 //
-//  Created by ZZHT on 2018/10/11.
-//  Copyright © 2018年 ZZHT. All rights reserved.
+//  Created by ZZHT on 2019/7/2.
+//  Copyright © 2019年 Tony Tony. All rights reserved.
 //
 
-#import "Z3LoginSettingViewController.h"
-#import "Z3NetworkConfig.h"
-#import "Z3URLConfig.h"
-#import "Z3BaseResponse.h"
-#import "Z3LoginRequest.h"
+#import "Z3HUDLoginSettingViewController.h"
 #import "UIKit+AFNetworking.h"
-#import "MBProgressHUD.h"
-@interface Z3LoginSettingViewController ()
+#import "MBProgressHUD+Z3.h"
+#import "Z3Network.h"
+#import "Z3MobileConfig.h"
+@interface Z3HUDLoginSettingViewController (){
+    NSString *_ip;
+    NSString *_port;
+    NSString *_virtualPath;
+}
 @property (weak, nonatomic) IBOutlet UISegmentedControl *settingModeSegment;
 @property (weak, nonatomic) IBOutlet UIView *portBgView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *protModeSegment;
@@ -21,21 +23,19 @@
 @property (weak, nonatomic) IBOutlet UITextField *protTF;
 @property (weak, nonatomic) IBOutlet UITextField *virtualTF;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *portBgViewHeightConstraint;
-@property (nonatomic,strong) Z3LoginRequest *request;
+@property (nonatomic,strong) Z3BaseRequest *request;
 @property (nonatomic,strong) UIActivityIndicatorView *indicatorView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *safeAreaTopConstraint;
-@property (weak, nonatomic) IBOutlet UIButton *doneBtn;
 
 @end
 
-@implementation Z3LoginSettingViewController
+@implementation Z3HUDLoginSettingViewController
 
 #pragma mark - life circle
 - (instancetype)init {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSString *path = [bundle pathForResource:@"Z3Login" ofType:@"bundle"];
     bundle = [NSBundle bundleWithPath:path];
-    self = [super initWithNibName:NSStringFromClass([Z3LoginSettingViewController class]) bundle:bundle];
+    self = [super initWithNibName:NSStringFromClass([Z3HUDLoginSettingViewController class]) bundle:bundle];
     if (self) {
         
     }
@@ -48,6 +48,7 @@
     // Do any additional setup after loading the view from its nib.
     [self initView];
     [self initDefaultData];
+
     
 }
 
@@ -65,25 +66,17 @@
     }else {
         
     }
-    
-    if (![self.view respondsToSelector:@selector(safeAreaInsets)]) {
-        [self.view removeConstraint:self.safeAreaTopConstraint];
-        NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.doneBtn attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:20];
-        [self.view addConstraint:constraint];
-    }
-    
-    
     [super updateViewConstraints];
 }
 #pragma mark - public method
 - (NSString *)screenTitle {
-    return NSLocalizedString(@"Settings", @"设置");
+    return NSLocalizedString(@"str_set_menu","设置");
 }
 #pragma mark - private metod
 - (void)initView {
     self.view.backgroundColor = [UIColor whiteColor];
     UIBarButtonItem *btnDone = [[UIBarButtonItem alloc]
-                                initWithTitle:NSLocalizedString(@"Done", @"完成")
+                                initWithTitle:NSLocalizedString(@"sel_ok",@"Done")
                                 style:UIBarButtonItemStylePlain
                                 target:self
                                 action:@selector(onCompletionButtonClicked:)];
@@ -121,9 +114,13 @@
     }
 }
 
-- (void)onCompletionButtonClicked:(id)sender {
+- (IBAction)onCompletionButtonClicked:(id)sender {
     [self saveLoginSettings];
-    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)onBackButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)testOnConnect:(id)sender {
@@ -142,7 +139,7 @@
     }
     [testURL appendString:@"/rest/userService/login"];
     NSString *url = [testURL copy];
-    self.request = [[Z3LoginRequest alloc] initWithAbsoluteURL:url method:GET parameter:@{} success:^(__kindof Z3BaseResponse * _Nonnull response) {
+    self.request = [[Z3BaseRequest alloc] initWithAbsoluteURL:url method:GET parameter:@{} success:^(__kindof Z3BaseResponse * _Nonnull response) {
         [self showToast:NSLocalizedString(@"net_connect_success", @"连接成功")];
         
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
@@ -157,13 +154,6 @@
     BOOL valid = self.ipTF.text.length != 0 && self.protTF.text.length != 0;
     return valid;
 }
-- (void)saveLoginSettings {
-    Z3URLConfig *config = [Z3URLConfig configration];
-    [config setHost:_ipTF.text];
-    [config setPort:_protTF.text];
-    [config setVirtualPath:_virtualTF.text];
-    [[Z3NetworkConfig shareConfig] setUrlConfig:config];
-}
 
 - (void)showToast:(NSString *)msg {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -172,26 +162,12 @@
     [hud hideAnimated:YES afterDelay:2.0];
 }
 
-- (IBAction)onBack:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (void)saveLoginSettings {
+    Z3URLConfig *config = [Z3URLConfig configration];
+    [config setHost:_ipTF.text];
+    [config setPort:_protTF.text];
+    [config setVirtualPath:_virtualTF.text];
+    [[Z3NetworkConfig shareConfig] setUrlConfig:config];
 }
-
-- (IBAction)onSave:(id)sender {
-    [self saveLoginSettings];
-}
-
-#pragma mark - delegate
-
-#pragma mark - getter and setter method
-- (UIActivityIndicatorView *)indicatorView {
-    if (!_indicatorView) {
-        _indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        [self.view addSubview:_indicatorView];
-        _indicatorView.center = self.view.center;
-    }
-    return _indicatorView;
-}
-
-
 
 @end

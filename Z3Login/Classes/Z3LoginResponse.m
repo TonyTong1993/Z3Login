@@ -13,8 +13,13 @@
 #import "YYKit.h"
 #import "Z3LoginPrivate.h"
 @implementation Z3LoginResponse
+@synthesize error = _error;
 - (void)toModel {
     NSDictionary *data = self.responseJSONObject;
+    //服务器处理失败
+    if (![data[@"isSuccess"] boolValue]) {
+        return;
+    }
     NSArray *menus = [data valueForKey:@"menus"];
     NSDictionary *userDict = [data valueForKey:@"user"];
     NSArray *mapConfigs = [data valueForKey:@"mobileCfg"];

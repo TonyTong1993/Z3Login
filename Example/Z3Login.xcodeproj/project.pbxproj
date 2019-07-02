@@ -21,6 +21,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6793D87F099AA1010E92AED9 /* Pods_Z3Login_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		AF300E6722C9F29D000A0CBD /* Z3HUDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF300E6522C9F29D000A0CBD /* Z3HUDLoginViewController.m */; };
+		AF300E6822C9F29D000A0CBD /* Z3HUDLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF300E6622C9F29D000A0CBD /* Z3HUDLoginViewController.xib */; };
+		AF99EE7422CB39C500CCEA5A /* Z3HUDLoginSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF99EE7222CB39C500CCEA5A /* Z3HUDLoginSettingViewController.m */; };
+		AF99EE7522CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF99EE7322CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib */; };
 		EB44211322B37B85007B6DCF /* Z3TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */; };
 		EBF03BFF22C0B7F000EFD9DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0122C0B7F000EFD9DD /* Localizable.strings */; };
 		EBF03C0B22C0CE5900EFD9DD /* appmenulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0A22C0CE5800EFD9DD /* appmenulist.plist */; };
@@ -59,6 +63,12 @@
 		7E3AD0AF035898FD47028156 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9788AB0C39673B24C34C0D89 /* Pods-Z3Login_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Login_Example.debug.xcconfig"; path = "Target Support Files/Pods-Z3Login_Example/Pods-Z3Login_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A431D9752A08B88C5692BDE0 /* Z3Login.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Z3Login.podspec; path = ../Z3Login.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF300E6422C9F29D000A0CBD /* Z3HUDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3HUDLoginViewController.h; sourceTree = "<group>"; };
+		AF300E6522C9F29D000A0CBD /* Z3HUDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3HUDLoginViewController.m; sourceTree = "<group>"; };
+		AF300E6622C9F29D000A0CBD /* Z3HUDLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Z3HUDLoginViewController.xib; sourceTree = "<group>"; };
+		AF99EE7122CB39C500CCEA5A /* Z3HUDLoginSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3HUDLoginSettingViewController.h; sourceTree = "<group>"; };
+		AF99EE7222CB39C500CCEA5A /* Z3HUDLoginSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3HUDLoginSettingViewController.m; sourceTree = "<group>"; };
+		AF99EE7322CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Z3HUDLoginSettingViewController.xib; sourceTree = "<group>"; };
 		B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z3Login_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB44211122B37B85007B6DCF /* Z3TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3TabBarViewController.h; sourceTree = "<group>"; };
 		EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3TabBarViewController.m; sourceTree = "<group>"; };
@@ -138,6 +148,12 @@
 				6003F59D195388D20070C39A /* Z3AppDelegate.m */,
 				EB44211122B37B85007B6DCF /* Z3TabBarViewController.h */,
 				EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */,
+				AF300E6422C9F29D000A0CBD /* Z3HUDLoginViewController.h */,
+				AF300E6522C9F29D000A0CBD /* Z3HUDLoginViewController.m */,
+				AF300E6622C9F29D000A0CBD /* Z3HUDLoginViewController.xib */,
+				AF99EE7122CB39C500CCEA5A /* Z3HUDLoginSettingViewController.h */,
+				AF99EE7222CB39C500CCEA5A /* Z3HUDLoginSettingViewController.m */,
+				AF99EE7322CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -280,8 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF03BFF22C0B7F000EFD9DD /* Localizable.strings in Resources */,
+				AF300E6822C9F29D000A0CBD /* Z3HUDLoginViewController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				AF99EE7522CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				EBF03C0B22C0CE5900EFD9DD /* appmenulist.plist in Resources */,
 			);
@@ -356,8 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* Z3AppDelegate.m in Sources */,
+				AF99EE7422CB39C500CCEA5A /* Z3HUDLoginSettingViewController.m in Sources */,
 				EB44211322B37B85007B6DCF /* Z3TabBarViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				AF300E6722C9F29D000A0CBD /* Z3HUDLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +522,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Z3Login/Z3Login-Prefix.pch";
 				INFOPLIST_FILE = "Z3Login/Z3Login-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +538,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Z3Login/Z3Login-Prefix.pch";
 				INFOPLIST_FILE = "Z3Login/Z3Login-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
