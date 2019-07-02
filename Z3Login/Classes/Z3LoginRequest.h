@@ -6,7 +6,7 @@
 //  Copyright © 2019 Tony Tony. All rights reserved.
 //
 
-#import <Z3Network/Z3BaseRequest.h>
+#import "Z3BaseRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

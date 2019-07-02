@@ -23,6 +23,7 @@
 #import "Z3MobileConfig.h"
 #import "Z3MobileTask.h"
 #import "Z3User.h"
+#import "Z3XmllRequest.h"
 
 FOUNDATION_EXPORT double Z3LoginVersionNumber;
 FOUNDATION_EXPORT const unsigned char Z3LoginVersionString[];

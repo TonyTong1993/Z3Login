@@ -7,9 +7,9 @@
 //
 
 #import "Z3LoginSettingViewController.h"
-#import <Z3Network/Z3NetworkConfig.h>
-#import <Z3Network/Z3URLConfig.h>
-#import <Z3Network/Z3BaseResponse.h>
+#import "Z3NetworkConfig.h"
+#import "Z3URLConfig.h"
+#import "Z3BaseResponse.h"
 #import "Z3LoginRequest.h"
 #import "UIKit+AFNetworking.h"
 #import "MBProgressHUD.h"
@@ -23,6 +23,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *portBgViewHeightConstraint;
 @property (nonatomic,strong) Z3LoginRequest *request;
 @property (nonatomic,strong) UIActivityIndicatorView *indicatorView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *safeAreaTopConstraint;
+@property (weak, nonatomic) IBOutlet UIButton *doneBtn;
+
 @end
 
 @implementation Z3LoginSettingViewController
@@ -62,17 +65,25 @@
     }else {
         
     }
+    
+    if (![self.view respondsToSelector:@selector(safeAreaInsets)]) {
+        [self.view removeConstraint:self.safeAreaTopConstraint];
+        NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.doneBtn attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:20];
+        [self.view addConstraint:constraint];
+    }
+    
+    
     [super updateViewConstraints];
 }
 #pragma mark - public method
 - (NSString *)screenTitle {
-    return @"设置";
+    return NSLocalizedString(@"Settings", @"设置");
 }
 #pragma mark - private metod
 - (void)initView {
     self.view.backgroundColor = [UIColor whiteColor];
     UIBarButtonItem *btnDone = [[UIBarButtonItem alloc]
-                                initWithTitle:@"完成"
+                                initWithTitle:NSLocalizedString(@"Done", @"完成")
                                 style:UIBarButtonItemStylePlain
                                 target:self
                                 action:@selector(onCompletionButtonClicked:)];
@@ -132,9 +143,10 @@
     [testURL appendString:@"/rest/userService/login"];
     NSString *url = [testURL copy];
     self.request = [[Z3LoginRequest alloc] initWithAbsoluteURL:url method:GET parameter:@{} success:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [self showToast:@"连接成功"];
+        [self showToast:NSLocalizedString(@"net_connect_success", @"连接成功")];
+        
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [self showToast:@"连接失败"];
+        [self showToast:NSLocalizedString(@"net_connect_failure", @"连接失败")];
         NSLog(@"error = %@",[response.error localizedDescription]);
     }];
     [self.request start];

@@ -9,9 +9,13 @@
 #import "Z3LoginViewController.h"
 #import "Z3LoginSettingViewController.h"
 #import "Z3LoginRequest.h"
+#import "Z3MapConfigRequest.h"
 #import "UIKit+AFNetworking.h"
+#import "AFNetworkReachabilityManager.h"
+#import "MBProgressHUD+Z3.h"
 #import "Z3User.h"
 #import "Z3Network.h"
+#import "Z3MobileConfig.h"
 #define TIMEINTERVAL_LIMIT 60      //时间限制 60秒
 #define CLICKTIMES_LIMIT 5         //点击次数限制 至少5次
 @interface Z3LoginViewController () {
@@ -26,7 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginSettingButton;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
-@property (nonatomic,strong) Z3LoginRequest *request;
+@property (nonatomic,strong) Z3BaseRequest *request;
 @property (nonatomic,strong) UIActivityIndicatorView *indicatorView;
 @property (nonatomic,copy) LoginSuccessBlock success;
 @end
@@ -59,8 +63,8 @@
     [self initSubView];
         //开发阶段默认填充
 #if DEBUG
-    self.accountField.text = @"xj001";
-    self.pwdField.text = @"123456";
+    self.accountField.text = @"admin";
+    self.pwdField.text = @"ggsw123";
 #endif
     
         //是否自动填充密码
@@ -122,12 +126,12 @@
 }
 - (BOOL)check {
     if (self.accountField.text.length == 0) {
-//        [MBProgressHUD showError:@"用户名不能为空"];
+        [MBProgressHUD showError:NSLocalizedString(@"user_account_is_empty", @"用户名不能为空")];
         return false;
     }
     
     if (self.pwdField.text.length == 0) {
-//        [MBProgressHUD showError:@"用户名不能为空"];
+        [MBProgressHUD showError:NSLocalizedString(@"user_pwd_is_empty", @"用户密码不能为空")];
         return false;
     }
     
@@ -139,19 +143,61 @@
     __weak typeof(self) weakSelf = self;
     self.request = [[Z3LoginRequest alloc] initWithRelativeToURL:@"rest/userService/login" method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
         if (response.error) {
-            //TODO:提示失败
+              [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
         }else {
-            if (weakSelf.success) {
-                weakSelf.success(response.data);
-            }
+            [weakSelf requestMapXMLConfiguration];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        
+         [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
     }];
     [self.request start];
     [self.indicatorView setAnimatingWithStateOfTask:self.request.requestTask];
     
 }
+
+
+/**
+ 获取地图配置文件
+ */
+- (void)requestMapXMLConfiguration {
+    NSDictionary *parameters = @{};
+    __weak typeof(self) weakSelf = self;
+    NSString *absoluteURL = [Z3MobileConfig shareConfig].mobileMapURL;
+    self.request = [[Z3MapConfigRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
+        if (response.error) {
+            [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+        }else {
+            [weakSelf requestCoordinate2dTransformXMLConfiguration];
+        }
+    } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+    }];
+    [self.request start];
+    [self.indicatorView setAnimatingWithStateOfTask:self.request.requestTask];
+}
+
+/**
+ 获取坐标转换参数
+ */
+- (void)requestCoordinate2dTransformXMLConfiguration {
+    NSDictionary *parameters = @{};
+    __weak typeof(self) weakSelf = self;
+    NSString *absoluteURL = [Z3MobileConfig shareConfig].transParamsURL;
+    self.request = [[Z3XmllRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
+        if (response.error) {
+           [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+        }else {
+            if (weakSelf.success) {
+                weakSelf.success(response.responseJSONObject);
+            }
+        }
+    } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+    }];
+    [self.request start];
+    [self.indicatorView setAnimatingWithStateOfTask:self.request.requestTask];
+}
+
 - (void)updateUserDefault:(UIButton *)sender withKey:(NSString *)key {
     sender.selected = !sender.isSelected;
     if (sender.selected) {
@@ -162,7 +208,6 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
-
 
 #pragma mark -request
 

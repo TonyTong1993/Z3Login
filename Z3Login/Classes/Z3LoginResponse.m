@@ -10,7 +10,7 @@
 #import "Z3User.h"
 #import "Z3AppMenu.h"
 #import "Z3MobileConfig.h"
-#import <YYKit/YYKit.h>
+#import "YYKit.h"
 #import "Z3LoginPrivate.h"
 @implementation Z3LoginResponse
 - (void)toModel {
@@ -109,7 +109,7 @@
     }];
     
     NSMutableDictionary *mappcenter = [appCenter mutableCopy];
-    [mappcenter setObject:[apps copy] forKey:@"children"];
+    [mappcenter setObject:[apps copy] forKey:@"menus"];
     NSUInteger index = [tabs indexOfObject:appCenter];
     [tabs replaceObjectAtIndex:index withObject:mappcenter];
     

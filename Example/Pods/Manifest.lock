@@ -21,7 +21,7 @@ PODS:
   - Z3CommonLib (0.1.1):
     - MBProgressHUD (~> 1.1.0)
     - YYKit (~> 1.0.9)
-  - Z3Login (0.1.0):
+  - Z3Login (0.1.2):
     - Z3CommonLib (~> 0.1.1)
     - Z3Network (~> 0.0.1)
   - Z3Network (0.0.1):
@@ -51,7 +51,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   Z3CommonLib: 77bcabcc40fcc0c102b2006aa6a2aa6b6ed3f600
-  Z3Login: f695b2866cdfeb13e34b306567f6fc40b004dfdf
+  Z3Login: 3699a83a91ab0da13d97fe2a6370a4aa782993a9
   Z3Network: 4386fd3b1b5648cf0bcde0962e6378b6f9a4fd4f
 
 PODFILE CHECKSUM: 9c022998dc77517c98b1973ca86c36ad9499a3cb

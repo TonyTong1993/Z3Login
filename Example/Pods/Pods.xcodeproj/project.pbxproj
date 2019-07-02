@@ -7,33 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000E26C0EEADC104EF4C0E3B9096F204 /* Z3Login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5DFE095981DC4A6DDA531F80CB80B6 /* Z3Login-dummy.m */; };
 		0064387C25FAA3EED42F603E72BEE940 /* YYSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A102194618F37DCA723F689B793529 /* YYSentinel.m */; };
 		008F749126FD9E71BB135E7B2BA55D49 /* NSArray+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = AF2E2D2640160843CF09FA08A391443A /* NSArray+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0119F572750E7F7BA9FF9095CC3E55E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FBCAD83C3A40F73891AF71F57644CB /* MobileCoreServices.framework */; };
+		027607DFDED8B9CDC778EAC2172CC173 /* Z3MapConfigRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 650594BC32BA68B7F91A243345902468 /* Z3MapConfigRequest.m */; };
 		02ECBD8986D01DF261A622AD8B3404A2 /* _YYWebImageSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2698F41A91F800A1893B76EDBF8D6197 /* _YYWebImageSetter.m */; };
 		0540938736EA2F5F9B21A82951318DDE /* YYTextKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B23DBA291117621D17AD6AA7A42093D /* YYTextKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		055266CE72B015AEC9F20E6E5600422D /* UIDevice+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1DC0370D4965C8074BEDEB7BD2D63A /* UIDevice+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05924A47D151DE6DC9568B0361D56BD1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FBCAD83C3A40F73891AF71F57644CB /* MobileCoreServices.framework */; };
 		0659AA33F922983EA98E3FD59B900225 /* Pods-Z3Login_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 614D39B50258E265B3BACF546FE81E6C /* Pods-Z3Login_Example-dummy.m */; };
+		06BC54197700475E0F44B1EA2439F11D /* Z3LoginPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE4427C7458B7261D7766E5FA0903C1 /* Z3LoginPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0711592661CF1FF78650D89D4FC21801 /* UIScrollView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BEFA1072621198D60183E77B20FD4A /* UIScrollView+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		076C00AFD23F6DF56093E24AC4E1F72A /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7354BDD34A360F0C5BFE660CBC166E47 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		077E63D68E41DAF6AB92F95C562258A7 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E155E69A99F2FAE2E975B02F56711 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		089B7C97FD152161A6816AC18CA274DE /* YYTextMagnifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 91A2D4CEB2D14C3A30DF94F735CB090E /* YYTextMagnifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09773D4BD0732F94043E34DA7D94A4FB /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = DC793A921C230551645042A4E3BB96CC /* checkmark.png */; };
+		09FE99A6CE4E7116A79AD6D845945D16 /* Z3LoginResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = ED90CFFE68F2A27463571CF8DF3C749B /* Z3LoginResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AB35678E7B99037B9338F97953647F5 /* YYTextDebugOption.h in Headers */ = {isa = PBXBuildFile; fileRef = C67770C997C2285337BAAD4DEB2F499C /* YYTextDebugOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B37802413B74849FEE6F99E6FE65E9C /* YYTextContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA4ACED923D30BD8A5FCF4FA21EC20D /* YYTextContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B9090C2DC7B6794313D803028F4671B /* Z3LoginSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14D2A1E1E4989929640778767E0252A /* Z3LoginSettingViewController.xib */; };
-		0D52F2290E9827E830ABD77E9E5DAACF /* Z3AppMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D302976FBC1B7AB08ABB9DC65E7B88D /* Z3AppMenu.m */; };
-		0E7EEDB3B97B4F292FAAA470598E21B9 /* Z3HttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A447CCDF9ECBBDAF546CDA388C67AB /* Z3HttpManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EA55E12A2D0FA820889E865AD331B5A /* Z3LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D16048135DC48D6883BAB035F27E3E54 /* Z3LoginRequest.m */; };
+		0E7EEDB3B97B4F292FAAA470598E21B9 /* Z3HttpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B113245FA0B3DF2507129AE3089BC71 /* Z3HttpManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10672A7463F5E66AAF39262A105C0BB8 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3515C6DB1E4FE3542218EF4EA5962 /* YYLabel.m */; };
 		116802291526EAA63AB806E407E3AF8B /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A11D0A4129931370F9891906F3964D /* YYClassInfo.m */; };
 		13BF5B7959DDC4034635A5E4A23616C0 /* NSObject+YYAddForKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = D654C7074DC744A4B48F1B190D6B029D /* NSObject+YYAddForKVO.m */; };
-		13D3E90C4A74A808D02D21D7031026B7 /* Z3MapConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D226000133E4A704837C0A86B11A40 /* Z3MapConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14801393FB5B95B26CAAD76267BC65DD /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 99113246FF732A1CC65ED5B0923D40E2 /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15850CCC735E8E712966553F6EC6E2CA /* Z3MobileConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA5B7D28D341009D4911BE9BD231D76 /* Z3MobileConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15F49DE5769BBFF5DBABD5F5FB841BB9 /* Z3Theme.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D19944BA51B49B858072D13A413ACB5 /* Z3Theme.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16D73D386AEA16266870D905260E8A75 /* Z3Login-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB323E9BC79C8829D217629B17313D38 /* Z3Login-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F49DE5769BBFF5DBABD5F5FB841BB9 /* Z3Theme.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9B1BF15647883389AA928795BB9004 /* Z3Theme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		177AC2287044DC61E8DE24FA4A753087 /* _YYWebImageSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9D35B3FC5E37D54CF9390D3CB79433 /* _YYWebImageSetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17F4D73436F038FA830069967155558B /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E7FBB64E0E4275C93ABB57F0387CB40 /* YYAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		185F7BDB9FF767E5118969765D030DB0 /* YYKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = D33BC4353124D3FCB4F08F00D9A5A6B7 /* YYKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,17 +40,18 @@
 		1A8E18E571545A2D8F7D6C00EB7EC5E4 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 411403B3453B2445970CFCA2CD645138 /* NSBundle+YYAdd.m */; };
 		1D35C979522417404265DA17C138B85B /* YYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E62DF276063B6B89417305C89EB2BB8 /* YYKeychain.m */; };
 		1F00C7EFFEAA51CB92A627E154AAE46C /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E2977B443E7BCA6956B0F3355CBF3A22 /* UITableView+YYAdd.m */; };
-		204B37962220D9F6795741FBE15DA9B8 /* MBProgressHUD+Z3.h in Headers */ = {isa = PBXBuildFile; fileRef = 2427EAEAE58EBAC3170FDEC285DDCA77 /* MBProgressHUD+Z3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204B37962220D9F6795741FBE15DA9B8 /* MBProgressHUD+Z3.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5BE6DCBAFC2E97FFBD3F1578DEC0F2 /* MBProgressHUD+Z3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22D111C0F046C51CB30C83393AC95FAA /* YYWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 198B4291E20699A76E01D06979770278 /* YYWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2350D5C0B07B1B021756F47D452A4CB2 /* Z3LoginSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 265F40510913F55EA00CD4A7B75090AF /* Z3LoginSettingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23CBB9A76FE12CFF9C48A482A737B90A /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 42234E677CB67FCE632886D04E6195DD /* NSObject+YYAdd.m */; };
-		25911582D2D28C75F081FCA1BB89E00E /* Z3LoginSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB9700CF31F866567D8DADB1FFBAC18 /* Z3LoginSettingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E43DB49C9E81BC5DE83970AD245C68 /* icon_login_input_password.png in Resources */ = {isa = PBXBuildFile; fileRef = B7A93AC6FB55BC9BB3E4B491D590552B /* icon_login_input_password.png */; };
 		25C341E0D1633A42850B2A8BBB8D8491 /* YYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FBAB8D7F22DE1EEFC98E370112A6C5 /* YYTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25DF25BA7FBB43063D9D725209A7B1FA /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF58151D693F4A9B5C4C44ECEB0292A6 /* YYCache.m */; };
-		2752B5A587DAF737CDBA3CDB3EC0EFA1 /* Z3MobileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DBCE954901FF613364C21DA4595E84 /* Z3MobileConfig.m */; };
 		27D379F7E9F7B666F7CFEE4B3E727F4F /* YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6403C2F9504780CA060E81CC3D8B5 /* YYTextLayout.m */; };
 		27F6529F1BCA4C3EA51652D0A6D12C8B /* YYTextAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD6434FC4498781D3E06B2862BF621A /* YYTextAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		286B587DCE3575E1C4EF515F61440906 /* UITableView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F3BB2E696DE2C3C0812DEDEDD902B9 /* UITableView+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AA6F33E3BB668FB7B3F478AF348DBA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F001D739B3A946133D9FC80C06BB1AE2 /* UIKit.framework */; };
+		2B976C8485B7971D102330D3E562C1AF /* Z3MobileConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E606F37FD73E1BB024206B703BC2CF7 /* Z3MobileConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BDB021D27F3102F5A4957C05C007912 /* YYWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A34D725D4CA500F97ED215697EF30AC /* YYWebImageManager.m */; };
 		2C46FCA2CD79345257699C843B0642E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6259093C84E2422F3AEADD442AE3ED87 /* SystemConfiguration.framework */; };
 		2DE75715F7514DCCD0E5A1DAF9AA11FC /* UIButton+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 693EE285895457F93A1539AA9544001C /* UIButton+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,22 +62,27 @@
 		3072ABE198633EF147D5A2C9F4F6459D /* YYThreadSafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = F9C80BFB635DBDD08D16FC16EB3AF8E6 /* YYThreadSafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30FC85639A7922FDF8239AAADE76A3A2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DC8572356F9B2784D2746C42DC6CDB /* AssetsLibrary.framework */; };
 		33029FDB5016A2F7A44E187BB61840F8 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F8211C18B87745E4C38A7CD2A2D255 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33290E912281170B356137B500B7603A /* Z3User.h in Headers */ = {isa = PBXBuildFile; fileRef = 508F52BC5816E9AE28E0B640BFF2A44A /* Z3User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33C9CD4B44409BCA29FDBBF29A9FBAD2 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DA6BAC0EDC6E6B41C601FF0FB2FEFC /* YYKVStorage.m */; };
+		33E30E68F0075E7D528862CA2E4A3379 /* nav_back_login_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = A45481C11FEB80DCCD93324B158E661C /* nav_back_login_setting.png */; };
+		344EAEC57D0589B79E57DDCEC3510F7B /* Z3Login-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBD37153049D30F95F25082B97C6FA2 /* Z3Login-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		350538A51D77C4AE06DCAC2B48F0183A /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0759F364942F3057447EF69A398D1795 /* YYTextRubyAnnotation.m */; };
 		369E6AA7741BBACEB5DADBF2C0084C8E /* UIGestureRecognizer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A40992E470365AA2E5745375965BC0A /* UIGestureRecognizer+YYAdd.m */; };
+		386F401710037A1D4851D86D3C516B3D /* Z3LoginSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FEB769CC8A4D0CB467291CA7715550 /* Z3LoginSettingViewController.m */; };
 		3ABC33C59704927F765F505D217C2BC1 /* UIApplication+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 61CA44DE0DABF6FC2F521F7839C1DF7A /* UIApplication+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B444557B9F9052D916B945406358900 /* YYTextSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B3B15D3B13CBA509F5DA183B2AD9BE /* YYTextSelectionView.m */; };
+		3B75E5DA603232D68129A457FABBEC07 /* Z3XmllRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EACB96614FA838B47EA6D1E1DF7E33 /* Z3XmllRequest.m */; };
 		3B9AB4977674EFCFC49CA28926B80081 /* UIImage+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D346A3463BD01894AEC853C7C4CC092 /* UIImage+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C636EFA6F3E1020C732E9C18F26E35A /* Z3URLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 073FA8C34D270C9CB84659AC91991C66 /* Z3URLConfig.m */; };
+		3C636EFA6F3E1020C732E9C18F26E35A /* Z3URLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0549408BBD0FAFB974E3B9FC341C09D4 /* Z3URLConfig.m */; };
 		3CDDB2F6F83E3B359C1D081C62B1D8A4 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB20861AFA79EA0B2D8F4A940EABBE3 /* NSNumber+YYAdd.m */; };
 		3CFFE5E93CD39E2D20D2DF1CC6FD0D65 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B07BA1C96407BDBFDAC65432070AD142 /* UIView+YYAdd.m */; };
 		3D26FEB0D3C003CEF1FFAB3567A87747 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E315128EE66FF2694126E4F7AC66D1 /* AFNetworkActivityIndicatorManager.m */; };
 		3D58593D303DE366695F55B798CC1A48 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C25521240D3AAD124CE4B6FC84DD473 /* UIColor+YYAdd.m */; };
 		3D5B74CD2B8D04892FAB60BAD04AE7E7 /* NSTimer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 577F388BEA5C3B76A127E01E7BAD7ADC /* NSTimer+YYAdd.m */; };
-		3D6225FEAF4F8A801C7FFFCC9765B313 /* MBProgressHUD+Z3.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D1DD16644EF487A6BC28840DB52F4B /* MBProgressHUD+Z3.m */; };
+		3D6225FEAF4F8A801C7FFFCC9765B313 /* MBProgressHUD+Z3.m in Sources */ = {isa = PBXBuildFile; fileRef = 451273CFE5D0655476A36A468B663AED /* MBProgressHUD+Z3.m */; };
 		3D67E691D7544100061A1E17F07ED6DA /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2402F2700C97447DD336EDF528B2A223 /* MBProgressHUD-dummy.m */; };
 		3E6CBE5A96B3532700E9524AAB3C5BFB /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9060B218446AB181460BB2B0D6DD3C /* UIProgressView+AFNetworking.m */; };
-		3F11C45E4D10D1991E3FAEB5B8AB8C7F /* Z3LoginPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEFD968DF1AF2D9E07F171953AF2F5C /* Z3LoginPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EC196F0D193168C7CCE3C2908BF69BA /* Z3LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACB8068CED4CF1C20E0203C5E33422E /* Z3LoginViewController.xib */; };
 		3F79313E4EFECD8226F9D4FB57C8494E /* UIBarButtonItem+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = CA188289DB8C687F97D6A39B28EC1324 /* UIBarButtonItem+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		409C2CF05F2151C664A455C92F896FE0 /* YYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AD75CE07543BB728A14D7263815819 /* YYGestureRecognizer.m */; };
 		4143A6B05E268442207843AF83B4D7BF /* UIControl+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD335DA6CCA524F5263C18A36FE7E46 /* UIControl+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -87,6 +90,7 @@
 		421362A3C01EBAA139FE8C0D27C49172 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A750256CC198F7C25E7B2FFD07FBF /* CoreFoundation.framework */; };
 		42FFAA70E7000E84ABAEBB7236282A58 /* UIScreen+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EBACEBE1291A1617808FB85A9658FB /* UIScreen+YYAdd.m */; };
 		4303E641A1C9B9C48C61C3CC0276EF8E /* NSKeyedUnarchiver+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA5E7D7B6357A7FC31B4FCC5EE233FD /* NSKeyedUnarchiver+YYAdd.m */; };
+		445E86A97B55FA7A59F17D88E9F47E92 /* Z3MobileTask.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EDF0306336FF2D5C2854076F76EDAC /* Z3MobileTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44955CFE1768FB73542786F8F41ADF6E /* NSDate+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = A1CDCB2B897347A2792B0C0F746132C2 /* NSDate+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		459B7981366B750E67C9C930A9D04402 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B20ED6496E03DCEA4FA8498A3D001923 /* AFURLResponseSerialization.m */; };
 		45A76E0D07D40173F22C9B4142CE3E89 /* NSString+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C5460ACE1208BFA0884BED2A105542 /* NSString+YYAdd.m */; };
@@ -94,20 +98,21 @@
 		4762C64C104CFBC8D4300B4E8EAAEB02 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E217F642BA43D230F0538F5C09E28B2E /* YYMemoryCache.m */; };
 		480CD15FAF979F9C728D5FDE8DF825B6 /* UIScreen+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F3E22A1C05549952E46DAACA509E34 /* UIScreen+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A7ED75E25D539E4A6C74A107CBA5B80 /* YYTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90875142A1C212C3AD9F3CEE7BE9C84 /* YYTextRunDelegate.m */; };
-		4B7E6FD7F76296F16B2F87A4BC3D8E83 /* Z3User.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E1155E9619BEF5FC3D63560EF5F8A6 /* Z3User.m */; };
 		4EF7A02A77EF99DBC47B3D9A1093AAB6 /* YYKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6D1D9B4022F63FDDE298E1652F4AD0 /* YYKit-dummy.m */; };
-		4F5F85C085D663E48B54E0CBAA58C232 /* Z3MapConfigRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B22F2C916E0D6AA3EAF11CBB3648F7 /* Z3MapConfigRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		512ECAD5BEF6B6E25358E561C68EBBA1 /* YYSentinel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F56590648F0B5C07BFF66AA8D386828 /* YYSentinel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5152F16B4E4DD86F4D8A6E8F167387A8 /* YYTextEffectWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB21AE0392544AC126E236D76323FD5 /* YYTextEffectWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		530A90E0BCCC2C6D9554C7D3EAB4AB25 /* Z3BaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D10173EDA7D893FCC3D0C960E8D012D5 /* Z3BaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		530A90E0BCCC2C6D9554C7D3EAB4AB25 /* Z3BaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF7ADA7D1B43FACED5724F737ADDC41 /* Z3BaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		531A40F7B2A1396F18C04166D4F867EF /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCB1E3AEA4D5EDE63C1D44D8A380B6 /* NSAttributedString+YYText.m */; };
+		53A01D6F2BC486812D97489A1137CA4A /* Z3MapConfigRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 83AC8DDFA90BD77E62FFCD1D535610E7 /* Z3MapConfigRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5406DF9262653CFB8F4460E560C84186 /* Z3CommonLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85B219AE0FFD6BE8ECF0C51EC8C7BE8 /* Z3CommonLib.framework */; };
 		5431B5B452BAE3FFA656FEC252A52F0F /* YYDispatchQueuePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 417EF9037EC69FB804FEBDB22D0D3407 /* YYDispatchQueuePool.m */; };
+		548CE0CD825CEB8C758E1C819FA6550D /* Z3LoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B674CC1E1E6E0E386EEDE68EFADF35 /* Z3LoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54AB2B998B1F1E6B05426918BCEE7748 /* Z3MapConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 148E427B9A826732E9363E11C67FA1B6 /* Z3MapConfigResponse.m */; };
 		55940F900F0FC9EC4F9CE2997B4D749C /* MKAnnotationView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = FE476992DED3F30021A47FD19C4D1FBE /* MKAnnotationView+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		562C55873D86CA0ECA2A7946373A1A51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35579502B0A853B4916B7991EC8CB57D /* CoreGraphics.framework */; };
 		567B4BF4309674A8523DF1E20D4671F2 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C9D429CCA7ABA03A64A34B5C727A16 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56B0F2FF932DC6EFB25D8F0794E3ED90 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FB78C5521668250B26578C9CBE63C9 /* CoreText.framework */; };
-		56E2E485A9C2C142A7AB979E188FC4EA /* UIColor+Z3.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B27BD2827EEF2607CF127696B61F1D /* UIColor+Z3.m */; };
+		56E2E485A9C2C142A7AB979E188FC4EA /* UIColor+Z3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D386CB8D14869A31793D7CEE17223B5 /* UIColor+Z3.m */; };
 		577717FCAC7DAFC8EC39F88257AB38C5 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EFC0537BFF633410F3CFF119327A52 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57BC237A2F25C81B1236D7D2F37A1BF1 /* YYKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B805DE64F7D65C909D04D3A904E2C63C /* YYKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58B0F7FA743F83991372B6D5DD873C8A /* UIView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 117C204AE79D9DBF3CA85010CA4159BD /* UIView+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -118,7 +123,6 @@
 		5C2E112E19BEBD06A5FF7504DD2C34C7 /* UIPasteboard+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = E84F47A996421D1DBDCEF4349AC7B63A /* UIPasteboard+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C6E43A19962372CB26AEDCC13E3A885 /* Z3Login.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF57801905FAE4602FE86D9B306CC05E /* Z3Login.bundle */; };
 		5C8F989ADBC7039997CD062114CACCFD /* NSParagraphStyle+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCD78D4DB61F6DA91A75FA12DABE04E /* NSParagraphStyle+YYText.m */; };
-		5DE7A8485E0F2F3A18AAC220E1478E82 /* Z3LoginComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 992702E5E0135AD259891250F0F79B00 /* Z3LoginComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E2C64365D4C9561D63119A5434EB725 /* UIScrollView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 786295B5A720967E3D69EAEE3C6FC463 /* UIScrollView+YYAdd.m */; };
 		5E6E276898CC25A1F735E95E4C6FF2DF /* NSKeyedUnarchiver+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4843E0D3161472D0CA2CF3F214EB7F27 /* NSKeyedUnarchiver+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F7661F98510B0E302BBC79DAB3CF360 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D067DD141A493702D5F29BE62518B8 /* Foundation.framework */; };
@@ -130,30 +134,32 @@
 		664490CED8A99854E6042B750F1B33FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35579502B0A853B4916B7991EC8CB57D /* CoreGraphics.framework */; };
 		66E037C310853F72B9AB5C84FC410C32 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D2039BD089DB40BE7DEE22E3843B1B /* AFImageDownloader.m */; };
 		670584EF0F07D75958C99CFC2E2DB9C0 /* NSString+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 32595A94FE2F52072AC98333DDC4EB10 /* NSString+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		693AA1A0E4ADEF0BF5B597210906FA51 /* Z3HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E5DC1B03FCFE9EC482C7C9ED39A879 /* Z3HttpManager.m */; };
+		693AA1A0E4ADEF0BF5B597210906FA51 /* Z3HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB188C6D55D78CE11571BA29949265AD /* Z3HttpManager.m */; };
 		696C2F72E9B7BD845385A6D4ED1EEE9D /* UIBarButtonItem+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B343145CB3105C9970D373F4D365E7 /* UIBarButtonItem+YYAdd.m */; };
 		69FBE33F2B01A1417F3A1F99374CDB01 /* NSAttributedString+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = DC076EB001C0A06F4CF57BFB1E856777 /* NSAttributedString+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A2700CB56B7F55F5EF1B40E1E49F1DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6259093C84E2422F3AEADD442AE3ED87 /* SystemConfiguration.framework */; };
 		6A7096283C7036C4B97030657219BFEF /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA6D132803723B8D11C5DB7A4CCE089 /* UIButton+AFNetworking.m */; };
 		6AE7CC34D889EB7C4ABDB17C31CBB78D /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98152E46BABE3D8F526B6D5C52DB2CC4 /* NSObject+YYModel.m */; };
 		6D5B42878E9DFDEEE1E465D6DB30BED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D067DD141A493702D5F29BE62518B8 /* Foundation.framework */; };
-		6E26D13CF3CA508D47EA332E2156A16A /* Z3LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F367913D0E314E1973E185C1B8BA29ED /* Z3LoginViewController.xib */; };
 		6E74E6AD108548B74F607D788E089522 /* YYImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 966109EB6DA9C94E07E3C231BFBC3DA7 /* YYImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EC73590709E5C6A726F17DD21B5FCA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35579502B0A853B4916B7991EC8CB57D /* CoreGraphics.framework */; };
-		72C4D2DF87D88D2741AA5A22F49B91C2 /* Z3BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C50CE00C1FC7C595A7A87E0200773A /* Z3BaseResponse.m */; };
-		7352CFEA15946E365F7C27168DF7D13E /* Z3Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F9CA529BA11485D35FF7A0A38D00C6 /* Z3Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71278BBF19123460E388078C1EFBD182 /* Z3MobileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCF34C7F2626DCEA5DE7536AE5C6764 /* Z3MobileConfig.m */; };
+		72C4D2DF87D88D2741AA5A22F49B91C2 /* Z3BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 194ECB7A0C70CDA2682FF5EC8C86E8C6 /* Z3BaseResponse.m */; };
+		7352CFEA15946E365F7C27168DF7D13E /* Z3Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBA1B983B1FDDCC0A85771ED46AC08C /* Z3Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7362EEA25454A0082C50E10180A62897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D067DD141A493702D5F29BE62518B8 /* Foundation.framework */; };
 		7397E81FD1F50A73C87AD11B90715BC1 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3822D9577611C2403B90FD71DB11B0 /* YYFrameImage.m */; };
 		76C87CD9D9FF7A6CF8670D7F1E5E1F58 /* YYTextRubyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D39A9E5C36CDCF65D65C6F1D341712 /* YYTextRubyAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76D709A0FA0E4FD022D3825CB60F6D4B /* YYCGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15684186EF2A9766F4211612CAAFA8 /* YYCGUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		775FD4041C972482A0AC5A31665EA870 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FAA44B742D0684C964BC1DEED40F1C /* AFHTTPSessionManager.m */; };
 		799D600FD4DEA43544B2F7CF5E4458CF /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E0285D0D70B67C50EBB61BE473CA7 /* CALayer+YYAdd.m */; };
-		7DBB0AB2134BBF0DE9A95B15363F1B17 /* Z3URLConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 91806255206A299DD3E0F96B92F05904 /* Z3URLConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CDD38BA4589E056A70FBAE1B2DBD2BF /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 431B49A9B46C2A8E902EAEE0EE90D7E2 /* checkmark.png */; };
+		7D4BFD205D0940145B4207BA78D9F13E /* Z3AppMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE674019815404F897771C478C9B177 /* Z3AppMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DBB0AB2134BBF0DE9A95B15363F1B17 /* Z3URLConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E74B7BC85C81A28D8AF6B49764E293C /* Z3URLConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DCFC748C7F8BBBC410C0C5157A1B9F5 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1697BDF076EED5EC22857198DD6F8BFF /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FA1BE280B874719171A449D69054D4D /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DC90C33862F98DA8EF568125F7E542FC /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80373E7750B5D2E7E692626EF24ADA5B /* Z3User.h in Headers */ = {isa = PBXBuildFile; fileRef = 8340BFE1DF3D973BA713B14FD8691EA7 /* Z3User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		821795BBE4C9042FACAB7053B38D3A05 /* YYTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = AC99888F8D7E1A771EADDF77B5F9D6DD /* YYTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		822B53C788B6250CF01E109A0359CFF6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709DAB74E6973B96EF65F155612D357D /* QuartzCore.framework */; };
+		8233CBC975633214C6E535F0BE708C0A /* Z3LoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 42E4D6F9C7758518EE3EB141C3F4141E /* Z3LoginRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		829C506B48FABBB3410F0FCAB7185781 /* Pods-Z3Login_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22FC226F5DF5B93F27AA3D089A1FDDB8 /* Pods-Z3Login_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		832B02E09ECC35E0B314C64D9255039A /* YYTextMagnifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4FD08443C33BAA026EF5D6A93360A5 /* YYTextMagnifier.m */; };
 		852E5392004891C661CE244DD47FA7A7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D26473CD3EB0328B44803C6BE832225 /* MBProgressHUD.m */; };
@@ -165,74 +171,74 @@
 		891AAE82F26D8020470FC40F20A46C6C /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5451B5EDDE20E88D3C59CC508C226216 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895D027B30257997C1CC79ED96E69397 /* YYImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F1427C641F63C704348AF1148572C2 /* YYImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89943CF557435D0B33E6C56CC5C5B7AF /* UIImageView+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0889CD9826312130E7EF65409C3544F4 /* UIImageView+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89ABE8FD168ACD62F733BADF136DC29A /* Z3User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D625CAA28F948B73CB770FFC2CA02D0 /* Z3User.m */; };
 		8AD5DCF40D6F1D970FAE3C28C7606317 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC76A4EDE0ED2E3BFD2A71C402E87291 /* AFURLSessionManager.m */; };
 		8B2874F670DAE042FD93DFB056E59C52 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC9C0D7211500C784680FB7C338BC93 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C07EFCF3D3C1591F5B4578E322B364E /* Z3LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1103BED8BE8CD99DC747D9EB8421EF14 /* Z3LoginViewController.m */; };
-		8C3665DCAE3FBD62E0CA4FE4223811B6 /* Z3LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F2116E674BECEDFB90F55757B476E5 /* Z3LoginResponse.m */; };
 		8C5BCC5C010A4842B90134D4B4A9965A /* NSNotificationCenter+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4B0492778CDAA086813224B2A73CCC /* NSNotificationCenter+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D8A49CD52AB93B4AD10DF2EA3BC3AC5 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FC6D1F0EE18A10EFBAD1578C81BD22 /* YYTextView.m */; };
-		8D9DA5424D253349E4199D572F60C6D0 /* Z3BatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC24693FC064ACD8B80EA0756C11FACD /* Z3BatchRequest.m */; };
-		8EF72629D564AEBC7189763E70BF059D /* Z3Network-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E228F05F770F331CBD77DD7509631BB9 /* Z3Network-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F24EF0C81CDB734711EEBC2249BF842 /* Z3LoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF5EBBDEF8531B33AE902CA0ABB5A29 /* Z3LoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D9DA5424D253349E4199D572F60C6D0 /* Z3BatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5841779CEB103008BC4EE9D7D2091A6D /* Z3BatchRequest.m */; };
+		8EF72629D564AEBC7189763E70BF059D /* Z3Network-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FAE4A6DE5BCA7A409333AA6943D0BF3 /* Z3Network-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		918168C4E0EA5B265D05AB2BDF64C0F0 /* Z3LoginSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61D16452C0F325B6007F3C2F9C8857F /* Z3LoginSettingViewController.xib */; };
 		931AED321F57C847A17C166D5B7DD11B /* NSObject+YYAddForARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DE139EA08FB109ED94E3EEA159EDA2 /* NSObject+YYAddForARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93D940FD17ECD74059F79CA176B7F019 /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3F7936A7B2A93392A6C5E860E9C814 /* YYFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		945B29FC967B016A80FC3337A64193B8 /* YYReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D75D67E7D3409749224C38EC8F6C9BF /* YYReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94DF94B31E93E14EDD7814292EF83A34 /* YYTextParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 518F4603640A50508C08FF37B49EDDDF /* YYTextParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9579C699ECD262A400C81F06150D8422 /* Z3BatchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF124400E3FAA29D2AA0C63D9770A1E /* Z3BatchRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95B80C4627041B38CE1F894E075959C4 /* Z3Login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E670E2DEAE46C102EF1E7F59CF34EC6 /* Z3Login-dummy.m */; };
+		9579C699ECD262A400C81F06150D8422 /* Z3BatchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BB63B3C8833D96810376DEFB8C3A70F3 /* Z3BatchRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95FF386791CFCD339E4A9058E3AEF260 /* YYTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 915581314786356947214174C72B55D6 /* YYTextLine.m */; };
 		9655C7710B7085B4E530E8562884704D /* YYTextUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 805A2672FFF8435E7ADD2F1055C26886 /* YYTextUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		966E0E9FF475BE3100208ECF67EA1919 /* YYWebImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7824896DE57AFCA53AC6C1F8E0D5EEBD /* YYWebImageOperation.m */; };
+		99F3FCCFAD42FDCBCDBDEAA63E816F73 /* Z3XmllRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB5F5C9CE6798B242E62A717D0655DF /* Z3XmllRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A5CA25A63AF0B4164AE2959E548015B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DEE31F3CCD0FDF5CEE79E38F321BDF /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A936D803CAB0F8B257B7EAC25693821 /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 51560E90316A0470B1DB5AEA818D2C19 /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9A93F2FAAA695119B863886706622CF3 /* Z3MapConfigResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9C2B28496A56CC6DCB93793F55AEA4 /* Z3MapConfigResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B33C9FCC71B1CFBEF18F8F790DA982F /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F051DEDAA9D48FF2721A331B80DF9A /* MBProgressHUD.framework */; };
 		9B4D9E80D31B0B9EBE56273D5298CBE7 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6BC552FD9DC417E2F928607C833E8F /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B7F39EF5369BC3E16C02C04319E894E /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4972CBA9875E89571086B7C57AB5EE45 /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BEC973192F7716D6429270825FD0433 /* Z3MapConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ADA0A318170E9125166CD1ED9735F4 /* Z3MapConfig.m */; };
 		9CADDF61FECDC80678E1B01990533274 /* YYFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 08104876BFEE216DFFE652FF45CEEC6A /* YYFileHash.m */; };
 		9CCE08031C818A1904C5E4714830CD04 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 269951D70896191F6BBF4209377043C6 /* UIActivityIndicatorView+AFNetworking.m */; };
 		9F356935039A6AFEE2CB2C9FE1115853 /* NSDictionary+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF5A471B5B463FC21F8ED032B75A672 /* NSDictionary+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F9A933105D76FA3636A99815FAA4699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D067DD141A493702D5F29BE62518B8 /* Foundation.framework */; };
+		9FFEC13159E3857DBFEAB4D68AEDC1DC /* Z3LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DFFC5EB6305DACEDE7CA0D14CE60B1 /* Z3LoginViewController.m */; };
 		A01A7EB12BAF548BA45DD71744A601CC /* NSObject+YYAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = C88C43257911BA935D67F8C00F88410B /* NSObject+YYAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0280C9686F619F2136C39BF5191A143 /* UITextField+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAAC1063D43525B5BFFD8396D0559BD /* UITextField+YYAdd.m */; };
+		A0D589258E29F992F97C322315A8EC9A /* Z3LoginComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 524A96406997300622570FD945356135 /* Z3LoginComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A143E600F910EA4A7388B5B0000534A5 /* UIColor+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D73007D2E71BF6F1E98A393C0C8A11 /* UIColor+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A363AD4F46A1A82BDE88805AEE573B58 /* Z3LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5268D63BEB16E38241836CC8B779012B /* Z3LoginRequest.m */; };
 		A51D107A85FEBBDA4FB8A32B27B21B64 /* NSParagraphStyle+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 164F5ABDB4CFF9A4D5DEE5120B0940DC /* NSParagraphStyle+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5ABA8BA07BDB4EE5A3DCA65DE5810DA /* UITextField+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 069F59594A99805BD5FAB8CFA4BF2A63 /* UITextField+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5B3CF0C5588B8345E6AD6DAE3851F65 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8073B1ED414A2F41D5DD519B6FFA4B35 /* UIImageView+AFNetworking.m */; };
+		A66F1B654121AD202D37CBB1D9BD867F /* Z3MapConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 59632658DDA5BB57130422D3343ED643 /* Z3MapConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A71F4FCCB8C087CFBC62E74BFB6148CE /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AE36C1BE96E1C06E9E280420F28CD831 /* NSData+YYAdd.m */; };
 		A71F7196727FCA432610A3F0A6A488C8 /* YYAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 095FCE280103D621BF18D6A96AA3C582 /* YYAsyncLayer.m */; };
 		A77934166CE08F1026B6CDA602D06793 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6D355471DA2EB02716EDB880970BC2 /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8A3D6D5FE6A2A7C4078FFF90256A022 /* icon_login_input_password.png in Resources */ = {isa = PBXBuildFile; fileRef = CC503C7722F5CD6AECF318B4FB89122E /* icon_login_input_password.png */; };
 		A9841010A0719E98870A8A8B0121D8A3 /* YYTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75FEAF92F12C14A917298930022D95 /* YYTextKeyboardManager.m */; };
 		AB692B543FD34C7A8EAC5F993A7B4A47 /* YYAsyncLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CED267492C92A06F67BC2D45DC561826 /* YYAsyncLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5C76A6FBFDCA8DE21E6EB9F13868B9 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7258E095792B6F4F46CA7B31FB8EED62 /* AFNetworking.framework */; };
 		ADCA4CBE526EDDA6D16D50D3450E7E32 /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E349A05662FE231E237C86D4F6E7528 /* YYTextEffectWindow.m */; };
 		AE192577865A81E553EA0D31F783E3FB /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B02C8651DBE91D023391F2B9873084 /* YYWeakProxy.m */; };
 		AEC2ED8CE5A74D905922A3536EDFA1D0 /* CALayer+YYWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 00CE791850333C487053A2C43A200271 /* CALayer+YYWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF1707DF032130A5C053D2B2C8D3C043 /* Z3LoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD178EAC18A4B7B319AE1BE9F7CFB9C /* Z3LoginRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF495C5EC0B647B8E394570CD77D349E /* Z3BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 791428D53646C19809DC20817DF65CB2 /* Z3BaseRequest.m */; };
+		AF495C5EC0B647B8E394570CD77D349E /* Z3BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AE125B4C2D12736E178F533EE5BA95 /* Z3BaseRequest.m */; };
 		AF58C3607FE5EF6EAE0B6E429739B19F /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEDFB45549D668D791657FED3D4EF7A /* YYDiskCache.m */; };
 		B0FE1AC303CE8CB9F7C029AD1D3D1E12 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 062B12725535B5F25E9B9D479753601F /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B15A6B599452C327506BD5B37F1A47E6 /* YYThreadSafeDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 4446ED5940A4D2F46EE8870607276396 /* YYThreadSafeDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2EA28FDC9A57F14BA5FA5E4E96E0B5E /* Z3NetworkConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 155E8178A06B1A9EBD049B017AF1F568 /* Z3NetworkConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3339E8BB4CB25FD1A74E49B4468063A /* Z3Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A68C2A7100702E161AF4DC04BD002861 /* Z3Theme.m */; };
+		B2EA28FDC9A57F14BA5FA5E4E96E0B5E /* Z3NetworkConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C05076B60624D8002A5B89959DB81DE /* Z3NetworkConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3339E8BB4CB25FD1A74E49B4468063A /* Z3Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 69881DBC1AD5EB30A6C19583162A0FFE /* Z3Theme.m */; };
 		B671B1A442A2110AF1F2CB88BABB1962 /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D687FCB188C61DC9DB28507C9D6A99 /* YYTextParser.m */; };
 		B6A3E7B7372B64D5113BCBC571B29ED5 /* YYTextLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0E5198212505A07C21CF85DD550462 /* YYTextLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B71FDFBC09AF57F62747310D446863C1 /* Z3MobileTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 63227B4B26AFFC3D6C4946DDFEC49C74 /* Z3MobileTask.m */; };
 		B754C100F103CE5C0C732358BC8874C7 /* MKAnnotationView+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D563E11C3F9E199EF2D776DB5F1CBDA /* MKAnnotationView+YYWebImage.m */; };
 		B8710DD9E63184D147DD79CC87ACB4CD /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BAAAA6950FF73C23B763E37937D494C /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B889AE21B379694B61476E13E0F5E5AE /* NSNumber+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BD5F1E0EBD2E6C3648C7B08369631E /* NSNumber+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8B2030BFB4BBA7E04631056771AB0AD /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AC8019065F2042C883D1B25DFAD33A /* YYImageCache.m */; };
-		B8EEF2F4D21D686A9E9BA0BA7883DBF1 /* Z3LoginResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9197C00A860CAB113A199952CAC501C7 /* Z3LoginResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB2CA3FD81C6F3376E7A3A6698080BE8 /* YYDispatchQueuePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1BDD118613AD16631698EDADB4B65E /* YYDispatchQueuePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC23F67A2A2E0FEB7346216E08A8A3EA /* YYFileHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B958730435DC955F103746B2433F10 /* YYFileHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD7B78254ECDD3660265A5F5D37683E3 /* YYReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B3F363E7A15855464F3A800BBEC608 /* YYReachability.m */; };
-		BE9CF04971E0B170D3CFDB40AA94D063 /* Z3MobileTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F8BED4654B41C028D1ACA01AFA143C /* Z3MobileTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEFAD75AA1BC7467715B0FB47F528C14 /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EF88D0593DBE6F6C12FB007C28A5A3 /* UIApplication+YYAdd.m */; };
 		BF7B25BB7EB3E36759B01B4C5606E8B7 /* YYTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AF4C587BBD6F5F7226E08B807F7FB /* YYTextInput.m */; };
 		C11F2E8559DA21E55457F55654388B84 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CE75564BEFD25E54C5485857CFF36F /* Security.framework */; };
 		C2333517109C1E3F92F79E36D76DF168 /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4A17B9B75E398BB2E21D3283AD853D /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C295EA9745CA748B969F8E2DA5A28617 /* Z3AppMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C3E8E8E0A95EAF585558BD05D0880 /* Z3AppMenu.m */; };
 		C5672EC454F9040A8498E98C54DA62FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D067DD141A493702D5F29BE62518B8 /* Foundation.framework */; };
+		C5E2EA706E57740EA7A936B50705D37C /* Z3LoginPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8986EE2454BBCA23F49F5DA38DD644E /* Z3LoginPrivate.m */; };
 		C65745E59B3D0A1C9A417B77AB884EE5 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C92E68F5B3114927C5921E70CD0325 /* AFNetworking-dummy.m */; };
 		C890A1CFB6DD41B7C5E8EE6E53A27D3F /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DD08F9DD19B065C28B67A6B95D184014 /* NSArray+YYAdd.m */; };
 		C8D02E91031D4DC37D7E123B91585F8A /* YYTextRunDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5168490D8172F5696ADFB184989433B3 /* YYTextRunDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -240,15 +246,15 @@
 		CA1DF6FE040EFBCDF894D69622ABD0C6 /* NSData+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A5E6A5297BAC347AD4BA5B54B3EF65 /* NSData+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA9F712F0A3CF0876C8657EF18CF0454 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E46AEAA79F36F0D9B8275D06A0F6B7 /* YYAnimatedImageView.m */; };
 		CBA1DEEC644FB7FEAE69F8ED4C2E4504 /* NSObject+YYAddForKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B50FF85651CCBB7A9BABCD396178AAC /* NSObject+YYAddForKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC31ED1494F3A41B9EF129F2F695E390 /* Z3NetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF7194D78C9578758F70F0185E07A05 /* Z3NetworkPrivate.m */; };
+		CC31ED1494F3A41B9EF129F2F695E390 /* Z3NetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 674D28CFFB1918129AF061BC66A41355 /* Z3NetworkPrivate.m */; };
 		CCF286C5A8DB8F6283CE92313D26404A /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C98A4A50C8BC6C1A9B1B8E1DCF6FAB /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD54FFD0130D78EF03E188CE25BB1509 /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69DAEB090EAA2BCE9987925CBBA3DC0D /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE09DC8673AA29704A0F29E686F27E7F /* Z3CommonLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10F6D8703BB005DA58C5FD5775B01F /* Z3CommonLib-dummy.m */; };
+		CE09DC8673AA29704A0F29E686F27E7F /* Z3CommonLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BE5A24BA05962CC55044D83B225CAA /* Z3CommonLib-dummy.m */; };
 		CEC18DC7883A5DB076FCF6F4C164F3CD /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D2537FCDB8DE3AFE04822537765EB0 /* UIWebView+AFNetworking.m */; };
 		D0C33F506A68082320E8195A8219F773 /* UIDevice+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448D697F4B6F74E09BA570B8E8ADD06 /* UIDevice+YYAdd.m */; };
 		D23AB2CDE6536945A785226781FDE54E /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 49994DA47AA599B876F79B137B1B6CB3 /* YYImageCoder.m */; };
 		D291925F0CAEBC063B12582E0CAA4132 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BB496FA0AD3398ED01941033F12EBB0E /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D29EBB8A4F30A70841B1198454D6B25E /* UIColor+Z3.h in Headers */ = {isa = PBXBuildFile; fileRef = E7CFFADFBD4FD612AB9E0D63D50205A6 /* UIColor+Z3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29EBB8A4F30A70841B1198454D6B25E /* UIColor+Z3.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4D42F241794C61B97BB6E69CF13BB2 /* UIColor+Z3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D38F93DBCE3E5A1DC57D854FD6A57B56 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709DAB74E6973B96EF65F155612D357D /* QuartzCore.framework */; };
 		D41EEB3D805F7FB1DEC19DF1BB4434C6 /* YYThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D82A6AFEB4C6F414CCDA7AE680AFDA /* YYThreadSafeDictionary.m */; };
 		D5C169039395DA323C675710954E884A /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9A474C4D996A9B22AF9317CF12D01 /* AFAutoPurgingImageCache.m */; };
@@ -257,49 +263,46 @@
 		D84F10EBC2BE3AF8BC9BE49E3CC769A5 /* YYGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A727A57549A7C48F9936740AA96E5D3 /* YYGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D89F9B60C76C39CF93C5E68C8BB85431 /* UIFont+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B56AC4C2B743823EF1A915F13323AC1 /* UIFont+YYAdd.m */; };
 		D9DB3A48ED38E298DA3A430D5D7AE5E4 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2838CDA69BF28E36BF2AB780C5E37BD7 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD31E690C9BE7542D85B00B53FAC25E2 /* Z3NetworkPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = B02C2B04E88B5416E6AA07B95F7C1059 /* Z3NetworkPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD31E690C9BE7542D85B00B53FAC25E2 /* Z3NetworkPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C124BD07C87BEF65427366ECCB4E64D /* Z3NetworkPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDF328AEE1317EEE7A98660411E4E049 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC55AE9BE91AF3D1140EF273EF2D278E /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE89B26FA451DF04F4307FC730411068 /* YYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F617F7546FBE7ADEB3A6B52E1B3A28C /* YYTimer.m */; };
 		DF3BCB4549F79A9F94A68E249156B6D0 /* NSNotificationCenter+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E7E0EC780DD00CB4BCF2B580AF5A5B /* NSNotificationCenter+YYAdd.m */; };
 		DF69C1EEB2B3AE665849167C9B2C8D89 /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E5B1905F1E0605F49A6A219F50C445 /* NSDate+YYAdd.m */; };
-		E02272BBCD99FE75DB8023F937CD2D1A /* Z3CommonLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A31973EF7C034B858DC8731BFC0AB0 /* Z3CommonLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E02272BBCD99FE75DB8023F937CD2D1A /* Z3CommonLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B974EEC449A6ACA56CC05B520BC3216C /* Z3CommonLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0D1506871348F9FADE9358840E7B726 /* NSTimer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F779778D485E1D974FB16E7A47345C9 /* NSTimer+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1A2D518F257338A0961AABEF6E7B05C /* UIGestureRecognizer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F18834951DA6A87C366891A2DECE19 /* UIGestureRecognizer+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1F068B95D15091B8E866B9BE93CE0BE /* YYTextArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 7364C375718BA0C3E6F5CA7539193500 /* YYTextArchiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2566A96FC99D1FF85AF7019B327AFA1 /* UIButton+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B68F52FA6BE1B2AA951D9FD62BC43 /* UIButton+YYWebImage.m */; };
 		E256D8E01B89E75A24337691A854C999 /* CALayer+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD675CD1C9D4BFE83BBE290774DED09 /* CALayer+YYWebImage.m */; };
 		E27C998EB1EE24C0FBA0917B8AFE2CA1 /* UIImage+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9F939E3D991C30BBB03BD3BDB529FD /* UIImage+YYAdd.m */; };
-		E43F9D9FEEED4BF55BCAACB0E1FDEE1A /* Z3MapConfigResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BFF617215083478F6163E06D29A3D8 /* Z3MapConfigResponse.m */; };
 		E49C140237350688EB95A960D9EEB183 /* UIImageView+YYWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039B8B11DAF6A7926B288B416498F75 /* UIImageView+YYWebImage.m */; };
 		E61698FE781518079514689BB990D132 /* YYWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DE43C8573831C3B6D6FC194B49D8FE /* YYWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6937F73D5B04BE67153D3C3AACD8922 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A004BBE52F9979BAD4FB059DFB8C606 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E743804E92035E9683460D296513A13E /* Z3NetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 605D1762BE1434AC0667A4661DE073CD /* Z3NetworkConfig.m */; };
+		E743804E92035E9683460D296513A13E /* Z3NetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A1F9A55BD713DE030D77BB2AAD2F7 /* Z3NetworkConfig.m */; };
 		E7805B558ACD291DAE469478DA1D29E2 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB5EB46090DD11D1C48B18675D7D9FD /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8384A79A4659AA86C4EB044DC3E92F5 /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D3D2298BCA04DA8EE3154313455C3F /* YYTextContainerView.m */; };
+		EA4AC4BC4DA3574F09F92CAF176F65FF /* icon_login_input_username.png in Resources */ = {isa = PBXBuildFile; fileRef = 55053A7773742CD170AB91F7DD051025 /* icon_login_input_username.png */; };
 		EC3CCEE1362D368B85D6E84AF5053A73 /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2381A343F3AAB8758ECE2CE46D6BA7 /* NSDictionary+YYAdd.m */; };
-		ECAED6278B8C9EF4E84058D79295B197 /* Z3Network-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E54412871696E8ADB35B6E9573E43A /* Z3Network-dummy.m */; };
+		ECAED6278B8C9EF4E84058D79295B197 /* Z3Network-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EFEDB08DB4D9425537587E370F023E /* Z3Network-dummy.m */; };
 		EDDCCBDE85282278E3366C58CD9F7F9D /* YYSpriteSheetImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B131278FC3B8BF42CF231179ED1910B0 /* YYSpriteSheetImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEAD7F4F28DECBB9F574C2EE1A8A6D6C /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = F69369AF3BB55325217E0347247525C0 /* YYTextDebugOption.m */; };
 		EF377BD250E23E1145A17E69C5A31F5F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE3300F793C35786AE7557AF006159A /* AFNetworkReachabilityManager.m */; };
-		F00DC2F0184D00E03D2F6D31F08AB5FE /* Z3AppMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = AA23FA8C6407ED1F18736864B48A80EC /* Z3AppMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F06A1D57921458C44558DDC1E36F3776 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2893327E1D7B157F50F4F17F4736F0A6 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1BCE6FC809E0C764F64598A46B0EA03 /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3A7C5DD8A3EE933CA40A0AA1599F6E /* YYTextAttribute.m */; };
 		F2150EDD2B43EE7EC64FD8E3C3CCCE8A /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0851949B06B7E6606D641FF536D50B /* YYSpriteSheetImage.m */; };
 		F277340B7683AB3524D5B50B06DE4F06 /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = A8353935ECD035FDD070ABCD10BD4929 /* UIPasteboard+YYText.m */; };
-		F3A9E9A6DFDF06F33DE3A4C561E8E994 /* Z3BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD96D8956E3DD21079988E27CAA8DC0 /* Z3BaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3A9E9A6DFDF06F33DE3A4C561E8E994 /* Z3BaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 474033F4F5E4EA29A3CF9D09E021F005 /* Z3BaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4D5DFDB74C9F4300AB7C8F3B8A0D87A /* YYTextUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BC5E9ECD640B0732F6B4E2EA785691 /* YYTextUtilities.m */; };
 		F4D9B53BCA05CD86986ED969EF61807D /* NSBundle+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6CB42D7E9ED6A9A4BB7E81FCC8699D /* NSBundle+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F565CEB8533B6EC85A489C3BC53522C0 /* Z3LoginSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E9FAD8AE49F09BE6B8DFEBC3ED5C34 /* Z3LoginSettingViewController.m */; };
-		F697A1AA641A9838B9AFCBB009B90E61 /* icon_login_input_username.png in Resources */ = {isa = PBXBuildFile; fileRef = 49543CC98448941B374672E680932315 /* icon_login_input_username.png */; };
 		F6DFA99E7FBA27A7EE70A1F037DA3A24 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 11273F5F48D83149A2C91268C9C6DC26 /* YYImage.m */; };
-		F8487BD2CD3EB375EA79E125B84FDAD1 /* Z3MapConfigRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E94AD15AB48748453D51B02B486A35 /* Z3MapConfigRequest.m */; };
 		F84D5B6C81712530B75013FFA8FA3A3B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2A804F7E47EFA64F5BFBF5B409A94 /* AFURLRequestSerialization.m */; };
-		F866470389439E79028FFAB96E6A3E03 /* Z3MobileTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D9F1D69FD7318D547CCD2C9C21B31D /* Z3MobileTask.m */; };
-		F9B7829230602C6C8F70CFD381B6048D /* Z3LoginPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC82903F3517FC3EC6A84AAEC2BBC6 /* Z3LoginPrivate.m */; };
+		F99D7A4040D3D612727DC0174DE7B795 /* Z3LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C539A7A85FD7E6FCC6CCA38ED93D2C /* Z3LoginResponse.m */; };
 		FB0B3E456F9FE8347E56AD486BCC820B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1D7E562661C0608D28C451A3D9CAD7 /* ImageIO.framework */; };
 		FB3E46B9FF369995DA726ADEE05D8763 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB8679827CCF519A0DC1209F09B72F /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4C5B2F93540832771066AF3EB051FA /* Z3MapConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 395DD1EF6804984C6B95F4ABE161072F /* Z3MapConfig.m */; };
 		FBF9ED88EABE13664F0C1C5E4537819B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9E867123571E99865211496E559F10 /* CoreImage.framework */; };
 		FD3798D6CAB32AC261D766CF094B2EC3 /* Z3Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3129B5A5E958DEB74DBE0A605917E341 /* Z3Network.framework */; };
+		FDDF1AD0158E669ADE38A861200064A5 /* Z3MapConfigResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C431B961168C4F78C58FB3F7CCEB4A /* Z3MapConfigResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF01C2B9BCAE37F2F85BCC49F1206956 /* YYTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E353C1D79A99E7AB30C834284BFEC4C8 /* YYTransaction.m */; };
 		FF1617F5B9ACDB85E3FE46C8DC735A01 /* NSObject+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D8CD2EAC2F211F32F668EA407A13E3C /* NSObject+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -395,13 +398,14 @@
 		00CE791850333C487053A2C43A200271 /* CALayer+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+YYWebImage.h"; path = "YYKit/Image/Categories/CALayer+YYWebImage.h"; sourceTree = "<group>"; };
 		03428D8471C7199BC57910FBFF87FB8A /* Pods-Z3Login_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Z3Login_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		03EFC0537BFF633410F3CFF119327A52 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0549408BBD0FAFB974E3B9FC341C09D4 /* Z3URLConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3URLConfig.m; path = Z3Network/Classes/Z3URLConfig.m; sourceTree = "<group>"; };
 		062B12725535B5F25E9B9D479753601F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		069F59594A99805BD5FAB8CFA4BF2A63 /* UITextField+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+YYAdd.h"; path = "YYKit/Base/UIKit/UITextField+YYAdd.h"; sourceTree = "<group>"; };
 		06F051DEDAA9D48FF2721A331B80DF9A /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		073FA8C34D270C9CB84659AC91991C66 /* Z3URLConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3URLConfig.m; path = Z3Network/Classes/Z3URLConfig.m; sourceTree = "<group>"; };
 		0759F364942F3057447EF69A398D1795 /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYKit/Text/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
 		08104876BFEE216DFFE652FF45CEEC6A /* YYFileHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFileHash.m; path = YYKit/Utility/YYFileHash.m; sourceTree = "<group>"; };
 		0889CD9826312130E7EF65409C3544F4 /* UIImageView+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+YYWebImage.h"; path = "YYKit/Image/Categories/UIImageView+YYWebImage.h"; sourceTree = "<group>"; };
+		08EFEDB08DB4D9425537587E370F023E /* Z3Network-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Z3Network-dummy.m"; sourceTree = "<group>"; };
 		095FCE280103D621BF18D6A96AA3C582 /* YYAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAsyncLayer.m; path = YYKit/Utility/YYAsyncLayer.m; sourceTree = "<group>"; };
 		097A750256CC198F7C25E7B2FFD07FBF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		0B77752625C20D9BC199EF2E3FE79FCD /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
@@ -409,23 +413,22 @@
 		0C15684186EF2A9766F4211612CAAFA8 /* YYCGUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYCGUtilities.h; path = YYKit/Base/Quartz/YYCGUtilities.h; sourceTree = "<group>"; };
 		0CD675CD1C9D4BFE83BBE290774DED09 /* CALayer+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+YYWebImage.m"; path = "YYKit/Image/Categories/CALayer+YYWebImage.m"; sourceTree = "<group>"; };
 		0D75FEAF92F12C14A917298930022D95 /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYKit/Text/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
+		0E8C68BD24D52F3104F0DBA6D8077142 /* Z3Network.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Z3Network.xcconfig; sourceTree = "<group>"; };
 		0EA5E7D7B6357A7FC31B4FCC5EE233FD /* NSKeyedUnarchiver+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSKeyedUnarchiver+YYAdd.m"; path = "YYKit/Base/Foundation/NSKeyedUnarchiver+YYAdd.m"; sourceTree = "<group>"; };
 		0EE2A804F7E47EFA64F5BFBF5B409A94 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		0F779778D485E1D974FB16E7A47345C9 /* NSTimer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+YYAdd.h"; path = "YYKit/Base/Foundation/NSTimer+YYAdd.h"; sourceTree = "<group>"; };
 		0FB20861AFA79EA0B2D8F4A940EABBE3 /* NSNumber+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+YYAdd.m"; path = "YYKit/Base/Foundation/NSNumber+YYAdd.m"; sourceTree = "<group>"; };
-		1103BED8BE8CD99DC747D9EB8421EF14 /* Z3LoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginViewController.m; path = Z3Login/Classes/Z3LoginViewController.m; sourceTree = "<group>"; };
 		11273F5F48D83149A2C91268C9C6DC26 /* YYImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImage.m; path = YYKit/Image/YYImage.m; sourceTree = "<group>"; };
 		117C204AE79D9DBF3CA85010CA4159BD /* UIView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YYAdd.h"; path = "YYKit/Base/UIKit/UIView+YYAdd.h"; sourceTree = "<group>"; };
 		12A11D0A4129931370F9891906F3964D /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYKit/Model/YYClassInfo.m; sourceTree = "<group>"; };
 		12AC8019065F2042C883D1B25DFAD33A /* YYImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCache.m; path = YYKit/Image/YYImageCache.m; sourceTree = "<group>"; };
-		13D9F1D69FD7318D547CCD2C9C21B31D /* Z3MobileTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MobileTask.m; path = Z3Login/Classes/Z3MobileTask.m; sourceTree = "<group>"; };
+		148E427B9A826732E9363E11C67FA1B6 /* Z3MapConfigResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MapConfigResponse.m; path = Z3Login/Classes/Z3MapConfigResponse.m; sourceTree = "<group>"; };
+		14B674CC1E1E6E0E386EEDE68EFADF35 /* Z3LoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginViewController.h; path = Z3Login/Classes/Z3LoginViewController.h; sourceTree = "<group>"; };
 		14FBAB8D7F22DE1EEFC98E370112A6C5 /* YYTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextView.h; path = YYKit/Text/YYTextView.h; sourceTree = "<group>"; };
-		155E8178A06B1A9EBD049B017AF1F568 /* Z3NetworkConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3NetworkConfig.h; path = Z3Network/Classes/Z3NetworkConfig.h; sourceTree = "<group>"; };
 		15A102194618F37DCA723F689B793529 /* YYSentinel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSentinel.m; path = YYKit/Utility/YYSentinel.m; sourceTree = "<group>"; };
 		164F5ABDB4CFF9A4D5DEE5120B0940DC /* NSParagraphStyle+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSParagraphStyle+YYText.h"; path = "YYKit/Text/String/NSParagraphStyle+YYText.h"; sourceTree = "<group>"; };
 		1697BDF076EED5EC22857198DD6F8BFF /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		16AC82903F3517FC3EC6A84AAEC2BBC6 /* Z3LoginPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginPrivate.m; path = Z3Login/Classes/Z3LoginPrivate.m; sourceTree = "<group>"; };
-		18F9CA529BA11485D35FF7A0A38D00C6 /* Z3Network.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3Network.h; path = Z3Network/Classes/Z3Network.h; sourceTree = "<group>"; };
+		194ECB7A0C70CDA2682FF5EC8C86E8C6 /* Z3BaseResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3BaseResponse.m; path = Z3Network/Classes/Z3BaseResponse.m; sourceTree = "<group>"; };
 		198B4291E20699A76E01D06979770278 /* YYWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageManager.h; path = YYKit/Image/YYWebImageManager.h; sourceTree = "<group>"; };
 		1A81501FDB1CF31D8E86182F0D68579D /* UIControl+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+YYAdd.m"; path = "YYKit/Base/UIKit/UIControl+YYAdd.m"; sourceTree = "<group>"; };
 		1BA6D132803723B8D11C5DB7A4CCE089 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
@@ -435,15 +438,15 @@
 		1E6D355471DA2EB02716EDB880970BC2 /* YYCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYCache.h; path = YYKit/Cache/YYCache.h; sourceTree = "<group>"; };
 		1F617F7546FBE7ADEB3A6B52E1B3A28C /* YYTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTimer.m; path = YYKit/Utility/YYTimer.m; sourceTree = "<group>"; };
 		20CE75564BEFD25E54C5485857CFF36F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		20FDE544ED011F6CF88960FA64190A5B /* Z3CommonLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Z3CommonLib-Info.plist"; sourceTree = "<group>"; };
+		216CFEE4386FB90FB1A654AEC692C153 /* Z3Login-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Login-prefix.pch"; sourceTree = "<group>"; };
 		21A3515C6DB1E4FE3542218EF4EA5962 /* YYLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLabel.m; path = YYKit/Text/YYLabel.m; sourceTree = "<group>"; };
 		22AD75CE07543BB728A14D7263815819 /* YYGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYGestureRecognizer.m; path = YYKit/Utility/YYGestureRecognizer.m; sourceTree = "<group>"; };
-		22D1DD16644EF487A6BC28840DB52F4B /* MBProgressHUD+Z3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+Z3.m"; path = "Z3CommonLib/Classes/MBProgressHUD+Z3.m"; sourceTree = "<group>"; };
 		22FC226F5DF5B93F27AA3D089A1FDDB8 /* Pods-Z3Login_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Z3Login_Example-umbrella.h"; sourceTree = "<group>"; };
 		232577B730D7A0E4F7B448523154DBD4 /* Z3Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Z3Network.framework; path = Z3Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2402F2700C97447DD336EDF528B2A223 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		2427EAEAE58EBAC3170FDEC285DDCA77 /* MBProgressHUD+Z3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+Z3.h"; path = "Z3CommonLib/Classes/MBProgressHUD+Z3.h"; sourceTree = "<group>"; };
-		24846AF11B809081FCA20410B24F8253 /* Z3Login.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Z3Login.modulemap; sourceTree = "<group>"; };
+		24BB3D457FCCA69270C55A1A1C7770BF /* Z3CommonLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Z3CommonLib.modulemap; sourceTree = "<group>"; };
+		25AA7AAB39292982CA348EB78231367D /* Z3Network.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Z3Network.modulemap; sourceTree = "<group>"; };
+		265F40510913F55EA00CD4A7B75090AF /* Z3LoginSettingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginSettingViewController.h; path = Z3Login/Classes/Z3LoginSettingViewController.h; sourceTree = "<group>"; };
 		2698F41A91F800A1893B76EDBF8D6197 /* _YYWebImageSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _YYWebImageSetter.m; path = YYKit/Image/Categories/_YYWebImageSetter.m; sourceTree = "<group>"; };
 		269951D70896191F6BBF4209377043C6 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		26D3D2298BCA04DA8EE3154313455C3F /* YYTextContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextContainerView.m; path = YYKit/Text/Component/YYTextContainerView.m; sourceTree = "<group>"; };
@@ -458,35 +461,35 @@
 		2D4A17B9B75E398BB2E21D3283AD853D /* YYKVStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKVStorage.h; path = YYKit/Cache/YYKVStorage.h; sourceTree = "<group>"; };
 		2D78A0C2A3F8553CE42408F007370F9C /* Pods-Z3Login_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Z3Login_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2DF6403C2F9504780CA060E81CC3D8B5 /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYKit/Text/Component/YYTextLayout.m; sourceTree = "<group>"; };
+		2DF7ADA7D1B43FACED5724F737ADDC41 /* Z3BaseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3BaseRequest.h; path = Z3Network/Classes/Z3BaseRequest.h; sourceTree = "<group>"; };
 		2E1BDD118613AD16631698EDADB4B65E /* YYDispatchQueuePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDispatchQueuePool.h; path = YYKit/Utility/YYDispatchQueuePool.h; sourceTree = "<group>"; };
-		2F384132915AD3E59336B581C7E67286 /* Z3Login.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Z3Login.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3129B5A5E958DEB74DBE0A605917E341 /* Z3Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Z3Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323513C3EE49EEC67D91A93234955E94 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		32595A94FE2F52072AC98333DDC4EB10 /* NSString+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+YYAdd.h"; path = "YYKit/Base/Foundation/NSString+YYAdd.h"; sourceTree = "<group>"; };
 		32F40E9595F037DC9CF0ECB1896C6771 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		35357AD7E663F0FC424BA5AAA2E2E5E2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		35579502B0A853B4916B7991EC8CB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		3676A4F914AC9F3D6CB3B6E0E601F295 /* Z3CommonLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Z3CommonLib.xcconfig; sourceTree = "<group>"; };
+		367ACC35FC569214222656C5A4B4CFC7 /* Z3Network-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Network-prefix.pch"; sourceTree = "<group>"; };
 		36D39A9E5C36CDCF65D65C6F1D341712 /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRubyAnnotation.h; path = YYKit/Text/String/YYTextRubyAnnotation.h; sourceTree = "<group>"; };
-		38BFF617215083478F6163E06D29A3D8 /* Z3MapConfigResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MapConfigResponse.m; path = Z3Login/Classes/Z3MapConfigResponse.m; sourceTree = "<group>"; };
-		38F8BED4654B41C028D1ACA01AFA143C /* Z3MobileTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MobileTask.h; path = Z3Login/Classes/Z3MobileTask.h; sourceTree = "<group>"; };
+		395DD1EF6804984C6B95F4ABE161072F /* Z3MapConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MapConfig.m; path = Z3Login/Classes/Z3MapConfig.m; sourceTree = "<group>"; };
 		3A004BBE52F9979BAD4FB059DFB8C606 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		3B8E0285D0D70B67C50EBB61BE473CA7 /* CALayer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+YYAdd.m"; path = "YYKit/Base/Quartz/CALayer+YYAdd.m"; sourceTree = "<group>"; };
-		3D19944BA51B49B858072D13A413ACB5 /* Z3Theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3Theme.h; path = Z3CommonLib/Classes/Z3Theme.h; sourceTree = "<group>"; };
-		3D302976FBC1B7AB08ABB9DC65E7B88D /* Z3AppMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3AppMenu.m; path = Z3Login/Classes/Z3AppMenu.m; sourceTree = "<group>"; };
+		3BC70F0DFF191231202FDD4D9498F106 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3E6D1D9B4022F63FDDE298E1652F4AD0 /* YYKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYKit-dummy.m"; sourceTree = "<group>"; };
-		40E54412871696E8ADB35B6E9573E43A /* Z3Network-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Z3Network-dummy.m"; sourceTree = "<group>"; };
-		40E5DC1B03FCFE9EC482C7C9ED39A879 /* Z3HttpManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3HttpManager.m; path = Z3Network/Classes/Z3HttpManager.m; sourceTree = "<group>"; };
+		3FAE4A6DE5BCA7A409333AA6943D0BF3 /* Z3Network-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Network-umbrella.h"; sourceTree = "<group>"; };
 		411403B3453B2445970CFCA2CD645138 /* NSBundle+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+YYAdd.m"; path = "YYKit/Base/Foundation/NSBundle+YYAdd.m"; sourceTree = "<group>"; };
 		417EF9037EC69FB804FEBDB22D0D3407 /* YYDispatchQueuePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYDispatchQueuePool.m; path = YYKit/Utility/YYDispatchQueuePool.m; sourceTree = "<group>"; };
 		42234E677CB67FCE632886D04E6195DD /* NSObject+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAdd.m"; path = "YYKit/Base/Foundation/NSObject+YYAdd.m"; sourceTree = "<group>"; };
-		43E1155E9619BEF5FC3D63560EF5F8A6 /* Z3User.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3User.m; path = Z3Login/Classes/Z3User.m; sourceTree = "<group>"; };
+		42E4D6F9C7758518EE3EB141C3F4141E /* Z3LoginRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginRequest.h; path = Z3Login/Classes/Z3LoginRequest.h; sourceTree = "<group>"; };
+		431B49A9B46C2A8E902EAEE0EE90D7E2 /* checkmark.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = checkmark.png; path = Z3Login/Assets/checkmark.png; sourceTree = "<group>"; };
+		43B0F98A70A89FDEA789AC9408699109 /* Z3CommonLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Z3CommonLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		43E46AEAA79F36F0D9B8275D06A0F6B7 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYAnimatedImageView.m; path = YYKit/Image/YYAnimatedImageView.m; sourceTree = "<group>"; };
 		4446ED5940A4D2F46EE8870607276396 /* YYThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeDictionary.h; path = YYKit/Utility/YYThreadSafeDictionary.h; sourceTree = "<group>"; };
 		44677DC3A87F3F572E776115171E378C /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		451273CFE5D0655476A36A468B663AED /* MBProgressHUD+Z3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+Z3.m"; path = "Z3CommonLib/Classes/MBProgressHUD+Z3.m"; sourceTree = "<group>"; };
 		45E7E0EC780DD00CB4BCF2B580AF5A5B /* NSNotificationCenter+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+YYAdd.m"; path = "YYKit/Base/Foundation/NSNotificationCenter+YYAdd.m"; sourceTree = "<group>"; };
+		474033F4F5E4EA29A3CF9D09E021F005 /* Z3BaseResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3BaseResponse.h; path = Z3Network/Classes/Z3BaseResponse.h; sourceTree = "<group>"; };
 		4843E0D3161472D0CA2CF3F214EB7F27 /* NSKeyedUnarchiver+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSKeyedUnarchiver+YYAdd.h"; path = "YYKit/Base/Foundation/NSKeyedUnarchiver+YYAdd.h"; sourceTree = "<group>"; };
 		48D2039BD089DB40BE7DEE22E3843B1B /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
-		49543CC98448941B374672E680932315 /* icon_login_input_username.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_login_input_username.png; path = Z3Login/Assets/icon_login_input_username.png; sourceTree = "<group>"; };
 		4972CBA9875E89571086B7C57AB5EE45 /* YYMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYMemoryCache.h; path = YYKit/Cache/YYMemoryCache.h; sourceTree = "<group>"; };
 		49914DC5D714E4E74E6EB38269FCBEFC /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		49994DA47AA599B876F79B137B1B6CB3 /* YYImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYImageCoder.m; path = YYKit/Image/YYImageCoder.m; sourceTree = "<group>"; };
@@ -495,58 +498,67 @@
 		4B23DBA291117621D17AD6AA7A42093D /* YYTextKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextKeyboardManager.h; path = YYKit/Text/Component/YYTextKeyboardManager.h; sourceTree = "<group>"; };
 		4B9D35B3FC5E37D54CF9390D3CB79433 /* _YYWebImageSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _YYWebImageSetter.h; path = YYKit/Image/Categories/_YYWebImageSetter.h; sourceTree = "<group>"; };
 		4BC4107423E506D73B11F703CA74620D /* YYKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKit.h; path = YYKit/YYKit.h; sourceTree = "<group>"; };
-		4BF1B579BCFE7C6BA70A6194054F0D8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4BCF34C7F2626DCEA5DE7536AE5C6764 /* Z3MobileConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MobileConfig.m; path = Z3Login/Classes/Z3MobileConfig.m; sourceTree = "<group>"; };
 		4E349A05662FE231E237C86D4F6E7528 /* YYTextEffectWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextEffectWindow.m; path = YYKit/Text/Component/YYTextEffectWindow.m; sourceTree = "<group>"; };
 		4E3A7C5DD8A3EE933CA40A0AA1599F6E /* YYTextAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAttribute.m; path = YYKit/Text/String/YYTextAttribute.m; sourceTree = "<group>"; };
 		4F0851949B06B7E6606D641FF536D50B /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYSpriteSheetImage.m; path = YYKit/Image/YYSpriteSheetImage.m; sourceTree = "<group>"; };
 		4F56590648F0B5C07BFF66AA8D386828 /* YYSentinel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSentinel.h; path = YYKit/Utility/YYSentinel.h; sourceTree = "<group>"; };
 		5039B8B11DAF6A7926B288B416498F75 /* UIImageView+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+YYWebImage.m"; path = "YYKit/Image/Categories/UIImageView+YYWebImage.m"; sourceTree = "<group>"; };
+		508F52BC5816E9AE28E0B640BFF2A44A /* Z3User.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3User.h; path = Z3Login/Classes/Z3User.h; sourceTree = "<group>"; };
 		50D82A6AFEB4C6F414CCDA7AE680AFDA /* YYThreadSafeDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYThreadSafeDictionary.m; path = YYKit/Utility/YYThreadSafeDictionary.m; sourceTree = "<group>"; };
 		514AE23D655FDBC6D94224ED2557E603 /* YYTextLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLayout.h; path = YYKit/Text/Component/YYTextLayout.h; sourceTree = "<group>"; };
 		51560E90316A0470B1DB5AEA818D2C19 /* NSThread+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSThread+YYAdd.m"; path = "YYKit/Base/Foundation/NSThread+YYAdd.m"; sourceTree = "<group>"; };
 		5168490D8172F5696ADFB184989433B3 /* YYTextRunDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRunDelegate.h; path = YYKit/Text/String/YYTextRunDelegate.h; sourceTree = "<group>"; };
 		518F4603640A50508C08FF37B49EDDDF /* YYTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextParser.h; path = YYKit/Text/String/YYTextParser.h; sourceTree = "<group>"; };
-		530CE2211E15E8616CB4F4B6B6AB1B92 /* Z3CommonLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3CommonLib-prefix.pch"; sourceTree = "<group>"; };
-		53DD6115D8B610ECC3129B2349D89493 /* Z3Login-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Z3Login-Info.plist"; sourceTree = "<group>"; };
+		524A96406997300622570FD945356135 /* Z3LoginComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginComponent.h; path = Z3Login/Classes/Z3LoginComponent.h; sourceTree = "<group>"; };
+		5268D63BEB16E38241836CC8B779012B /* Z3LoginRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginRequest.m; path = Z3Login/Classes/Z3LoginRequest.m; sourceTree = "<group>"; };
 		5451B5EDDE20E88D3C59CC508C226216 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		545AF4C587BBD6F5F7226E08B807F7FB /* YYTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextInput.m; path = YYKit/Text/Component/YYTextInput.m; sourceTree = "<group>"; };
+		55053A7773742CD170AB91F7DD051025 /* icon_login_input_username.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_login_input_username.png; path = Z3Login/Assets/icon_login_input_username.png; sourceTree = "<group>"; };
 		56BD5F1E0EBD2E6C3648C7B08369631E /* NSNumber+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+YYAdd.h"; path = "YYKit/Base/Foundation/NSNumber+YYAdd.h"; sourceTree = "<group>"; };
 		577F388BEA5C3B76A127E01E7BAD7ADC /* NSTimer+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+YYAdd.m"; path = "YYKit/Base/Foundation/NSTimer+YYAdd.m"; sourceTree = "<group>"; };
+		5841779CEB103008BC4EE9D7D2091A6D /* Z3BatchRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3BatchRequest.m; path = Z3Network/Classes/Z3BatchRequest.m; sourceTree = "<group>"; };
+		59632658DDA5BB57130422D3343ED643 /* Z3MapConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MapConfig.h; path = Z3Login/Classes/Z3MapConfig.h; sourceTree = "<group>"; };
 		5A4B0492778CDAA086813224B2A73CCC /* NSNotificationCenter+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+YYAdd.h"; path = "YYKit/Base/Foundation/NSNotificationCenter+YYAdd.h"; sourceTree = "<group>"; };
-		5B9C2B28496A56CC6DCB93793F55AEA4 /* Z3MapConfigResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MapConfigResponse.h; path = Z3Login/Classes/Z3MapConfigResponse.h; sourceTree = "<group>"; };
+		5A4D42F241794C61B97BB6E69CF13BB2 /* UIColor+Z3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Z3.h"; path = "Z3CommonLib/Classes/UIColor+Z3.h"; sourceTree = "<group>"; };
+		5A5DFE095981DC4A6DDA531F80CB80B6 /* Z3Login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Z3Login-dummy.m"; sourceTree = "<group>"; };
+		5BE674019815404F897771C478C9B177 /* Z3AppMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3AppMenu.h; path = Z3Login/Classes/Z3AppMenu.h; sourceTree = "<group>"; };
 		5D1DC0370D4965C8074BEDEB7BD2D63A /* UIDevice+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+YYAdd.h"; path = "YYKit/Base/UIKit/UIDevice+YYAdd.h"; sourceTree = "<group>"; };
 		5D346A3463BD01894AEC853C7C4CC092 /* UIImage+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+YYAdd.h"; path = "YYKit/Base/UIKit/UIImage+YYAdd.h"; sourceTree = "<group>"; };
+		5D386CB8D14869A31793D7CEE17223B5 /* UIColor+Z3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Z3.m"; path = "Z3CommonLib/Classes/UIColor+Z3.m"; sourceTree = "<group>"; };
 		5D3E49761C05C8E3E6D28B6C00AECC6F /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		5D9E867123571E99865211496E559F10 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
-		605D1762BE1434AC0667A4661DE073CD /* Z3NetworkConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3NetworkConfig.m; path = Z3Network/Classes/Z3NetworkConfig.m; sourceTree = "<group>"; };
+		5E74B7BC85C81A28D8AF6B49764E293C /* Z3URLConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3URLConfig.h; path = Z3Network/Classes/Z3URLConfig.h; sourceTree = "<group>"; };
 		60FBCAD83C3A40F73891AF71F57644CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		614D39B50258E265B3BACF546FE81E6C /* Pods-Z3Login_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Z3Login_Example-dummy.m"; sourceTree = "<group>"; };
 		61CA44DE0DABF6FC2F521F7839C1DF7A /* UIApplication+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+YYAdd.h"; path = "YYKit/Base/UIKit/UIApplication+YYAdd.h"; sourceTree = "<group>"; };
 		6259093C84E2422F3AEADD442AE3ED87 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		63227B4B26AFFC3D6C4946DDFEC49C74 /* Z3MobileTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MobileTask.m; path = Z3Login/Classes/Z3MobileTask.m; sourceTree = "<group>"; };
 		6478C1E25901D5FD4EA6DC7C17E80323 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		64B3F363E7A15855464F3A800BBEC608 /* YYReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYReachability.m; path = YYKit/Utility/YYReachability.m; sourceTree = "<group>"; };
-		66B22F2C916E0D6AA3EAF11CBB3648F7 /* Z3MapConfigRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MapConfigRequest.h; path = Z3Login/Classes/Z3MapConfigRequest.h; sourceTree = "<group>"; };
+		64BE5A24BA05962CC55044D83B225CAA /* Z3CommonLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Z3CommonLib-dummy.m"; sourceTree = "<group>"; };
+		650594BC32BA68B7F91A243345902468 /* Z3MapConfigRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MapConfigRequest.m; path = Z3Login/Classes/Z3MapConfigRequest.m; sourceTree = "<group>"; };
+		674D28CFFB1918129AF061BC66A41355 /* Z3NetworkPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3NetworkPrivate.m; path = Z3Network/Classes/Z3NetworkPrivate.m; sourceTree = "<group>"; };
+		687A1F9A55BD713DE030D77BB2AAD2F7 /* Z3NetworkConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3NetworkConfig.m; path = Z3Network/Classes/Z3NetworkConfig.m; sourceTree = "<group>"; };
 		693EE285895457F93A1539AA9544001C /* UIButton+YYWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+YYWebImage.h"; path = "YYKit/Image/Categories/UIButton+YYWebImage.h"; sourceTree = "<group>"; };
-		69A31973EF7C034B858DC8731BFC0AB0 /* Z3CommonLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3CommonLib-umbrella.h"; sourceTree = "<group>"; };
-		69B539BF12FA4A499DF149F75374A00E /* Z3Network-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Z3Network-Info.plist"; sourceTree = "<group>"; };
+		69881DBC1AD5EB30A6C19583162A0FFE /* Z3Theme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3Theme.m; path = Z3CommonLib/Classes/Z3Theme.m; sourceTree = "<group>"; };
 		69DAEB090EAA2BCE9987925CBBA3DC0D /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYKit/Text/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
 		6B4FD08443C33BAA026EF5D6A93360A5 /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYKit/Text/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
+		6C124BD07C87BEF65427366ECCB4E64D /* Z3NetworkPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3NetworkPrivate.h; path = Z3Network/Classes/Z3NetworkPrivate.h; sourceTree = "<group>"; };
 		6C25521240D3AAD124CE4B6FC84DD473 /* UIColor+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+YYAdd.m"; path = "YYKit/Base/UIKit/UIColor+YYAdd.m"; sourceTree = "<group>"; };
 		6D26473CD3EB0328B44803C6BE832225 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		6D563E11C3F9E199EF2D776DB5F1CBDA /* MKAnnotationView+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+YYWebImage.m"; path = "YYKit/Image/Categories/MKAnnotationView+YYWebImage.m"; sourceTree = "<group>"; };
 		709DAB74E6973B96EF65F155612D357D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		71007A96CC20490D7DA9DBAD8B9F4A5D /* Z3Login-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Z3Login-Info.plist"; sourceTree = "<group>"; };
 		717FF28B4FD868D57A4928233D6EE476 /* Pods_Z3Login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Z3Login_Example.framework; path = "Pods-Z3Login_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		71B27BD2827EEF2607CF127696B61F1D /* UIColor+Z3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Z3.m"; path = "Z3CommonLib/Classes/UIColor+Z3.m"; sourceTree = "<group>"; };
 		7258E095792B6F4F46CA7B31FB8EED62 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DC8572356F9B2784D2746C42DC6CDB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		7354BDD34A360F0C5BFE660CBC166E47 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		7364C375718BA0C3E6F5CA7539193500 /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYKit/Text/String/YYTextArchiver.h; sourceTree = "<group>"; };
-		73F8F51E1BAEBAA500F4C44129A1E9BE /* Z3CommonLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Z3CommonLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		74F18834951DA6A87C366891A2DECE19 /* UIGestureRecognizer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+YYAdd.h"; path = "YYKit/Base/UIKit/UIGestureRecognizer+YYAdd.h"; sourceTree = "<group>"; };
 		754B68F52FA6BE1B2AA951D9FD62BC43 /* UIButton+YYWebImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+YYWebImage.m"; path = "YYKit/Image/Categories/UIButton+YYWebImage.m"; sourceTree = "<group>"; };
 		75C5460ACE1208BFA0884BED2A105542 /* NSString+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+YYAdd.m"; path = "YYKit/Base/Foundation/NSString+YYAdd.m"; sourceTree = "<group>"; };
 		75DC5A91B2EBAE41FFB466C62ADF857E /* YYKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYKit.xcconfig; sourceTree = "<group>"; };
-		76DBCE954901FF613364C21DA4595E84 /* Z3MobileConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MobileConfig.m; path = Z3Login/Classes/Z3MobileConfig.m; sourceTree = "<group>"; };
 		76DEE31F3CCD0FDF5CEE79E38F321BDF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		77B3B15D3B13CBA509F5DA183B2AD9BE /* YYTextSelectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextSelectionView.m; path = YYKit/Text/Component/YYTextSelectionView.m; sourceTree = "<group>"; };
 		77E5B1905F1E0605F49A6A219F50C445 /* NSDate+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+YYAdd.m"; path = "YYKit/Base/Foundation/NSDate+YYAdd.m"; sourceTree = "<group>"; };
@@ -555,55 +567,60 @@
 		786295B5A720967E3D69EAEE3C6FC463 /* UIScrollView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+YYAdd.m"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.m"; sourceTree = "<group>"; };
 		78BB90D72951A4B3770412631CC50CD4 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DE139EA08FB109ED94E3EEA159EDA2 /* NSObject+YYAddForARC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAddForARC.h"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.h"; sourceTree = "<group>"; };
-		791428D53646C19809DC20817DF65CB2 /* Z3BaseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3BaseRequest.m; path = Z3Network/Classes/Z3BaseRequest.m; sourceTree = "<group>"; };
+		79C539A7A85FD7E6FCC6CCA38ED93D2C /* Z3LoginResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginResponse.m; path = Z3Login/Classes/Z3LoginResponse.m; sourceTree = "<group>"; };
 		7A40D914A204765119B9A6D177541652 /* YYLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYLabel.h; path = YYKit/Text/YYLabel.h; sourceTree = "<group>"; };
+		7A9B1BF15647883389AA928795BB9004 /* Z3Theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3Theme.h; path = Z3CommonLib/Classes/Z3Theme.h; sourceTree = "<group>"; };
 		7B25124C86AD449B30DA787A7E905FA5 /* UIBezierPath+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+YYAdd.h"; path = "YYKit/Base/UIKit/UIBezierPath+YYAdd.h"; sourceTree = "<group>"; };
 		7B50FF85651CCBB7A9BABCD396178AAC /* NSObject+YYAddForKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAddForKVO.h"; path = "YYKit/Base/Foundation/NSObject+YYAddForKVO.h"; sourceTree = "<group>"; };
 		7B56AC4C2B743823EF1A915F13323AC1 /* UIFont+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+YYAdd.m"; path = "YYKit/Base/UIKit/UIFont+YYAdd.m"; sourceTree = "<group>"; };
 		7D8CD2EAC2F211F32F668EA407A13E3C /* NSObject+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYAdd.h"; path = "YYKit/Base/Foundation/NSObject+YYAdd.h"; sourceTree = "<group>"; };
-		7E670E2DEAE46C102EF1E7F59CF34EC6 /* Z3Login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Z3Login-dummy.m"; sourceTree = "<group>"; };
-		7FA5B7D28D341009D4911BE9BD231D76 /* Z3MobileConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MobileConfig.h; path = Z3Login/Classes/Z3MobileConfig.h; sourceTree = "<group>"; };
 		7FBE8A987FD16B23DD561780E288DFE6 /* NSThread+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSThread+YYAdd.h"; path = "YYKit/Base/Foundation/NSThread+YYAdd.h"; sourceTree = "<group>"; };
 		805A2672FFF8435E7ADD2F1055C26886 /* YYTextUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextUtilities.h; path = YYKit/Text/String/YYTextUtilities.h; sourceTree = "<group>"; };
 		8073B1ED414A2F41D5DD519B6FFA4B35 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		811EEAE67FEFA4487FC4AB91C74B9696 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		8340BFE1DF3D973BA713B14FD8691EA7 /* Z3User.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3User.h; path = Z3Login/Classes/Z3User.h; sourceTree = "<group>"; };
+		83AC8DDFA90BD77E62FFCD1D535610E7 /* Z3MapConfigRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MapConfigRequest.h; path = Z3Login/Classes/Z3MapConfigRequest.h; sourceTree = "<group>"; };
 		83CFABDBDC759347982F4F1987127FD0 /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		8448D697F4B6F74E09BA570B8E8ADD06 /* UIDevice+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+YYAdd.m"; path = "YYKit/Base/UIKit/UIDevice+YYAdd.m"; sourceTree = "<group>"; };
 		85086B3EA3788E32CAB77C6E27A9EFBA /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8545E45038E590BD8774E7E908157195 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		854652D381B41D7F450F05D7A83105DD /* Z3Login.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Z3Login.modulemap; sourceTree = "<group>"; };
+		85C431B961168C4F78C58FB3F7CCEB4A /* Z3MapConfigResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MapConfigResponse.h; path = Z3Login/Classes/Z3MapConfigResponse.h; sourceTree = "<group>"; };
 		85C98A4A50C8BC6C1A9B1B8E1DCF6FAB /* YYDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDiskCache.h; path = YYKit/Cache/YYDiskCache.h; sourceTree = "<group>"; };
+		86DFFC5EB6305DACEDE7CA0D14CE60B1 /* Z3LoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginViewController.m; path = Z3Login/Classes/Z3LoginViewController.m; sourceTree = "<group>"; };
 		886E8F09D8129B993137208ABA14B627 /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
 		89F1427C641F63C704348AF1148572C2 /* YYImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImageCoder.h; path = YYKit/Image/YYImageCoder.h; sourceTree = "<group>"; };
 		89FAA44B742D0684C964BC1DEED40F1C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		8A3F7936A7B2A93392A6C5E860E9C814 /* YYFrameImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYFrameImage.h; path = YYKit/Image/YYFrameImage.h; sourceTree = "<group>"; };
+		8A5BE6DCBAFC2E97FFBD3F1578DEC0F2 /* MBProgressHUD+Z3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+Z3.h"; path = "Z3CommonLib/Classes/MBProgressHUD+Z3.h"; sourceTree = "<group>"; };
+		8A811F86580A7E772248D5DED9194323 /* ResourceBundle-Z3Login-Z3Login-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Z3Login-Z3Login-Info.plist"; sourceTree = "<group>"; };
+		8AE4427C7458B7261D7766E5FA0903C1 /* Z3LoginPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginPrivate.h; path = Z3Login/Classes/Z3LoginPrivate.h; sourceTree = "<group>"; };
+		8B113245FA0B3DF2507129AE3089BC71 /* Z3HttpManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3HttpManager.h; path = Z3Network/Classes/Z3HttpManager.h; sourceTree = "<group>"; };
+		8B3C3E8E8E0A95EAF585558BD05D0880 /* Z3AppMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3AppMenu.m; path = Z3Login/Classes/Z3AppMenu.m; sourceTree = "<group>"; };
 		8BAE3A6C1C6913DAE09582C196A289B0 /* YYWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageOperation.h; path = YYKit/Image/YYWebImageOperation.h; sourceTree = "<group>"; };
 		8BC9C0D7211500C784680FB7C338BC93 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
 		8BD6434FC4498781D3E06B2862BF621A /* YYTextAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAttribute.h; path = YYKit/Text/String/YYTextAttribute.h; sourceTree = "<group>"; };
 		8D8C76804B5C85ED6DDB365DF6EB0947 /* Pods-Z3Login_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Z3Login_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8D9060B218446AB181460BB2B0D6DD3C /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		8DEFD968DF1AF2D9E07F171953AF2F5C /* Z3LoginPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginPrivate.h; path = Z3Login/Classes/Z3LoginPrivate.h; sourceTree = "<group>"; };
-		8DF5EBBDEF8531B33AE902CA0ABB5A29 /* Z3LoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginViewController.h; path = Z3Login/Classes/Z3LoginViewController.h; sourceTree = "<group>"; };
+		8E606F37FD73E1BB024206B703BC2CF7 /* Z3MobileConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MobileConfig.h; path = Z3Login/Classes/Z3MobileConfig.h; sourceTree = "<group>"; };
 		8E62DF276063B6B89417305C89EB2BB8 /* YYKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKeychain.m; path = YYKit/Utility/YYKeychain.m; sourceTree = "<group>"; };
-		8FB9700CF31F866567D8DADB1FFBAC18 /* Z3LoginSettingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginSettingViewController.h; path = Z3Login/Classes/Z3LoginSettingViewController.h; sourceTree = "<group>"; };
+		8EBD37153049D30F95F25082B97C6FA2 /* Z3Login-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Login-umbrella.h"; sourceTree = "<group>"; };
+		8FB5F5C9CE6798B242E62A717D0655DF /* Z3XmllRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3XmllRequest.h; path = Z3Login/Classes/Z3XmllRequest.h; sourceTree = "<group>"; };
+		8FBA1B983B1FDDCC0A85771ED46AC08C /* Z3Network.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3Network.h; path = Z3Network/Classes/Z3Network.h; sourceTree = "<group>"; };
 		915581314786356947214174C72B55D6 /* YYTextLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLine.m; path = YYKit/Text/Component/YYTextLine.m; sourceTree = "<group>"; };
-		91806255206A299DD3E0F96B92F05904 /* Z3URLConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3URLConfig.h; path = Z3Network/Classes/Z3URLConfig.h; sourceTree = "<group>"; };
-		9197C00A860CAB113A199952CAC501C7 /* Z3LoginResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginResponse.h; path = Z3Login/Classes/Z3LoginResponse.h; sourceTree = "<group>"; };
 		91A2D4CEB2D14C3A30DF94F735CB090E /* YYTextMagnifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextMagnifier.h; path = YYKit/Text/Component/YYTextMagnifier.h; sourceTree = "<group>"; };
+		92EE7082312D289DB8B91EA172FA80ED /* Z3CommonLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3CommonLib-prefix.pch"; sourceTree = "<group>"; };
 		93FCB1E3AEA4D5EDE63C1D44D8A380B6 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+YYText.m"; path = "YYKit/Text/String/NSAttributedString+YYText.m"; sourceTree = "<group>"; };
-		94E9FAD8AE49F09BE6B8DFEBC3ED5C34 /* Z3LoginSettingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginSettingViewController.m; path = Z3Login/Classes/Z3LoginSettingViewController.m; sourceTree = "<group>"; };
-		95A447CCDF9ECBBDAF546CDA388C67AB /* Z3HttpManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3HttpManager.h; path = Z3Network/Classes/Z3HttpManager.h; sourceTree = "<group>"; };
+		95EACB96614FA838B47EA6D1E1DF7E33 /* Z3XmllRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3XmllRequest.m; path = Z3Login/Classes/Z3XmllRequest.m; sourceTree = "<group>"; };
 		95FC6D1F0EE18A10EFBAD1578C81BD22 /* YYTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextView.m; path = YYKit/Text/YYTextView.m; sourceTree = "<group>"; };
 		966109EB6DA9C94E07E3C231BFBC3DA7 /* YYImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYImage.h; path = YYKit/Image/YYImage.h; sourceTree = "<group>"; };
-		96E9EB5DC6F47CCBD60D57189D345E5C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		972FE4D9DD022BEA8B043D2F10304678 /* YYKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYKit-prefix.pch"; sourceTree = "<group>"; };
 		98152E46BABE3D8F526B6D5C52DB2CC4 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYKit/Model/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		98B958730435DC955F103746B2433F10 /* YYFileHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYFileHash.h; path = YYKit/Utility/YYFileHash.h; sourceTree = "<group>"; };
 		99113246FF732A1CC65ED5B0923D40E2 /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYKit/Text/Component/YYTextInput.h; sourceTree = "<group>"; };
-		992702E5E0135AD259891250F0F79B00 /* Z3LoginComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginComponent.h; path = Z3Login/Classes/Z3LoginComponent.h; sourceTree = "<group>"; };
 		9A34D725D4CA500F97ED215697EF30AC /* YYWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWebImageManager.m; path = YYKit/Image/YYWebImageManager.m; sourceTree = "<group>"; };
 		9B3873AF60F488D13130C55C5C52F15D /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYKit.framework; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BA55964551BE53533506E75D36DB615 /* Z3CommonLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Z3CommonLib.modulemap; sourceTree = "<group>"; };
+		9C05076B60624D8002A5B89959DB81DE /* Z3NetworkConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3NetworkConfig.h; path = Z3Network/Classes/Z3NetworkConfig.h; sourceTree = "<group>"; };
+		9D625CAA28F948B73CB770FFC2CA02D0 /* Z3User.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3User.m; path = Z3Login/Classes/Z3User.m; sourceTree = "<group>"; };
 		9D75D67E7D3409749224C38EC8F6C9BF /* YYReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYReachability.h; path = YYKit/Utility/YYReachability.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E7FBB64E0E4275C93ABB57F0387CB40 /* YYAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAnimatedImageView.h; path = YYKit/Image/YYAnimatedImageView.h; sourceTree = "<group>"; };
@@ -611,68 +628,66 @@
 		9FF5A471B5B463FC21F8ED032B75A672 /* NSDictionary+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+YYAdd.h"; path = "YYKit/Base/Foundation/NSDictionary+YYAdd.h"; sourceTree = "<group>"; };
 		A0B343145CB3105C9970D373F4D365E7 /* UIBarButtonItem+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+YYAdd.m"; path = "YYKit/Base/UIKit/UIBarButtonItem+YYAdd.m"; sourceTree = "<group>"; };
 		A1CDCB2B897347A2792B0C0F746132C2 /* NSDate+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+YYAdd.h"; path = "YYKit/Base/Foundation/NSDate+YYAdd.h"; sourceTree = "<group>"; };
-		A35A54885423A0BF866F8904E29C909F /* Z3Network.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Z3Network.modulemap; sourceTree = "<group>"; };
 		A3D2537FCDB8DE3AFE04822537765EB0 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		A68C2A7100702E161AF4DC04BD002861 /* Z3Theme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3Theme.m; path = Z3CommonLib/Classes/Z3Theme.m; sourceTree = "<group>"; };
+		A45481C11FEB80DCCD93324B158E661C /* nav_back_login_setting.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nav_back_login_setting.png; path = Z3Login/Assets/nav_back_login_setting.png; sourceTree = "<group>"; };
+		A548F5142B68B2BE468AE4C554EB752A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A6DA6BAC0EDC6E6B41C601FF0FB2FEFC /* YYKVStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKVStorage.m; path = YYKit/Cache/YYKVStorage.m; sourceTree = "<group>"; };
+		A7FEB769CC8A4D0CB467291CA7715550 /* Z3LoginSettingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginSettingViewController.m; path = Z3Login/Classes/Z3LoginSettingViewController.m; sourceTree = "<group>"; };
 		A8353935ECD035FDD070ABCD10BD4929 /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+YYText.m"; path = "YYKit/Text/String/UIPasteboard+YYText.m"; sourceTree = "<group>"; };
-		AA23FA8C6407ED1F18736864B48A80EC /* Z3AppMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3AppMenu.h; path = Z3Login/Classes/Z3AppMenu.h; sourceTree = "<group>"; };
-		AAD178EAC18A4B7B319AE1BE9F7CFB9C /* Z3LoginRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginRequest.h; path = Z3Login/Classes/Z3LoginRequest.h; sourceTree = "<group>"; };
 		AC99888F8D7E1A771EADDF77B5F9D6DD /* YYTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTimer.h; path = YYKit/Utility/YYTimer.h; sourceTree = "<group>"; };
 		ACA8477A3E019AF0760CDA60BDF2480B /* Z3Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Z3Login.framework; path = Z3Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB5EB46090DD11D1C48B18675D7D9FD /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		AD9F939E3D991C30BBB03BD3BDB529FD /* UIImage+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YYAdd.m"; path = "YYKit/Base/UIKit/UIImage+YYAdd.m"; sourceTree = "<group>"; };
 		ADE3300F793C35786AE7557AF006159A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		AE10F6D8703BB005DA58C5FD5775B01F /* Z3CommonLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Z3CommonLib-dummy.m"; sourceTree = "<group>"; };
 		AE36C1BE96E1C06E9E280420F28CD831 /* NSData+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+YYAdd.m"; path = "YYKit/Base/Foundation/NSData+YYAdd.m"; sourceTree = "<group>"; };
 		AF2E2D2640160843CF09FA08A391443A /* NSArray+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+YYAdd.h"; path = "YYKit/Base/Foundation/NSArray+YYAdd.h"; sourceTree = "<group>"; };
-		AF6085CAB17FCB114FA03983366BF8A6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		AFD335DA6CCA524F5263C18A36FE7E46 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+YYAdd.h"; path = "YYKit/Base/UIKit/UIControl+YYAdd.h"; sourceTree = "<group>"; };
-		B02C2B04E88B5416E6AA07B95F7C1059 /* Z3NetworkPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3NetworkPrivate.h; path = Z3Network/Classes/Z3NetworkPrivate.h; sourceTree = "<group>"; };
+		B033BB759E881FD998DA7A9334F3F436 /* Z3CommonLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Z3CommonLib-Info.plist"; sourceTree = "<group>"; };
 		B07BA1C96407BDBFDAC65432070AD142 /* UIView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYAdd.m"; path = "YYKit/Base/UIKit/UIView+YYAdd.m"; sourceTree = "<group>"; };
 		B131278FC3B8BF42CF231179ED1910B0 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSpriteSheetImage.h; path = YYKit/Image/YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		B1AE125B4C2D12736E178F533EE5BA95 /* Z3BaseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3BaseRequest.m; path = Z3Network/Classes/Z3BaseRequest.m; sourceTree = "<group>"; };
 		B20ED6496E03DCEA4FA8498A3D001923 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		B52B158708AEC7A70536820553473955 /* Z3Network.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Z3Network.xcconfig; sourceTree = "<group>"; };
 		B5BEFA1072621198D60183E77B20FD4A /* UIScrollView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+YYAdd.h"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.h"; sourceTree = "<group>"; };
 		B5C9D429CCA7ABA03A64A34B5C727A16 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		B5E315128EE66FF2694126E4F7AC66D1 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		B614F05C150311FA2BED22D91686435B /* YYKitMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKitMacro.h; path = YYKit/Base/YYKitMacro.h; sourceTree = "<group>"; };
-		B75A039DE1B9007835BC4436FE8A101E /* ResourceBundle-Z3Login-Z3Login-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Z3Login-Z3Login-Info.plist"; sourceTree = "<group>"; };
+		B61D16452C0F325B6007F3C2F9C8857F /* Z3LoginSettingViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = Z3LoginSettingViewController.xib; path = Z3Login/Assets/Z3LoginSettingViewController.xib; sourceTree = "<group>"; };
+		B7A93AC6FB55BC9BB3E4B491D590552B /* icon_login_input_password.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_login_input_password.png; path = Z3Login/Assets/icon_login_input_password.png; sourceTree = "<group>"; };
 		B805DE64F7D65C909D04D3A904E2C63C /* YYKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYKit-umbrella.h"; sourceTree = "<group>"; };
-		B91F536B46369C3234E29C40E9D3D9F0 /* Z3Network-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Network-prefix.pch"; sourceTree = "<group>"; };
-		B953370ECE4653EFD498FE260D01C480 /* Z3Network.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Z3Network.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B95969E02014D21008F439CB502FB76A /* YYTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTransaction.h; path = YYKit/Utility/YYTransaction.h; sourceTree = "<group>"; };
+		B974EEC449A6ACA56CC05B520BC3216C /* Z3CommonLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3CommonLib-umbrella.h"; sourceTree = "<group>"; };
 		B9BC5E9ECD640B0732F6B4E2EA785691 /* YYTextUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextUtilities.m; path = YYKit/Text/String/YYTextUtilities.m; sourceTree = "<group>"; };
 		BB496FA0AD3398ED01941033F12EBB0E /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		BB63B3C8833D96810376DEFB8C3A70F3 /* Z3BatchRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3BatchRequest.h; path = Z3Network/Classes/Z3BatchRequest.h; sourceTree = "<group>"; };
 		BB6CB42D7E9ED6A9A4BB7E81FCC8699D /* NSBundle+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+YYAdd.h"; path = "YYKit/Base/Foundation/NSBundle+YYAdd.h"; sourceTree = "<group>"; };
 		BBE96512F67AD25F9035AAF689DBCA3D /* YYThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYThreadSafeArray.m; path = YYKit/Utility/YYThreadSafeArray.m; sourceTree = "<group>"; };
 		BCAAC1063D43525B5BFFD8396D0559BD /* UITextField+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+YYAdd.m"; path = "YYKit/Base/UIKit/UITextField+YYAdd.m"; sourceTree = "<group>"; };
-		BEF7194D78C9578758F70F0185E07A05 /* Z3NetworkPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3NetworkPrivate.m; path = Z3Network/Classes/Z3NetworkPrivate.m; sourceTree = "<group>"; };
+		BE277DF7F1E35091CAF9ECD88EC8813E /* Z3Login.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Z3Login.xcconfig; sourceTree = "<group>"; };
+		BED2FF54B8141CAB63226D95A858EE59 /* Z3Network-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Z3Network-Info.plist"; sourceTree = "<group>"; };
 		BF57801905FAE4602FE86D9B306CC05E /* Z3Login.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Z3Login.bundle; path = "Z3Login-Z3Login.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9A474C4D996A9B22AF9317CF12D01 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		C0ADA0A318170E9125166CD1ED9735F4 /* Z3MapConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MapConfig.m; path = Z3Login/Classes/Z3MapConfig.m; sourceTree = "<group>"; };
+		C0F75A4E32C87F7CB4947AABC30BCFF7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C13F2557F2E5F4A9A5486C123BDCC82C /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		C1EDF0306336FF2D5C2854076F76EDAC /* Z3MobileTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MobileTask.h; path = Z3Login/Classes/Z3MobileTask.h; sourceTree = "<group>"; };
 		C4ADAB60445B273A6AB2BB75222405BD /* UIBezierPath+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+YYAdd.m"; path = "YYKit/Base/UIKit/UIBezierPath+YYAdd.m"; sourceTree = "<group>"; };
 		C4F7D8E55B8858EB281F05981AA44A4E /* Pods-Z3Login_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Z3Login_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C67770C997C2285337BAAD4DEB2F499C /* YYTextDebugOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextDebugOption.h; path = YYKit/Text/Component/YYTextDebugOption.h; sourceTree = "<group>"; };
 		C7D687FCB188C61DC9DB28507C9D6A99 /* YYTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextParser.m; path = YYKit/Text/String/YYTextParser.m; sourceTree = "<group>"; };
-		C7E94AD15AB48748453D51B02B486A35 /* Z3MapConfigRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3MapConfigRequest.m; path = Z3Login/Classes/Z3MapConfigRequest.m; sourceTree = "<group>"; };
+		C80E0E2F0CA282348CD9BFBED77325DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C88C43257911BA935D67F8C00F88410B /* NSObject+YYAddForARC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForARC.m"; path = "YYKit/Base/Foundation/NSObject+YYAddForARC.m"; sourceTree = "<group>"; };
+		C8986EE2454BBCA23F49F5DA38DD644E /* Z3LoginPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginPrivate.m; path = Z3Login/Classes/Z3LoginPrivate.m; sourceTree = "<group>"; };
 		C8B02C8651DBE91D023391F2B9873084 /* YYWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYWeakProxy.m; path = YYKit/Utility/YYWeakProxy.m; sourceTree = "<group>"; };
-		C95CDC456778D4CC00DBA26112AC16E0 /* Z3Login.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Z3Login.xcconfig; sourceTree = "<group>"; };
 		CA188289DB8C687F97D6A39B28EC1324 /* UIBarButtonItem+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+YYAdd.h"; path = "YYKit/Base/UIKit/UIBarButtonItem+YYAdd.h"; sourceTree = "<group>"; };
 		CA317E9ED8D29B642D2DA9AB42757D7A /* Pods-Z3Login_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Z3Login_Example-Info.plist"; sourceTree = "<group>"; };
 		CAC685BA5024748AD51DCA244CA2D561 /* YYKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YYKit-Info.plist"; sourceTree = "<group>"; };
-		CC24693FC064ACD8B80EA0756C11FACD /* Z3BatchRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3BatchRequest.m; path = Z3Network/Classes/Z3BatchRequest.m; sourceTree = "<group>"; };
-		CC503C7722F5CD6AECF318B4FB89122E /* icon_login_input_password.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_login_input_password.png; path = Z3Login/Assets/icon_login_input_password.png; sourceTree = "<group>"; };
+		CACB8068CED4CF1C20E0203C5E33422E /* Z3LoginViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = Z3LoginViewController.xib; path = Z3Login/Assets/Z3LoginViewController.xib; sourceTree = "<group>"; };
+		CB188C6D55D78CE11571BA29949265AD /* Z3HttpManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3HttpManager.m; path = Z3Network/Classes/Z3HttpManager.m; sourceTree = "<group>"; };
 		CC55AE9BE91AF3D1140EF273EF2D278E /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		CC7312ECD8DBF0CE1D48AF5562C222C1 /* Z3Network.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Z3Network.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CC76A4EDE0ED2E3BFD2A71C402E87291 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		CC9E155E69A99F2FAE2E975B02F56711 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		CCE7315C83C04F0183E0757E8C0787E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		CED267492C92A06F67BC2D45DC561826 /* YYAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYAsyncLayer.h; path = YYKit/Utility/YYAsyncLayer.h; sourceTree = "<group>"; };
-		D10173EDA7D893FCC3D0C960E8D012D5 /* Z3BaseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3BaseRequest.h; path = Z3Network/Classes/Z3BaseRequest.h; sourceTree = "<group>"; };
-		D16048135DC48D6883BAB035F27E3E54 /* Z3LoginRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginRequest.m; path = Z3Login/Classes/Z3LoginRequest.m; sourceTree = "<group>"; };
-		D165992B7DE17D87C7256A8A47249C6E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		D1F2116E674BECEDFB90F55757B476E5 /* Z3LoginResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3LoginResponse.m; path = Z3Login/Classes/Z3LoginResponse.m; sourceTree = "<group>"; };
 		D2EBACEBE1291A1617808FB85A9658FB /* UIScreen+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+YYAdd.m"; path = "YYKit/Base/UIKit/UIScreen+YYAdd.m"; sourceTree = "<group>"; };
 		D33BC4353124D3FCB4F08F00D9A5A6B7 /* YYKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKeychain.h; path = YYKit/Utility/YYKeychain.h; sourceTree = "<group>"; };
 		D654C7074DC744A4B48F1B190D6B029D /* NSObject+YYAddForKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForKVO.m"; path = "YYKit/Base/Foundation/NSObject+YYAddForKVO.m"; sourceTree = "<group>"; };
@@ -680,46 +695,37 @@
 		D7DA3F51FAAFF077E45855BEB3EF205E /* YYKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYKit.modulemap; sourceTree = "<group>"; };
 		D843EA7F1B2DD61512ADC1C4E05A5045 /* UIFont+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+YYAdd.h"; path = "YYKit/Base/UIKit/UIFont+YYAdd.h"; sourceTree = "<group>"; };
 		D85B219AE0FFD6BE8ECF0C51EC8C7BE8 /* Z3CommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Z3CommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAF124400E3FAA29D2AA0C63D9770A1E /* Z3BatchRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3BatchRequest.h; path = Z3Network/Classes/Z3BatchRequest.h; sourceTree = "<group>"; };
 		DC076EB001C0A06F4CF57BFB1E856777 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYKit/Text/String/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
-		DC793A921C230551645042A4E3BB96CC /* checkmark.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = checkmark.png; path = Z3Login/Assets/checkmark.png; sourceTree = "<group>"; };
 		DC90C33862F98DA8EF568125F7E542FC /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYKit/Model/YYClassInfo.h; sourceTree = "<group>"; };
 		DD08F9DD19B065C28B67A6B95D184014 /* NSArray+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+YYAdd.m"; path = "YYKit/Base/Foundation/NSArray+YYAdd.m"; sourceTree = "<group>"; };
 		E0D067DD141A493702D5F29BE62518B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E0FD6A1400195CB29DA2027BB8F006DB /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		E14D2A1E1E4989929640778767E0252A /* Z3LoginSettingViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = Z3LoginSettingViewController.xib; path = Z3Login/Assets/Z3LoginSettingViewController.xib; sourceTree = "<group>"; };
 		E20FD8AD111E3F17F4BF0C826BB6D78C /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		E217F642BA43D230F0538F5C09E28B2E /* YYMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYMemoryCache.m; path = YYKit/Cache/YYMemoryCache.m; sourceTree = "<group>"; };
-		E21F5844C6F3D628C082DBC815A83F56 /* Z3Login-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Login-prefix.pch"; sourceTree = "<group>"; };
-		E228F05F770F331CBD77DD7509631BB9 /* Z3Network-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Network-umbrella.h"; sourceTree = "<group>"; };
 		E2977B443E7BCA6956B0F3355CBF3A22 /* UITableView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+YYAdd.m"; path = "YYKit/Base/UIKit/UITableView+YYAdd.m"; sourceTree = "<group>"; };
 		E353C1D79A99E7AB30C834284BFEC4C8 /* YYTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTransaction.m; path = YYKit/Utility/YYTransaction.m; sourceTree = "<group>"; };
-		E4D226000133E4A704837C0A86B11A40 /* Z3MapConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3MapConfig.h; path = Z3Login/Classes/Z3MapConfig.h; sourceTree = "<group>"; };
-		E7CFFADFBD4FD612AB9E0D63D50205A6 /* UIColor+Z3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Z3.h"; path = "Z3CommonLib/Classes/UIColor+Z3.h"; sourceTree = "<group>"; };
+		E676D9C6F5A29EC4C327A2A835F6E744 /* Z3Login.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Z3Login.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E83AEF5F54F7CC7A6A969BDFBE3B558B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		E84F47A996421D1DBDCEF4349AC7B63A /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+YYText.h"; path = "YYKit/Text/String/UIPasteboard+YYText.h"; sourceTree = "<group>"; };
 		E90875142A1C212C3AD9F3CEE7BE9C84 /* YYTextRunDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRunDelegate.m; path = YYKit/Text/String/YYTextRunDelegate.m; sourceTree = "<group>"; };
 		EA00A2124AD22C170D92FA0BE7145EB1 /* Z3CommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Z3CommonLib.framework; path = Z3CommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2381A343F3AAB8758ECE2CE46D6BA7 /* NSDictionary+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+YYAdd.m"; path = "YYKit/Base/Foundation/NSDictionary+YYAdd.m"; sourceTree = "<group>"; };
-		EAD96D8956E3DD21079988E27CAA8DC0 /* Z3BaseResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3BaseResponse.h; path = Z3Network/Classes/Z3BaseResponse.h; sourceTree = "<group>"; };
-		EB323E9BC79C8829D217629B17313D38 /* Z3Login-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Z3Login-umbrella.h"; sourceTree = "<group>"; };
 		EBB2A82DBFCFFC549A3586C03C7497EE /* CALayer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+YYAdd.h"; path = "YYKit/Base/Quartz/CALayer+YYAdd.h"; sourceTree = "<group>"; };
 		ED3822D9577611C2403B90FD71DB11B0 /* YYFrameImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYFrameImage.m; path = YYKit/Image/YYFrameImage.m; sourceTree = "<group>"; };
+		ED90CFFE68F2A27463571CF8DF3C749B /* Z3LoginResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Z3LoginResponse.h; path = Z3Login/Classes/Z3LoginResponse.h; sourceTree = "<group>"; };
 		EF1D7E562661C0608D28C451A3D9CAD7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		F001D739B3A946133D9FC80C06BB1AE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F2FB78C5521668250B26578C9CBE63C9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		F367913D0E314E1973E185C1B8BA29ED /* Z3LoginViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = Z3LoginViewController.xib; path = Z3Login/Assets/Z3LoginViewController.xib; sourceTree = "<group>"; };
 		F3A5E6A5297BAC347AD4BA5B54B3EF65 /* NSData+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+YYAdd.h"; path = "YYKit/Base/Foundation/NSData+YYAdd.h"; sourceTree = "<group>"; };
+		F3C1ADC27BB31096887CD5329135B019 /* Z3CommonLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Z3CommonLib.xcconfig; sourceTree = "<group>"; };
 		F3F3BB2E696DE2C3C0812DEDEDD902B9 /* UITableView+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+YYAdd.h"; path = "YYKit/Base/UIKit/UITableView+YYAdd.h"; sourceTree = "<group>"; };
 		F411DF93724DB08F3B8F7EFC63207661 /* YYTextArchiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextArchiver.m; path = YYKit/Text/String/YYTextArchiver.m; sourceTree = "<group>"; };
 		F4DE43C8573831C3B6D6FC194B49D8FE /* YYWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWeakProxy.h; path = YYKit/Utility/YYWeakProxy.h; sourceTree = "<group>"; };
 		F69369AF3BB55325217E0347247525C0 /* YYTextDebugOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextDebugOption.m; path = YYKit/Text/Component/YYTextDebugOption.m; sourceTree = "<group>"; };
-		F6C50CE00C1FC7C595A7A87E0200773A /* Z3BaseResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Z3BaseResponse.m; path = Z3Network/Classes/Z3BaseResponse.m; sourceTree = "<group>"; };
 		F75E970DDA3E79D35B8A06B65A74FD19 /* YYCGUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCGUtilities.m; path = YYKit/Base/Quartz/YYCGUtilities.m; sourceTree = "<group>"; };
 		F81AA2CA2EE421871A6A0C10D3F9D401 /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F830F476B645057483FADEBB8B515909 /* Pods-Z3Login_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Z3Login_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F873500B8F0A96502F4610AB0518400E /* Pods-Z3Login_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Z3Login_Example.modulemap"; sourceTree = "<group>"; };
-		F98CDC711E1F95866F69C827C4B17AB8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F9C80BFB635DBDD08D16FC16EB3AF8E6 /* YYThreadSafeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeArray.h; path = YYKit/Utility/YYThreadSafeArray.h; sourceTree = "<group>"; };
 		F9F8211C18B87745E4C38A7CD2A2D255 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
 		FBFB8679827CCF519A0DC1209F09B72F /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
@@ -826,43 +832,30 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
-		1CF57444096C21F0D76A10AC31BC46CC /* Z3Network */ = {
+		136F269563BB3F7FFC51151846DE838C /* Z3CommonLib */ = {
 			isa = PBXGroup;
 			children = (
-				D10173EDA7D893FCC3D0C960E8D012D5 /* Z3BaseRequest.h */,
-				791428D53646C19809DC20817DF65CB2 /* Z3BaseRequest.m */,
-				EAD96D8956E3DD21079988E27CAA8DC0 /* Z3BaseResponse.h */,
-				F6C50CE00C1FC7C595A7A87E0200773A /* Z3BaseResponse.m */,
-				DAF124400E3FAA29D2AA0C63D9770A1E /* Z3BatchRequest.h */,
-				CC24693FC064ACD8B80EA0756C11FACD /* Z3BatchRequest.m */,
-				95A447CCDF9ECBBDAF546CDA388C67AB /* Z3HttpManager.h */,
-				40E5DC1B03FCFE9EC482C7C9ED39A879 /* Z3HttpManager.m */,
-				18F9CA529BA11485D35FF7A0A38D00C6 /* Z3Network.h */,
-				155E8178A06B1A9EBD049B017AF1F568 /* Z3NetworkConfig.h */,
-				605D1762BE1434AC0667A4661DE073CD /* Z3NetworkConfig.m */,
-				B02C2B04E88B5416E6AA07B95F7C1059 /* Z3NetworkPrivate.h */,
-				BEF7194D78C9578758F70F0185E07A05 /* Z3NetworkPrivate.m */,
-				91806255206A299DD3E0F96B92F05904 /* Z3URLConfig.h */,
-				073FA8C34D270C9CB84659AC91991C66 /* Z3URLConfig.m */,
-				B48251B1DF4AE8094392475F1014011A /* Pod */,
-				24A7B398808789819F86AC8DF01825EF /* Support Files */,
+				8A5BE6DCBAFC2E97FFBD3F1578DEC0F2 /* MBProgressHUD+Z3.h */,
+				451273CFE5D0655476A36A468B663AED /* MBProgressHUD+Z3.m */,
+				5A4D42F241794C61B97BB6E69CF13BB2 /* UIColor+Z3.h */,
+				5D386CB8D14869A31793D7CEE17223B5 /* UIColor+Z3.m */,
+				7A9B1BF15647883389AA928795BB9004 /* Z3Theme.h */,
+				69881DBC1AD5EB30A6C19583162A0FFE /* Z3Theme.m */,
+				5920D735618B1131EFEF8624812B6AE7 /* Pod */,
+				B623FB5C5D2EED7AD79BFA9B4C271197 /* Support Files */,
 			);
-			name = Z3Network;
-			path = ../../../Z3Network;
+			name = Z3CommonLib;
+			path = ../../../Z3CommonLib;
 			sourceTree = "<group>";
 		};
-		24A7B398808789819F86AC8DF01825EF /* Support Files */ = {
+		18361653DA16B61CC74767281F078A40 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A35A54885423A0BF866F8904E29C909F /* Z3Network.modulemap */,
-				B52B158708AEC7A70536820553473955 /* Z3Network.xcconfig */,
-				40E54412871696E8ADB35B6E9573E43A /* Z3Network-dummy.m */,
-				69B539BF12FA4A499DF149F75374A00E /* Z3Network-Info.plist */,
-				B91F536B46369C3234E29C40E9D3D9F0 /* Z3Network-prefix.pch */,
-				E228F05F770F331CBD77DD7509631BB9 /* Z3Network-umbrella.h */,
+				3BC70F0DFF191231202FDD4D9498F106 /* LICENSE */,
+				A548F5142B68B2BE468AE4C554EB752A /* README.md */,
+				CC7312ECD8DBF0CE1D48AF5562C222C1 /* Z3Network.podspec */,
 			);
-			name = "Support Files";
-			path = "../Z3Login/Example/Pods/Target Support Files/Z3Network";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		2C188235D0BE7D4B242C44C8BFE26C16 /* Pods-Z3Login_Example */ = {
@@ -882,20 +875,6 @@
 			path = "Target Support Files/Pods-Z3Login_Example";
 			sourceTree = "<group>";
 		};
-		34131100C798FECF682AC512A6547F95 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9BA55964551BE53533506E75D36DB615 /* Z3CommonLib.modulemap */,
-				3676A4F914AC9F3D6CB3B6E0E601F295 /* Z3CommonLib.xcconfig */,
-				AE10F6D8703BB005DA58C5FD5775B01F /* Z3CommonLib-dummy.m */,
-				20FDE544ED011F6CF88960FA64190A5B /* Z3CommonLib-Info.plist */,
-				530CE2211E15E8616CB4F4B6B6AB1B92 /* Z3CommonLib-prefix.pch */,
-				69A31973EF7C034B858DC8731BFC0AB0 /* Z3CommonLib-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Z3Login/Example/Pods/Target Support Files/Z3CommonLib";
-			sourceTree = "<group>";
-		};
 		35F8B4428C497D5E72824A29691852D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -909,6 +888,31 @@
 				232577B730D7A0E4F7B448523154DBD4 /* Z3Network.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3798610D45F3FD1F54C5A9EA19F87B8B /* Z3Network */ = {
+			isa = PBXGroup;
+			children = (
+				2DF7ADA7D1B43FACED5724F737ADDC41 /* Z3BaseRequest.h */,
+				B1AE125B4C2D12736E178F533EE5BA95 /* Z3BaseRequest.m */,
+				474033F4F5E4EA29A3CF9D09E021F005 /* Z3BaseResponse.h */,
+				194ECB7A0C70CDA2682FF5EC8C86E8C6 /* Z3BaseResponse.m */,
+				BB63B3C8833D96810376DEFB8C3A70F3 /* Z3BatchRequest.h */,
+				5841779CEB103008BC4EE9D7D2091A6D /* Z3BatchRequest.m */,
+				8B113245FA0B3DF2507129AE3089BC71 /* Z3HttpManager.h */,
+				CB188C6D55D78CE11571BA29949265AD /* Z3HttpManager.m */,
+				8FBA1B983B1FDDCC0A85771ED46AC08C /* Z3Network.h */,
+				9C05076B60624D8002A5B89959DB81DE /* Z3NetworkConfig.h */,
+				687A1F9A55BD713DE030D77BB2AAD2F7 /* Z3NetworkConfig.m */,
+				6C124BD07C87BEF65427366ECCB4E64D /* Z3NetworkPrivate.h */,
+				674D28CFFB1918129AF061BC66A41355 /* Z3NetworkPrivate.m */,
+				5E74B7BC85C81A28D8AF6B49764E293C /* Z3URLConfig.h */,
+				0549408BBD0FAFB974E3B9FC341C09D4 /* Z3URLConfig.m */,
+				18361653DA16B61CC74767281F078A40 /* Pod */,
+				7277215B7BA6EB63766C7BD410141429 /* Support Files */,
+			);
+			name = Z3Network;
+			path = ../../../Z3Network;
 			sourceTree = "<group>";
 		};
 		3B5C0C87A848B4245F6799E7E176C88B /* no-arc */ = {
@@ -936,6 +940,19 @@
 			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
+		535D9A86A5A27C4FF902CB00040301FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				431B49A9B46C2A8E902EAEE0EE90D7E2 /* checkmark.png */,
+				B7A93AC6FB55BC9BB3E4B491D590552B /* icon_login_input_password.png */,
+				55053A7773742CD170AB91F7DD051025 /* icon_login_input_username.png */,
+				A45481C11FEB80DCCD93324B158E661C /* nav_back_login_setting.png */,
+				B61D16452C0F325B6007F3C2F9C8857F /* Z3LoginSettingViewController.xib */,
+				CACB8068CED4CF1C20E0203C5E33422E /* Z3LoginViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		5493F682A4C06D0C196078C5961CED34 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -951,60 +968,43 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		6146F182C5298A11944BB869693B6D81 /* Z3Login */ = {
+		5920D735618B1131EFEF8624812B6AE7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				AA23FA8C6407ED1F18736864B48A80EC /* Z3AppMenu.h */,
-				3D302976FBC1B7AB08ABB9DC65E7B88D /* Z3AppMenu.m */,
-				992702E5E0135AD259891250F0F79B00 /* Z3LoginComponent.h */,
-				8DEFD968DF1AF2D9E07F171953AF2F5C /* Z3LoginPrivate.h */,
-				16AC82903F3517FC3EC6A84AAEC2BBC6 /* Z3LoginPrivate.m */,
-				AAD178EAC18A4B7B319AE1BE9F7CFB9C /* Z3LoginRequest.h */,
-				D16048135DC48D6883BAB035F27E3E54 /* Z3LoginRequest.m */,
-				9197C00A860CAB113A199952CAC501C7 /* Z3LoginResponse.h */,
-				D1F2116E674BECEDFB90F55757B476E5 /* Z3LoginResponse.m */,
-				8FB9700CF31F866567D8DADB1FFBAC18 /* Z3LoginSettingViewController.h */,
-				94E9FAD8AE49F09BE6B8DFEBC3ED5C34 /* Z3LoginSettingViewController.m */,
-				8DF5EBBDEF8531B33AE902CA0ABB5A29 /* Z3LoginViewController.h */,
-				1103BED8BE8CD99DC747D9EB8421EF14 /* Z3LoginViewController.m */,
-				E4D226000133E4A704837C0A86B11A40 /* Z3MapConfig.h */,
-				C0ADA0A318170E9125166CD1ED9735F4 /* Z3MapConfig.m */,
-				66B22F2C916E0D6AA3EAF11CBB3648F7 /* Z3MapConfigRequest.h */,
-				C7E94AD15AB48748453D51B02B486A35 /* Z3MapConfigRequest.m */,
-				5B9C2B28496A56CC6DCB93793F55AEA4 /* Z3MapConfigResponse.h */,
-				38BFF617215083478F6163E06D29A3D8 /* Z3MapConfigResponse.m */,
-				7FA5B7D28D341009D4911BE9BD231D76 /* Z3MobileConfig.h */,
-				76DBCE954901FF613364C21DA4595E84 /* Z3MobileConfig.m */,
-				38F8BED4654B41C028D1ACA01AFA143C /* Z3MobileTask.h */,
-				13D9F1D69FD7318D547CCD2C9C21B31D /* Z3MobileTask.m */,
-				8340BFE1DF3D973BA713B14FD8691EA7 /* Z3User.h */,
-				43E1155E9619BEF5FC3D63560EF5F8A6 /* Z3User.m */,
-				75FD1769A3BCC2953A066ECC24FFFE6F /* Pod */,
-				B233EE57E69B01BE4DEDCE8B10AF0208 /* Resources */,
-				DF62D15E43ADCF7708228B24EAB02840 /* Support Files */,
-			);
-			name = Z3Login;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		6CE47F25763901DDD2706E2618D7D449 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ACEB682F63490A9C461ADCC6641BF77F /* Z3CommonLib */,
-				6146F182C5298A11944BB869693B6D81 /* Z3Login */,
-				1CF57444096C21F0D76A10AC31BC46CC /* Z3Network */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		75FD1769A3BCC2953A066ECC24FFFE6F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				96E9EB5DC6F47CCBD60D57189D345E5C /* LICENSE */,
-				4BF1B579BCFE7C6BA70A6194054F0D8C /* README.md */,
-				2F384132915AD3E59336B581C7E67286 /* Z3Login.podspec */,
+				C80E0E2F0CA282348CD9BFBED77325DA /* LICENSE */,
+				C0F75A4E32C87F7CB4947AABC30BCFF7 /* README.md */,
+				43B0F98A70A89FDEA789AC9408699109 /* Z3CommonLib.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		7276C95F9084622F3D1282EF00584FA9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A811F86580A7E772248D5DED9194323 /* ResourceBundle-Z3Login-Z3Login-Info.plist */,
+				854652D381B41D7F450F05D7A83105DD /* Z3Login.modulemap */,
+				BE277DF7F1E35091CAF9ECD88EC8813E /* Z3Login.xcconfig */,
+				5A5DFE095981DC4A6DDA531F80CB80B6 /* Z3Login-dummy.m */,
+				71007A96CC20490D7DA9DBAD8B9F4A5D /* Z3Login-Info.plist */,
+				216CFEE4386FB90FB1A654AEC692C153 /* Z3Login-prefix.pch */,
+				8EBD37153049D30F95F25082B97C6FA2 /* Z3Login-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Z3Login";
+			sourceTree = "<group>";
+		};
+		7277215B7BA6EB63766C7BD410141429 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				25AA7AAB39292982CA348EB78231367D /* Z3Network.modulemap */,
+				0E8C68BD24D52F3104F0DBA6D8077142 /* Z3Network.xcconfig */,
+				08EFEDB08DB4D9425537587E370F023E /* Z3Network-dummy.m */,
+				BED2FF54B8141CAB63226D95A858EE59 /* Z3Network-Info.plist */,
+				367ACC35FC569214222656C5A4B4CFC7 /* Z3Network-prefix.pch */,
+				3FAE4A6DE5BCA7A409333AA6943D0BF3 /* Z3Network-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Z3Login/Example/Pods/Target Support Files/Z3Network";
 			sourceTree = "<group>";
 		};
 		7A4F2EBCA62303286FFFB338151157E7 /* YYKit */ = {
@@ -1178,6 +1178,16 @@
 			path = YYKit;
 			sourceTree = "<group>";
 		};
+		8DDE6D88A493AB2EF780658A72EAFB09 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CCE7315C83C04F0183E0757E8C0787E0 /* LICENSE */,
+				323513C3EE49EEC67D91A93234955E94 /* README.md */,
+				E676D9C6F5A29EC4C327A2A835F6E744 /* Z3Login.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		8E8BB6709E8D55BD3318DE774A4F26C8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1263,49 +1273,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		ACEB682F63490A9C461ADCC6641BF77F /* Z3CommonLib */ = {
+		B623FB5C5D2EED7AD79BFA9B4C271197 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2427EAEAE58EBAC3170FDEC285DDCA77 /* MBProgressHUD+Z3.h */,
-				22D1DD16644EF487A6BC28840DB52F4B /* MBProgressHUD+Z3.m */,
-				E7CFFADFBD4FD612AB9E0D63D50205A6 /* UIColor+Z3.h */,
-				71B27BD2827EEF2607CF127696B61F1D /* UIColor+Z3.m */,
-				3D19944BA51B49B858072D13A413ACB5 /* Z3Theme.h */,
-				A68C2A7100702E161AF4DC04BD002861 /* Z3Theme.m */,
-				EF19CD7A31BD15AD52F59A219671F1AB /* Pod */,
-				34131100C798FECF682AC512A6547F95 /* Support Files */,
+				24BB3D457FCCA69270C55A1A1C7770BF /* Z3CommonLib.modulemap */,
+				F3C1ADC27BB31096887CD5329135B019 /* Z3CommonLib.xcconfig */,
+				64BE5A24BA05962CC55044D83B225CAA /* Z3CommonLib-dummy.m */,
+				B033BB759E881FD998DA7A9334F3F436 /* Z3CommonLib-Info.plist */,
+				92EE7082312D289DB8B91EA172FA80ED /* Z3CommonLib-prefix.pch */,
+				B974EEC449A6ACA56CC05B520BC3216C /* Z3CommonLib-umbrella.h */,
 			);
-			name = Z3CommonLib;
-			path = ../../../Z3CommonLib;
-			sourceTree = "<group>";
-		};
-		B233EE57E69B01BE4DEDCE8B10AF0208 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DC793A921C230551645042A4E3BB96CC /* checkmark.png */,
-				CC503C7722F5CD6AECF318B4FB89122E /* icon_login_input_password.png */,
-				49543CC98448941B374672E680932315 /* icon_login_input_username.png */,
-				E14D2A1E1E4989929640778767E0252A /* Z3LoginSettingViewController.xib */,
-				F367913D0E314E1973E185C1B8BA29ED /* Z3LoginViewController.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		B48251B1DF4AE8094392475F1014011A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				35357AD7E663F0FC424BA5AAA2E2E5E2 /* LICENSE */,
-				AF6085CAB17FCB114FA03983366BF8A6 /* README.md */,
-				B953370ECE4653EFD498FE260D01C480 /* Z3Network.podspec */,
-			);
-			name = Pod;
+			name = "Support Files";
+			path = "../Z3Login/Example/Pods/Target Support Files/Z3CommonLib";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				6CE47F25763901DDD2706E2618D7D449 /* Development Pods */,
+				D8A4087A1ADFE1C6F6DCCAC61660A4DA /* Development Pods */,
 				913601D9F8293F1DAABCBC54E097A196 /* Frameworks */,
 				A6C0CF7F2E358EFDB0681954FD23BC35 /* Pods */,
 				35F8B4428C497D5E72824A29691852D0 /* Products */,
@@ -1352,19 +1338,52 @@
 			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		DF62D15E43ADCF7708228B24EAB02840 /* Support Files */ = {
+		D84F12D8E2FCB31BE29D33A191DAFB67 /* Z3Login */ = {
 			isa = PBXGroup;
 			children = (
-				B75A039DE1B9007835BC4436FE8A101E /* ResourceBundle-Z3Login-Z3Login-Info.plist */,
-				24846AF11B809081FCA20410B24F8253 /* Z3Login.modulemap */,
-				C95CDC456778D4CC00DBA26112AC16E0 /* Z3Login.xcconfig */,
-				7E670E2DEAE46C102EF1E7F59CF34EC6 /* Z3Login-dummy.m */,
-				53DD6115D8B610ECC3129B2349D89493 /* Z3Login-Info.plist */,
-				E21F5844C6F3D628C082DBC815A83F56 /* Z3Login-prefix.pch */,
-				EB323E9BC79C8829D217629B17313D38 /* Z3Login-umbrella.h */,
+				5BE674019815404F897771C478C9B177 /* Z3AppMenu.h */,
+				8B3C3E8E8E0A95EAF585558BD05D0880 /* Z3AppMenu.m */,
+				524A96406997300622570FD945356135 /* Z3LoginComponent.h */,
+				8AE4427C7458B7261D7766E5FA0903C1 /* Z3LoginPrivate.h */,
+				C8986EE2454BBCA23F49F5DA38DD644E /* Z3LoginPrivate.m */,
+				42E4D6F9C7758518EE3EB141C3F4141E /* Z3LoginRequest.h */,
+				5268D63BEB16E38241836CC8B779012B /* Z3LoginRequest.m */,
+				ED90CFFE68F2A27463571CF8DF3C749B /* Z3LoginResponse.h */,
+				79C539A7A85FD7E6FCC6CCA38ED93D2C /* Z3LoginResponse.m */,
+				265F40510913F55EA00CD4A7B75090AF /* Z3LoginSettingViewController.h */,
+				A7FEB769CC8A4D0CB467291CA7715550 /* Z3LoginSettingViewController.m */,
+				14B674CC1E1E6E0E386EEDE68EFADF35 /* Z3LoginViewController.h */,
+				86DFFC5EB6305DACEDE7CA0D14CE60B1 /* Z3LoginViewController.m */,
+				59632658DDA5BB57130422D3343ED643 /* Z3MapConfig.h */,
+				395DD1EF6804984C6B95F4ABE161072F /* Z3MapConfig.m */,
+				83AC8DDFA90BD77E62FFCD1D535610E7 /* Z3MapConfigRequest.h */,
+				650594BC32BA68B7F91A243345902468 /* Z3MapConfigRequest.m */,
+				85C431B961168C4F78C58FB3F7CCEB4A /* Z3MapConfigResponse.h */,
+				148E427B9A826732E9363E11C67FA1B6 /* Z3MapConfigResponse.m */,
+				8E606F37FD73E1BB024206B703BC2CF7 /* Z3MobileConfig.h */,
+				4BCF34C7F2626DCEA5DE7536AE5C6764 /* Z3MobileConfig.m */,
+				C1EDF0306336FF2D5C2854076F76EDAC /* Z3MobileTask.h */,
+				63227B4B26AFFC3D6C4946DDFEC49C74 /* Z3MobileTask.m */,
+				508F52BC5816E9AE28E0B640BFF2A44A /* Z3User.h */,
+				9D625CAA28F948B73CB770FFC2CA02D0 /* Z3User.m */,
+				8FB5F5C9CE6798B242E62A717D0655DF /* Z3XmllRequest.h */,
+				95EACB96614FA838B47EA6D1E1DF7E33 /* Z3XmllRequest.m */,
+				8DDE6D88A493AB2EF780658A72EAFB09 /* Pod */,
+				535D9A86A5A27C4FF902CB00040301FC /* Resources */,
+				7276C95F9084622F3D1282EF00584FA9 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Z3Login";
+			name = Z3Login;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D8A4087A1ADFE1C6F6DCCAC61660A4DA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				136F269563BB3F7FFC51151846DE838C /* Z3CommonLib */,
+				D84F12D8E2FCB31BE29D33A191DAFB67 /* Z3Login */,
+				3798610D45F3FD1F54C5A9EA19F87B8B /* Z3Network */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		EC4E90AEDF41EEF9A450BA0B8812D916 /* Support Files */ = {
@@ -1392,16 +1411,6 @@
 			name = Serialization;
 			sourceTree = "<group>";
 		};
-		EF19CD7A31BD15AD52F59A219671F1AB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D165992B7DE17D87C7256A8A47249C6E /* LICENSE */,
-				F98CDC711E1F95866F69C827C4B17AB8 /* README.md */,
-				73F8F51E1BAEBAA500F4C44129A1E9BE /* Z3CommonLib.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		FFCDDA118B9787A4CA13A6E2D4EDD04B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1413,32 +1422,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		050A8F6D6F0FDE93F4642820136DD8AF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F00DC2F0184D00E03D2F6D31F08AB5FE /* Z3AppMenu.h in Headers */,
-				16D73D386AEA16266870D905260E8A75 /* Z3Login-umbrella.h in Headers */,
-				5DE7A8485E0F2F3A18AAC220E1478E82 /* Z3LoginComponent.h in Headers */,
-				3F11C45E4D10D1991E3FAEB5B8AB8C7F /* Z3LoginPrivate.h in Headers */,
-				AF1707DF032130A5C053D2B2C8D3C043 /* Z3LoginRequest.h in Headers */,
-				B8EEF2F4D21D686A9E9BA0BA7883DBF1 /* Z3LoginResponse.h in Headers */,
-				25911582D2D28C75F081FCA1BB89E00E /* Z3LoginSettingViewController.h in Headers */,
-				8F24EF0C81CDB734711EEBC2249BF842 /* Z3LoginViewController.h in Headers */,
-				13D3E90C4A74A808D02D21D7031026B7 /* Z3MapConfig.h in Headers */,
-				4F5F85C085D663E48B54E0CBAA58C232 /* Z3MapConfigRequest.h in Headers */,
-				9A93F2FAAA695119B863886706622CF3 /* Z3MapConfigResponse.h in Headers */,
-				15850CCC735E8E712966553F6EC6E2CA /* Z3MobileConfig.h in Headers */,
-				BE9CF04971E0B170D3CFDB40AA94D063 /* Z3MobileTask.h in Headers */,
-				80373E7750B5D2E7E692626EF24ADA5B /* Z3User.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1FB37C3C4EE418AFA1785ABD713305DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				829C506B48FABBB3410F0FCAB7185781 /* Pods-Z3Login_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223620F9D399E6F1626CEC2BD2C0BC4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4BFD205D0940145B4207BA78D9F13E /* Z3AppMenu.h in Headers */,
+				344EAEC57D0589B79E57DDCEC3510F7B /* Z3Login-umbrella.h in Headers */,
+				A0D589258E29F992F97C322315A8EC9A /* Z3LoginComponent.h in Headers */,
+				06BC54197700475E0F44B1EA2439F11D /* Z3LoginPrivate.h in Headers */,
+				8233CBC975633214C6E535F0BE708C0A /* Z3LoginRequest.h in Headers */,
+				09FE99A6CE4E7116A79AD6D845945D16 /* Z3LoginResponse.h in Headers */,
+				2350D5C0B07B1B021756F47D452A4CB2 /* Z3LoginSettingViewController.h in Headers */,
+				548CE0CD825CEB8C758E1C819FA6550D /* Z3LoginViewController.h in Headers */,
+				A66F1B654121AD202D37CBB1D9BD867F /* Z3MapConfig.h in Headers */,
+				53A01D6F2BC486812D97489A1137CA4A /* Z3MapConfigRequest.h in Headers */,
+				FDDF1AD0158E669ADE38A861200064A5 /* Z3MapConfigResponse.h in Headers */,
+				2B976C8485B7971D102330D3E562C1AF /* Z3MobileConfig.h in Headers */,
+				445E86A97B55FA7A59F17D88E9F47E92 /* Z3MobileTask.h in Headers */,
+				33290E912281170B356137B500B7603A /* Z3User.h in Headers */,
+				99F3FCCFAD42FDCBCDBDEAA63E816F73 /* Z3XmllRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1623,7 +1633,7 @@
 			buildPhases = (
 				AED5D9F52D9E4D5FC6EB25B1EB489042 /* Sources */,
 				AD4CD5E9CECF71701E9D279ECB077298 /* Frameworks */,
-				0D8DB86B8F932722F2BE944CF4944003 /* Resources */,
+				CD3B08402B4AD1CDA552F99EB2AE1A54 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1638,8 +1648,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B458D135AAB377B6415F6BC669B75A8E /* Build configuration list for PBXNativeTarget "Z3Login" */;
 			buildPhases = (
-				050A8F6D6F0FDE93F4642820136DD8AF /* Headers */,
-				B60E59B0B9FB90BA1971CA1F9A3E5B95 /* Sources */,
+				223620F9D399E6F1626CEC2BD2C0BC4C /* Headers */,
+				0356F16865AF5668AC4A45F6A9C00FB4 /* Sources */,
 				170CB7D9784679589FEACCFE0AAF35E8 /* Frameworks */,
 				B31D3687394FBE370E808A3BB62FB247 /* Resources */,
 			);
@@ -1795,18 +1805,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D8DB86B8F932722F2BE944CF4944003 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09773D4BD0732F94043E34DA7D94A4FB /* checkmark.png in Resources */,
-				A8A3D6D5FE6A2A7C4078FFF90256A022 /* icon_login_input_password.png in Resources */,
-				F697A1AA641A9838B9AFCBB009B90E61 /* icon_login_input_username.png in Resources */,
-				0B9090C2DC7B6794313D803028F4671B /* Z3LoginSettingViewController.xib in Resources */,
-				6E26D13CF3CA508D47EA332E2156A16A /* Z3LoginViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		634930879B28F5B709E721F7F686DAE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1843,6 +1841,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD3B08402B4AD1CDA552F99EB2AE1A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDD38BA4589E056A70FBAE1B2DBD2BF /* checkmark.png in Resources */,
+				23E43DB49C9E81BC5DE83970AD245C68 /* icon_login_input_password.png in Resources */,
+				EA4AC4BC4DA3574F09F92CAF176F65FF /* icon_login_input_username.png in Resources */,
+				33E30E68F0075E7D528862CA2E4A3379 /* nav_back_login_setting.png in Resources */,
+				918168C4E0EA5B265D05AB2BDF64C0F0 /* Z3LoginSettingViewController.xib in Resources */,
+				3EC196F0D193168C7CCE3C2908BF69BA /* Z3LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FBA9ADA204A8149A6C3E62ED8B29438B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1853,6 +1864,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0356F16865AF5668AC4A45F6A9C00FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C295EA9745CA748B969F8E2DA5A28617 /* Z3AppMenu.m in Sources */,
+				000E26C0EEADC104EF4C0E3B9096F204 /* Z3Login-dummy.m in Sources */,
+				C5E2EA706E57740EA7A936B50705D37C /* Z3LoginPrivate.m in Sources */,
+				A363AD4F46A1A82BDE88805AEE573B58 /* Z3LoginRequest.m in Sources */,
+				F99D7A4040D3D612727DC0174DE7B795 /* Z3LoginResponse.m in Sources */,
+				386F401710037A1D4851D86D3C516B3D /* Z3LoginSettingViewController.m in Sources */,
+				9FFEC13159E3857DBFEAB4D68AEDC1DC /* Z3LoginViewController.m in Sources */,
+				FB4C5B2F93540832771066AF3EB051FA /* Z3MapConfig.m in Sources */,
+				027607DFDED8B9CDC778EAC2172CC173 /* Z3MapConfigRequest.m in Sources */,
+				54AB2B998B1F1E6B05426918BCEE7748 /* Z3MapConfigResponse.m in Sources */,
+				71278BBF19123460E388078C1EFBD182 /* Z3MobileConfig.m in Sources */,
+				B71FDFBC09AF57F62747310D446863C1 /* Z3MobileTask.m in Sources */,
+				89ABE8FD168ACD62F733BADF136DC29A /* Z3User.m in Sources */,
+				3B75E5DA603232D68129A457FABBEC07 /* Z3XmllRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E5A3E045896D73364307FD117666898 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1961,26 +1993,6 @@
 				AE192577865A81E553EA0D31F783E3FB /* YYWeakProxy.m in Sources */,
 				2BDB021D27F3102F5A4957C05C007912 /* YYWebImageManager.m in Sources */,
 				966E0E9FF475BE3100208ECF67EA1919 /* YYWebImageOperation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B60E59B0B9FB90BA1971CA1F9A3E5B95 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D52F2290E9827E830ABD77E9E5DAACF /* Z3AppMenu.m in Sources */,
-				95B80C4627041B38CE1F894E075959C4 /* Z3Login-dummy.m in Sources */,
-				F9B7829230602C6C8F70CFD381B6048D /* Z3LoginPrivate.m in Sources */,
-				0EA55E12A2D0FA820889E865AD331B5A /* Z3LoginRequest.m in Sources */,
-				8C3665DCAE3FBD62E0CA4FE4223811B6 /* Z3LoginResponse.m in Sources */,
-				F565CEB8533B6EC85A489C3BC53522C0 /* Z3LoginSettingViewController.m in Sources */,
-				8C07EFCF3D3C1591F5B4578E322B364E /* Z3LoginViewController.m in Sources */,
-				9BEC973192F7716D6429270825FD0433 /* Z3MapConfig.m in Sources */,
-				F8487BD2CD3EB375EA79E125B84FDAD1 /* Z3MapConfigRequest.m in Sources */,
-				E43F9D9FEEED4BF55BCAACB0E1FDEE1A /* Z3MapConfigResponse.m in Sources */,
-				2752B5A587DAF737CDBA3CDB3EC0EFA1 /* Z3MobileConfig.m in Sources */,
-				F866470389439E79028FFAB96E6A3E03 /* Z3MobileTask.m in Sources */,
-				4B7E6FD7F76296F16B2F87A4BC3D8E83 /* Z3User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2115,7 +2127,7 @@
 /* Begin XCBuildConfiguration section */
 		182D4EB8ECA05C45777D1A16B41997CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C95CDC456778D4CC00DBA26112AC16E0 /* Z3Login.xcconfig */;
+			baseConfigurationReference = BE277DF7F1E35091CAF9ECD88EC8813E /* Z3Login.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2206,7 +2218,7 @@
 		};
 		4E13A180B5BA55A98442B6A4C9951ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C95CDC456778D4CC00DBA26112AC16E0 /* Z3Login.xcconfig */;
+			baseConfigurationReference = BE277DF7F1E35091CAF9ECD88EC8813E /* Z3Login.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Z3Login";
@@ -2222,7 +2234,7 @@
 		};
 		5AC9832B2936433F83EDC24809178631 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B52B158708AEC7A70536820553473955 /* Z3Network.xcconfig */;
+			baseConfigurationReference = 0E8C68BD24D52F3104F0DBA6D8077142 /* Z3Network.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2253,7 +2265,7 @@
 		};
 		5B0803682AE262548B63AD869E8C15F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C95CDC456778D4CC00DBA26112AC16E0 /* Z3Login.xcconfig */;
+			baseConfigurationReference = BE277DF7F1E35091CAF9ECD88EC8813E /* Z3Login.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2414,7 +2426,7 @@
 		};
 		9396FFC4578CEECEFFCC5806DDFBBE6A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3676A4F914AC9F3D6CB3B6E0E601F295 /* Z3CommonLib.xcconfig */;
+			baseConfigurationReference = F3C1ADC27BB31096887CD5329135B019 /* Z3CommonLib.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2505,7 +2517,7 @@
 		};
 		C08CC1CE99C847DB66C8A2CD4949FD57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B52B158708AEC7A70536820553473955 /* Z3Network.xcconfig */;
+			baseConfigurationReference = 0E8C68BD24D52F3104F0DBA6D8077142 /* Z3Network.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2535,7 +2547,7 @@
 		};
 		C1E86D11898699BDC868A1BFAE0882B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3676A4F914AC9F3D6CB3B6E0E601F295 /* Z3CommonLib.xcconfig */;
+			baseConfigurationReference = F3C1ADC27BB31096887CD5329135B019 /* Z3CommonLib.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2597,7 +2609,7 @@
 		};
 		E21061F3DA312AB17047ECB27D407915 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C95CDC456778D4CC00DBA26112AC16E0 /* Z3Login.xcconfig */;
+			baseConfigurationReference = BE277DF7F1E35091CAF9ECD88EC8813E /* Z3Login.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Z3Login";

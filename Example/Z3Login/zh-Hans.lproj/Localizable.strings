@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Z3Login
+
+  Created by 童万华 on 2019/6/24.
+  Copyright © 2019 Tony Tony. All rights reserved.
+*/
+"user_account_is_empty" = "用户名不能为空";
+"user_pwd_is_empty" = "用户密码不能为空";
+"user_login_failure" = "登录失败";
+"net_connect_success" = "连接失败";
+"net_connect_success" = "连接成功";
+"Setttings" = "设置";
+"Done" = "完成";
+

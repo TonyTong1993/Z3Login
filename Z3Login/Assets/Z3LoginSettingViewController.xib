@@ -12,11 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Z3LoginSettingViewController">
             <connections>
+                <outlet property="doneBtn" destination="KEi-Ty-SA7" id="p7K-v1-mjq"/>
                 <outlet property="ipTF" destination="BwF-u2-fzo" id="IgQ-dT-3zf"/>
                 <outlet property="portBgView" destination="1PI-MK-JbX" id="ecQ-wL-qaF"/>
                 <outlet property="portBgViewHeightConstraint" destination="GkH-k5-any" id="v9Z-p6-FOt"/>
                 <outlet property="protModeSegment" destination="qG9-kA-CHI" id="1U3-dA-GW6"/>
                 <outlet property="protTF" destination="QHE-ku-SS6" id="YbH-CX-se6"/>
+                <outlet property="safeAreaTopConstraint" destination="5ld-rC-ULi" id="MSR-5z-uwX"/>
                 <outlet property="settingModeSegment" destination="SaM-Gf-Dbg" id="nas-Oz-U3X"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="virtualTF" destination="DVN-yx-qmW" id="4UH-5M-6us"/>
@@ -129,7 +131,7 @@
                         <constraint firstAttribute="height" constant="32" id="KwH-eY-pWB"/>
                         <constraint firstAttribute="width" constant="32" id="Wky-km-q6v"/>
                     </constraints>
-                    <state key="normal" image="icon_nav_back"/>
+                    <state key="normal" image="nav_back_login_setting"/>
                     <connections>
                         <action selector="onBack:" destination="-1" eventType="touchUpInside" id="DIo-fy-ehe"/>
                     </connections>
@@ -152,12 +154,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="SaM-Gf-Dbg" firstAttribute="top" secondItem="KEi-Ty-SA7" secondAttribute="bottom" constant="12" id="1zS-PS-xC8"/>
                 <constraint firstItem="DVN-yx-qmW" firstAttribute="trailing" secondItem="QHE-ku-SS6" secondAttribute="trailing" id="29o-cV-RxJ"/>
                 <constraint firstItem="SaM-Gf-Dbg" firstAttribute="leading" secondItem="GDU-VV-vCz" secondAttribute="leading" constant="48" id="3YW-tb-dWu"/>
                 <constraint firstItem="wRX-Qm-yLM" firstAttribute="leading" secondItem="DVN-yx-qmW" secondAttribute="leading" id="3c8-H1-ju5"/>
                 <constraint firstItem="KEi-Ty-SA7" firstAttribute="top" secondItem="GDU-VV-vCz" secondAttribute="top" id="5ld-rC-ULi"/>
                 <constraint firstItem="1PI-MK-JbX" firstAttribute="top" secondItem="SaM-Gf-Dbg" secondAttribute="bottom" constant="30" id="5tB-Yp-L4S"/>
-                <constraint firstItem="UkI-74-cyH" firstAttribute="top" secondItem="GDU-VV-vCz" secondAttribute="top" id="6se-ki-Tzt"/>
                 <constraint firstItem="DVN-yx-qmW" firstAttribute="leading" secondItem="bml-RX-gJe" secondAttribute="leading" id="9K1-ie-z7M"/>
                 <constraint firstItem="r9A-7U-RdI" firstAttribute="top" secondItem="1PI-MK-JbX" secondAttribute="bottom" constant="20" id="FB2-dY-7N9"/>
                 <constraint firstItem="wRX-Qm-yLM" firstAttribute="top" secondItem="DVN-yx-qmW" secondAttribute="bottom" constant="20" id="Gkw-GB-mzK"/>
@@ -168,10 +170,10 @@
                 <constraint firstItem="QHE-ku-SS6" firstAttribute="leading" secondItem="wXy-mc-YRu" secondAttribute="leading" id="O7W-k8-gCg"/>
                 <constraint firstItem="r9A-7U-RdI" firstAttribute="leading" secondItem="1PI-MK-JbX" secondAttribute="leading" id="OkE-8m-x2J"/>
                 <constraint firstItem="GDU-VV-vCz" firstAttribute="trailing" secondItem="KEi-Ty-SA7" secondAttribute="trailing" constant="8" id="V3G-DS-SRk"/>
-                <constraint firstItem="GDU-VV-vCz" firstAttribute="top" secondItem="SaM-Gf-Dbg" secondAttribute="top" constant="-44" id="YVM-0S-dVq"/>
                 <constraint firstItem="UkI-74-cyH" firstAttribute="leading" secondItem="GDU-VV-vCz" secondAttribute="leading" constant="8" id="YbD-so-IG1"/>
                 <constraint firstItem="BwF-u2-fzo" firstAttribute="leading" secondItem="r9A-7U-RdI" secondAttribute="leading" id="ZYb-e9-oVu"/>
                 <constraint firstItem="GDU-VV-vCz" firstAttribute="trailing" secondItem="SaM-Gf-Dbg" secondAttribute="trailing" constant="48" id="ZaK-5L-py5"/>
+                <constraint firstItem="UkI-74-cyH" firstAttribute="top" secondItem="KEi-Ty-SA7" secondAttribute="top" id="dld-cA-MiB"/>
                 <constraint firstItem="BwF-u2-fzo" firstAttribute="trailing" secondItem="1PI-MK-JbX" secondAttribute="trailing" id="i7z-U1-4vq"/>
                 <constraint firstItem="wRX-Qm-yLM" firstAttribute="trailing" secondItem="DVN-yx-qmW" secondAttribute="trailing" id="izb-Ub-as5"/>
                 <constraint firstItem="bml-RX-gJe" firstAttribute="leading" secondItem="QHE-ku-SS6" secondAttribute="leading" id="quL-m6-6Dw"/>
@@ -182,10 +184,10 @@
                 <constraint firstItem="QHE-ku-SS6" firstAttribute="top" secondItem="wXy-mc-YRu" secondAttribute="bottom" constant="20" id="wjb-9V-8cM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="GDU-VV-vCz"/>
-            <point key="canvasLocation" x="54.375" y="47.535211267605632"/>
+            <point key="canvasLocation" x="-240" y="65"/>
         </view>
     </objects>
     <resources>
-        <image name="icon_nav_back" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="nav_back_login_setting" width="16" height="16"/>
     </resources>
 </document>

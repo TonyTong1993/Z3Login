@@ -1,6 +1,6 @@
 {
   "name": "Z3Login",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "Z3Login help user construct login for zzht",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/TonyTong1993/Z3Login",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/TonyTong1993/Z3Login.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

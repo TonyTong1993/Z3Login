@@ -6,11 +6,11 @@
 //  Copyright © 2019 Tony Tony. All rights reserved.
 //
 
-#import <Z3Network/Z3BaseRequest.h>
+#import "Z3XmllRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Z3MapConfigRequest : Z3BaseRequest
+@interface Z3MapConfigRequest : Z3XmllRequest
 
 @end
 

@@ -319,6 +319,24 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>资产信息</string>
+				<key>subname</key>
+				<string>资产信息</string>
+				<key>deleteable</key>
+				<false/>
+				<key>dragable</key>
+				<false/>
+				<key>configurable</key>
+				<true/>
+				<key>preload</key>
+				<false/>
+				<key>iconName</key>
+				<string>main_menu_icon_plans_1</string>
+				<key>command</key>
+				<string>CommandXtd</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>计划管理</string>
 				<key>subname</key>
 				<string>计划管理</string>
@@ -376,6 +394,24 @@
 				<string>地图围栏</string>
 				<key>subname</key>
 				<string>地图围栏</string>
+				<key>deleteable</key>
+				<false/>
+				<key>dragable</key>
+				<false/>
+				<key>configurable</key>
+				<true/>
+				<key>iconName</key>
+				<string>event_icon_external</string>
+				<key>command</key>
+				<string>DailyManagementCommandXtd</string>
+				<key>preload</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>离线地图</string>
+				<key>subname</key>
+				<string>离线地图</string>
 				<key>deleteable</key>
 				<false/>
 				<key>dragable</key>

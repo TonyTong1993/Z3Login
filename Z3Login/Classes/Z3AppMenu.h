@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <YYKit/YYKit.h>
+#import "YYKit.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Z3AppMenu : NSObject<YYModel>
