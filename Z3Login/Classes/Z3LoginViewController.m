@@ -139,15 +139,21 @@
     
 }
 - (void)login {
+    [self.accountField resignFirstResponder];
+    [self.pwdField resignFirstResponder];
     NSDictionary *parameters = @{@"username":self.accountField.text,@"password":self.pwdField.text};
     __weak typeof(self) weakSelf = self;
     self.request = [[Z3LoginRequest alloc] initWithRelativeToURL:@"rest/userService/login" method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
         if (response.error) {
               [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
         }else {
+            [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:KEY_USER_PASSWORD];
+            [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:KEY_USER_NAME];
+            [[NSUserDefaults standardUserDefaults] synchronize];
             [weakSelf requestMapXMLConfiguration];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+        
          [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
     }];
     [self.request start];
@@ -159,17 +165,20 @@
 /**
  获取地图配置文件
  */
-- (void)requestMapXMLConfiguration {
+- (void)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            requestMapXMLConfiguration {
     NSDictionary *parameters = @{};
     __weak typeof(self) weakSelf = self;
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     NSString *absoluteURL = [Z3MobileConfig shareConfig].mobileMapURL;
     self.request = [[Z3MapConfigRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
         if (response.error) {
+             [MBProgressHUD hideHUDForView:self.view animated:YES];
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
             [weakSelf requestCoordinate2dTransformXMLConfiguration];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
     }];
     [self.request start];
@@ -184,6 +193,7 @@
     __weak typeof(self) weakSelf = self;
     NSString *absoluteURL = [Z3MobileConfig shareConfig].transParamsURL;
     self.request = [[Z3XmllRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
+         [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (response.error) {
            [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
@@ -192,6 +202,7 @@
             }
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
     }];
     [self.request start];
@@ -254,7 +265,7 @@
 #pragma mark - getter and setter
 - (UIActivityIndicatorView *)indicatorView {
     if (!_indicatorView) {
-        _indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        _indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         [self.view addSubview:_indicatorView];
         _indicatorView.center = self.view.center;
     }
