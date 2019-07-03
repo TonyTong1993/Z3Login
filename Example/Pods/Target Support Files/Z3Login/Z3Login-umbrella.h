@@ -11,6 +11,8 @@
 #endif
 
 #import "Z3AppMenu.h"
+#import "Z3HUDLoginSettingViewController.h"
+#import "Z3HUDLoginViewController.h"
 #import "Z3LoginComponent.h"
 #import "Z3LoginPrivate.h"
 #import "Z3LoginRequest.h"
