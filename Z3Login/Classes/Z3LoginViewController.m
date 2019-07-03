@@ -145,6 +145,9 @@
         if (response.error) {
               [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
         }else {
+            [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:KEY_USER_PASSWORD];
+            [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:KEY_USER_NAME];
+            [[NSUserDefaults standardUserDefaults] synchronize];
             [weakSelf requestMapXMLConfiguration];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
