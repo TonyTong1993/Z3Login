@@ -61,7 +61,13 @@
     [super viewDidLoad];
         // Do any additional setup after loading the view from its nib.
     [self initSubView];
-    //是否自动填充密码
+        //开发阶段默认填充
+#if DEBUG
+    self.accountField.text = @"admin";
+    self.pwdField.text = @"ggsw123";
+#endif
+    
+        //是否自动填充密码
     [self autoFillPwd];
         //是否自动登录
     [self autoLogin];
