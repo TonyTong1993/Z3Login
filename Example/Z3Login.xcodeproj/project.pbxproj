@@ -10,7 +10,6 @@
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* Z3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* Z3AppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
@@ -26,7 +25,6 @@
 		AF99EE7422CB39C500CCEA5A /* Z3HUDLoginSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF99EE7222CB39C500CCEA5A /* Z3HUDLoginSettingViewController.m */; };
 		AF99EE7522CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF99EE7322CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib */; };
 		EB44211322B37B85007B6DCF /* Z3TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */; };
-		EBF03BFF22C0B7F000EFD9DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0122C0B7F000EFD9DD /* Localizable.strings */; };
 		EBF03C0B22C0CE5900EFD9DD /* appmenulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0A22C0CE5800EFD9DD /* appmenulist.plist */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +44,6 @@
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6003F595195388D20070C39A /* Z3Login-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Z3Login-Info.plist"; sourceTree = "<group>"; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* Z3Login-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Z3Login-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* Z3AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3AppDelegate.h; sourceTree = "<group>"; };
@@ -72,12 +69,7 @@
 		B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z3Login_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB44211122B37B85007B6DCF /* Z3TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3TabBarViewController.h; sourceTree = "<group>"; };
 		EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3TabBarViewController.m; sourceTree = "<group>"; };
-		EBF03BFB22C0B73B00EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EBF03BFC22C0B73C00EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		EBF03C0022C0B7F000EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		EBF03C0222C0B7FC00EFD9DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EBF03C0322C0B82400EFD9DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		EBF03C0422C0B82400EFD9DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EBF03C0522C0B82400EFD9DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EBF03C0A22C0CE5800EFD9DD /* appmenulist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appmenulist.plist; sourceTree = "<group>"; };
 		FC0977A161D0F26F8DBA931B /* Pods-Z3Login_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Login_Example.release.xcconfig"; path = "Target Support Files/Pods-Z3Login_Example/Pods-Z3Login_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,11 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				6003F595195388D20070C39A /* Z3Login-Info.plist */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* Z3Login-Prefix.pch */,
 				EBF03C0A22C0CE5800EFD9DD /* appmenulist.plist */,
-				EBF03C0122C0B7F000EFD9DD /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -295,12 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF03BFF22C0B7F000EFD9DD /* Localizable.strings in Resources */,
 				AF300E6822C9F29D000A0CBD /* Z3HUDLoginViewController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				AF99EE7522CB39C500CCEA5A /* Z3HUDLoginSettingViewController.xib in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				EBF03C0B22C0CE5900EFD9DD /* appmenulist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,16 +388,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F597195388D20070C39A /* en */,
-				EBF03BFB22C0B73B00EFD9DD /* zh-Hant */,
-				EBF03C0322C0B82400EFD9DD /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -426,16 +404,6 @@
 				71719F9E1E33DC2100824A3D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		EBF03C0122C0B7F000EFD9DD /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBF03C0022C0B7F000EFD9DD /* zh-Hant */,
-				EBF03C0222C0B7FC00EFD9DD /* en */,
-				EBF03C0422C0B82400EFD9DD /* zh-Hans */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
