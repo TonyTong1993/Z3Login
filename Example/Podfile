@@ -6,4 +6,6 @@ target 'Z3Login_Example' do
   pod 'Z3Login', :path => '../'
   pod 'Z3CommonLib', :path => '../../Z3CommonLib'
   pod 'Z3Network', :path => '../../Z3Network'
+  #source "/Users/tongwanhua/.cocoapods/repos/myspec"
+  pod 'CoordinateTransform', :path => '../../CoordinateTransform'
 end

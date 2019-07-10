@@ -27,7 +27,9 @@
         return;
     }
     [self toUser:userDict];
-    [self toAppMenus:menus];
+    if (menus.count) {
+         [self toAppMenus:menus];
+    }
     [self toMapConfig:mapConfigs];
 }
 
@@ -71,7 +73,6 @@
         NSAssert(false, @"parse appmenulist.plist failure");
     }
     NSArray *names = [metas valueForKey:@"name"];
-    NSAssert(menus.count, @"menus from reomte is empty");
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"pageUrl BEGINSWITH[c] 'MAIN_TAB'"];
     NSArray *tabmenus = [menus filteredArrayUsingPredicate:predicate];
     NSAssert(tabmenus.count, @"tab menus from remote is empty");

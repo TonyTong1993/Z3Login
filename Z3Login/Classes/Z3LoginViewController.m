@@ -16,6 +16,7 @@
 #import "Z3User.h"
 #import "Z3Network.h"
 #import "Z3MobileConfig.h"
+#import "CoorTranUtil.h"
 #define TIMEINTERVAL_LIMIT 60      //时间限制 60秒
 #define CLICKTIMES_LIMIT 5         //点击次数限制 至少5次
 @interface Z3LoginViewController () {
@@ -64,7 +65,7 @@
         //开发阶段默认填充
 #if DEBUG
     self.accountField.text = @"admin";
-    self.pwdField.text = @"ggsw123";
+    self.pwdField.text = @"123456";
 #endif
     
         //是否自动填充密码
@@ -145,7 +146,12 @@
     __weak typeof(self) weakSelf = self;
     self.request = [[Z3LoginRequest alloc] initWithRelativeToURL:@"rest/userService/login" method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
         if (response.error) {
-              [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
+            NSDictionary *userInfo = [response.error userInfo];
+            NSString *msg = userInfo[@"msg"];
+            if (!msg) {
+                msg = NSLocalizedString(@"user_login_failure", @"登录失败");
+            }
+              [MBProgressHUD showError:msg];
         }else {
             [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:KEY_USER_PASSWORD];
             [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:KEY_USER_NAME];
@@ -165,7 +171,7 @@
 /**
  获取地图配置文件
  */
-- (void)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            requestMapXMLConfiguration {
+- (void)requestMapXMLConfiguration {
     NSDictionary *parameters = @{};
     __weak typeof(self) weakSelf = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -198,7 +204,9 @@
            [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
             if (weakSelf.success) {
-                weakSelf.success(response.responseJSONObject);
+              CoorTranUtil *coorTrans =  [[CoorTranUtil alloc] initWithParser:response.responseJSONObject];
+                [[Z3MobileConfig shareConfig] setCoorTrans:coorTrans];
+                 weakSelf.success(nil);
             }
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
