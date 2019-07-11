@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,7 +18,6 @@
                 <outlet property="loginSettingButton" destination="vjp-wg-70P" id="igj-JD-N9e"/>
                 <outlet property="pwdField" destination="Cag-h1-had" id="E30-Kd-Rzn"/>
                 <outlet property="rememberPwdBtn" destination="5IF-JF-YTP" id="QY5-D1-37c"/>
-                <outlet property="topConstraint" destination="ATE-ZA-xTt" id="zkp-fG-kyp"/>
                 <outlet property="versionLabel" destination="tV1-vH-Uxn" id="P27-ls-Se8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -179,7 +179,7 @@
             <constraints>
                 <constraint firstItem="tV1-vH-Uxn" firstAttribute="trailing" secondItem="qLb-Rq-aEI" secondAttribute="trailing" id="15F-aB-O3Z"/>
                 <constraint firstItem="vjp-wg-70P" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="4bA-bq-ghh"/>
-                <constraint firstItem="sSn-Xu-GlO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="20" id="ATE-ZA-xTt"/>
+                <constraint firstItem="sSn-Xu-GlO" firstAttribute="top" secondItem="nUN-k3-hXA" secondAttribute="top" constant="20" id="Cm2-yX-nym"/>
                 <constraint firstItem="OkI-yQ-5Ou" firstAttribute="top" secondItem="qLb-Rq-aEI" secondAttribute="bottom" constant="10" id="Cp5-5X-8GJ"/>
                 <constraint firstAttribute="bottom" secondItem="tV1-vH-Uxn" secondAttribute="bottom" constant="54" id="E65-Ex-vtR"/>
                 <constraint firstItem="Ogq-7c-Kxx" firstAttribute="centerY" secondItem="OkI-yQ-5Ou" secondAttribute="centerY" id="KZl-j4-KSX"/>
@@ -197,6 +197,7 @@
                 <constraint firstItem="NpT-nj-lI1" firstAttribute="leading" secondItem="qLb-Rq-aEI" secondAttribute="leading" constant="40" id="ogc-JY-Lb4"/>
                 <constraint firstItem="NpT-nj-lI1" firstAttribute="top" secondItem="qLb-Rq-aEI" secondAttribute="bottom" constant="10" id="rpa-2Z-IEl"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="nUN-k3-hXA"/>
             <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
         </view>
     </objects>
