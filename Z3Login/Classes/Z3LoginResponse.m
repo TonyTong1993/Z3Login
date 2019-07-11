@@ -75,7 +75,10 @@
     NSArray *names = [metas valueForKey:@"name"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"pageUrl BEGINSWITH[c] 'MAIN_TAB'"];
     NSArray *tabmenus = [menus filteredArrayUsingPredicate:predicate];
-    NSAssert(tabmenus.count, @"tab menus from remote is empty");
+    if (!tabmenus.count) {
+        tabmenus = [self loadDefaultAppMenus];
+    }
+    
     NSMutableArray *tabs = [NSMutableArray arrayWithCapacity:5];
     __block NSArray *appdicts = nil;
     __block NSDictionary *appCenter = nil;
@@ -97,7 +100,7 @@
     
     //合并metas与appmenus中相同的数据
     predicate = [NSPredicate predicateWithFormat:@"pageUrl BEGINSWITH[c] 'app:'"];
-    NSArray *appmenus = [menus filteredArrayUsingPredicate:predicate];
+    NSArray *appmenus = menus; //[menus filteredArrayUsingPredicate:predicate];
     if (!appmenus.count) return;
     NSAssert(appCenter, @"don`t have app center");
     NSAssert(appdicts, @"don`t have apps");
@@ -135,5 +138,16 @@
              [[Z3MobileConfig shareConfig] setTransParamsURL:[dict valueForKey:@"value"]];
         }
     }
+}
+
+- (NSArray *)loadDefaultAppMenus {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"app_default_menus" ofType:@"json"];
+        NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+        NSError * __autoreleasing error = nil;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        if (error) {
+            NSAssert(false, @"模拟轨迹点读取失败");
+        }
+        return  json[@"menus"];
 }
 @end
