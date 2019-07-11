@@ -67,6 +67,9 @@
 - (void)toAppMenus:(NSArray *)menus {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"appmenulist" ofType:@"plist"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:plistPath];
+    if (data == nil) {
+        return;
+    }
     NSError * __autoreleasing error = nil;
     NSArray *metas = [NSPropertyListSerialization propertyListWithData:data options:0 format:0 error:&error];
     if (error) {
