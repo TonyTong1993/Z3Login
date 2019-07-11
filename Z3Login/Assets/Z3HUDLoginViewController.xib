@@ -63,7 +63,7 @@
                                 </mask>
                             </variation>
                         </textField>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hud_login_username" translatesAutoresizingMaskIntoConstraints="NO" id="Njc-bm-3po">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_login_input_username.png" translatesAutoresizingMaskIntoConstraints="NO" id="Njc-bm-3po">
                             <rect key="frame" x="10" y="13" width="16" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="18" id="PpC-Jy-14l"/>
@@ -102,7 +102,7 @@
                                 </mask>
                             </variation>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hud_login_password" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-YB-Jmm">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_login_input_password.png" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-YB-Jmm">
                             <rect key="frame" x="10" y="57" width="18" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="16" id="S34-CP-hrw"/>
@@ -354,7 +354,7 @@
                         <action selector="savePwdBtnClicked:" destination="-1" eventType="touchUpInside" id="M13-QU-NnH"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hud_logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="Jud-i5-vRW">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hud_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Jud-i5-vRW">
                     <rect key="frame" x="472" y="60" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="4xg-1h-tkZ">
@@ -605,8 +605,8 @@
     <resources>
         <image name="bg_hud_login" width="1024" height="768"/>
         <image name="checkmark" width="16" height="16"/>
-        <image name="icon_hud_login_password" width="32" height="32"/>
-        <image name="icon_hud_login_username" width="32" height="32"/>
-        <image name="icon_hud_logo_login" width="128" height="128"/>
+        <image name="icon_hud_logo" width="16" height="16"/>
+        <image name="icon_login_input_password.png" width="32" height="32"/>
+        <image name="icon_login_input_username.png" width="32" height="32"/>
     </resources>
 </document>
