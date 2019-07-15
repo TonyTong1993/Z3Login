@@ -116,7 +116,8 @@
             NSDictionary *app = [appdicts objectAtIndex:index];
             [apps addObject:app];
         }else {
-            NSAssert(false, @"tab menu not config");
+            //TODO:苏州水利简易版
+//            NSAssert(false, @"tab menu not config");
         }
     }];
     
