@@ -90,11 +90,7 @@
     self.versionLabel.userInteractionEnabled = YES;
     UITapGestureRecognizer *labelTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(appVersionLabelTouchUpInside:)];
     [self.versionLabel addGestureRecognizer:labelTapGestureRecognizer];
-    if (@available(iOS 11.0, *)) {
-        
-    } else {
-        self.topConstraint.constant += 44;
-    }
+    
     
 }
 /**

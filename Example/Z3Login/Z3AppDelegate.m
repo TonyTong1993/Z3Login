@@ -7,7 +7,7 @@
 //
 
 #import "Z3AppDelegate.h"
-#import "Z3HUDLoginViewController.h"
+#import "Z3LoginViewController.h"
 @implementation Z3AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,7 +17,7 @@
     self.window = [[UIWindow alloc] initWithFrame:frame];
     UIViewController *rootViewController;
     __weak typeof(self) weakSelf = self;
-    Z3HUDLoginViewController *loginVC = [[Z3HUDLoginViewController alloc] initWithLoginSuccessBlock:^(id result) {
+    Z3LoginViewController *loginVC = [[Z3LoginViewController alloc] initWithLoginSuccessBlock:^(id result) {
 //        [weakSelf launchMainViewController];
     }];
     
