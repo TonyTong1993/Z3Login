@@ -8,7 +8,7 @@
 
 #import "Z3LoginRequest.h"
 #import "Z3LoginResponse.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 @implementation Z3LoginRequest
 @synthesize responseSerializer = _responseSerializer;
 

@@ -21,7 +21,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6793D87F099AA1010E92AED9 /* Pods_Z3Login_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		EB44211322B37B85007B6DCF /* Z3TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */; };
 		EBF03BFF22C0B7F000EFD9DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0122C0B7F000EFD9DD /* Localizable.strings */; };
 		EBF03C0B22C0CE5900EFD9DD /* appmenulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0A22C0CE5800EFD9DD /* appmenulist.plist */; };
 /* End PBXBuildFile section */
@@ -60,8 +59,6 @@
 		9788AB0C39673B24C34C0D89 /* Pods-Z3Login_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z3Login_Example.debug.xcconfig"; path = "Target Support Files/Pods-Z3Login_Example/Pods-Z3Login_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A431D9752A08B88C5692BDE0 /* Z3Login.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Z3Login.podspec; path = ../Z3Login.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B095E973C52119111F057A75 /* Pods_Z3Login_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z3Login_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB44211122B37B85007B6DCF /* Z3TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3TabBarViewController.h; sourceTree = "<group>"; };
-		EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3TabBarViewController.m; sourceTree = "<group>"; };
 		EBF03BFB22C0B73B00EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EBF03BFC22C0B73C00EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EBF03C0022C0B7F000EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -136,8 +133,6 @@
 			children = (
 				6003F59C195388D20070C39A /* Z3AppDelegate.h */,
 				6003F59D195388D20070C39A /* Z3AppDelegate.m */,
-				EB44211122B37B85007B6DCF /* Z3TabBarViewController.h */,
-				EB44211222B37B85007B6DCF /* Z3TabBarViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -367,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* Z3AppDelegate.m in Sources */,
-				EB44211322B37B85007B6DCF /* Z3TabBarViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

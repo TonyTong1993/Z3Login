@@ -10,7 +10,7 @@
 #import "Z3HUDLoginSettingViewController.h"
 #import "Z3LoginRequest.h"
 #import "Z3MapConfigRequest.h"
-#import "UIKit+AFNetworking.h"
+#import <AFNetworking/UIKit+AFNetworking.h>
 #import "AFNetworkReachabilityManager.h"
 #import "MBProgressHUD+Z3.h"
 #import "Z3User.h"
