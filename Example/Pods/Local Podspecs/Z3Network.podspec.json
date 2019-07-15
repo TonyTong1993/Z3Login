@@ -1,6 +1,6 @@
 {
   "name": "Z3Network",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "Z3Network help you develop network in ios",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/TonyTong1993/MySpecs",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/TonyTong1993/MySpecs.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "8.0"
