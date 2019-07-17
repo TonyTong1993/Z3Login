@@ -16,6 +16,8 @@
 #import "Z3User.h"
 #import "Z3Network.h"
 #import "Z3MobileConfig.h"
+#import "Z3MapConfig.h"
+#import "CoorTranUtil.h"
 #define TIMEINTERVAL_LIMIT 10      //时间限制 60秒
 #define CLICKTIMES_LIMIT 5         //点击次数限制 至少5次
 @interface Z3HUDLoginViewController (){
@@ -44,6 +46,9 @@
     NSString *path = [bundle pathForResource:@"Z3Login" ofType:@"bundle"];
     bundle = [NSBundle bundleWithPath:path];
     self = [super initWithNibName:NSStringFromClass([Z3HUDLoginViewController class]) bundle:bundle];
+    if (self == nil) {
+        self = [super init];
+    }
     if (self) {
         _success = success;
     }
@@ -99,10 +104,10 @@
     
 }
 - (void)internal_autoFillPwd {
-    BOOL isAutoFillPWD = [[NSUserDefaults standardUserDefaults] boolForKey:KEY_AUTO_FILL_PWD];
+    BOOL isAutoFillPWD = [[NSUserDefaults standardUserDefaults] boolForKey:Z3KEY_AUTO_FILL_PWD];
     if (isAutoFillPWD ) {
-        NSString *pwd = [[NSUserDefaults standardUserDefaults] valueForKey:KEY_USER_PASSWORD];
-        NSString *account = [[NSUserDefaults standardUserDefaults] valueForKey:KEY_USER_NAME];
+        NSString *pwd = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_PASSWORD];
+        NSString *account = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_NAME];
         self.accountField.text = account;
         self.pwdField.text = pwd;
     }
@@ -125,52 +130,14 @@
     MBProgressHUD *hud  = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeText;
     hud.label.text = NSLocalizedString(@"login_getting_init_paramters",@"正在初始化参数");
-//    [self internal_loadOfflineUserInfo];
-//    [self internal_loadOfflineMapConfig];
+    [self internal_loadOfflineUserInfo];
+    [self internal_loadOfflineMapConfig];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-        [self internal_enterMainScreen:nil];
+        self.success(@{});
     });
 }
-/**
- 处理动态appMenus
- */
-- (NSArray *)internal_appMenusParser {
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"production.xml" ofType:nil];
-//    //    NSDictionary *dictionary = [[XMLDictionaryParser sharedInstance] dictionaryWithFile:path];
-//    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
-//    NSDictionary *dictionary = [NSDictionary dictionaryWithXML:data];
-//    id category = [dictionary valueForKey:@"Category"];
-//    NSMutableArray *menus = [NSMutableArray array];
-//    AppMenu *menu = [[AppMenu alloc] initWithIcon:@"defaultphoto" highlightIcon:@"defaultphoto" name:[User sharedUser].trueName];
-//    [menu setCommandXtd:NSStringFromClass([ProfileCommandXtd class])];
-//    [menus addObject:menu];
-//    [category enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        id children = [obj valueForKey:@"Menu"];
-//        NSMutableArray *mchildren = [NSMutableArray array];
-//        if ([children isKindOfClass:[NSDictionary class]]) {
-//            AppMenu *menu = [AppMenu modelWithDictionary:children];
-//            [mchildren addObject:menu];
-//        }else if ([children isKindOfClass:[NSArray class]]) {
-//            [children enumerateObjectsUsingBlock:^(NSDictionary *child, NSUInteger idx, BOOL * _Nonnull stop) {
-//                AppMenu *menu = [AppMenu modelWithDictionary:child];
-//                [mchildren addObject:menu];
-//            }];
-//        }
-//        NSString *name = [obj valueForKey:@"name"];
-//        NSString *icon = [obj valueForKey:@"iconName"];
-//        NSString *highlightIcon = [obj valueForKey:@"hlIconName"];
-//        BOOL configurable = [obj valueForKey:@"configurable"];
-//        AppMenu *menu = [[AppMenu alloc] initWithIcon:icon highlightIcon:highlightIcon name:name configurable:configurable children:mchildren];
-//        [menu setCommandXtd:NSStringFromClass([MapQueryCommandXtd class])];
-//        [menus addObject:menu];
-//    }];
-//    //   menu = [[AppMenu alloc] initWithIcon:@"nav_setting_nor" highlightIcon:@"nav_setting_hl" name:LocalizedString(@"str_set_menu")];
-//    //    [menu setCommandXtd:NSStringFromClass([SettingCommandXtd class])];
-//    //    [menus addObject:menu];
-//    return [menus copy];
-    return nil;
-}
+
 
 - (void)internal_loadOfflineUserInfo {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"admin.json" ofType:nil];
@@ -178,76 +145,56 @@
     NSData *jsonData = [[NSData alloc] initWithContentsOfFile:path];
     id result = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:&error];
     if (error != nil) {
-        
         return;
     }
-//    [self internal_adapt2UserModel:result];
-//    [self internal_appMenusParser];
+    [self internal_adapt2UserModel:result];
+}
+- (void)internal_adapt2UserModel:(NSDictionary *)data {
+    NSDictionary *userDict = [data valueForKey:@"user"];
+    [self toUser:userDict];
+    //保存登录信息
+    [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:Z3KEY_USER_NAME];
+    [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:Z3KEY_USER_PASSWORD];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:Z3KEY_USER_LOGIN_FLAG];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    [[Z3MobileConfig shareConfig] setOfflineLogin:YES];
 }
 
-
-
-
-- (void)internal_enterMainScreen:(NSArray *)appMenus {
-//    UIWindow *window = [[UIApplication sharedApplication].delegate window];
-//    UISplitViewController *splitViewController = [[UISplitViewController alloc] init];
-//
-//    MasterViewController *masterViewController = [[MasterViewController alloc] init];
-//    masterViewController.dataSource = [self internal_appMenusParser];
-//    //创建左侧导航控制器
-//    UINavigationController *MasterNavigationController = [[UINavigationController alloc]initWithRootViewController:masterViewController];
-//    MasterNavigationController.navigationBarHidden = YES;
-//    ZZOperationMapViewController *detailViewController = [[ZZOperationMapViewController alloc] initWithFunctionOptions:MapFunctionOptionDefault];
-//    //    UINavigationController *detailNavigationController = [[UINavigationController alloc]initWithRootViewController:detailViewController];
-//    //    detailNavigationController.navigationBarHidden = YES;
-//    splitViewController.viewControllers = @[MasterNavigationController,detailViewController];
-//    splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModePrimaryHidden;
-//    splitViewController.preferredPrimaryColumnWidthFraction = 0.1;
-//    splitViewController.maximumPrimaryColumnWidth = 120;
-//    splitViewController.minimumPrimaryColumnWidth = 100;
-//    splitViewController.presentsWithGesture = YES;
-//
-//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    appDelegate.splitViewController = splitViewController;
-//    splitViewController.delegate = appDelegate;
-//
-//    NSArray *sources = [MobileConfig sharedMobileConfig].mapConfig.sources;
-//    NSMutableArray *layers = [NSMutableArray array];
-    //    for (MapLayerDatasource *source in sources) {
-    //        NSURL *url = [NSURL URLWithString:source.url];
-    //        AGSLayer* tiledLayer = nil;
-    //        if (source.layerType == EcityTiledMapServiceLayer) {
-    //           tiledLayer = [[AGSArcGISTiledLayer alloc] initWithURL:url];
-    //        }else if (source.layerType == ArcGISDynamicMapServiceLayer) {
-    //           tiledLayer = [[AGSArcGISMapImageLayer alloc] initWithURL:url];
-    //
-    //        }
-    //        if (tiledLayer != nil) {
-    //            tiledLayer.visible = source.visible;
-    //            [layers addObject:tiledLayer];
-    //        }
-    //    }
-    //    NSString *documentsPath = [UIApplication sharedApplication].documentsPath;
-    //    NSString *tpkFilePath = [documentsPath stringByAppendingPathComponent:@"mwdt.tpk"];
-    //    NSLog(@"tpkFilePath = %@",tpkFilePath);
-//    NSString *tpkFilePath = @"http://192.168.8.231:6080/arcgis/rest/services/MWGS/mwdt_wp/MapServer";
-//    AGSArcGISTiledLayer *baseMapLayer = [[AGSArcGISTiledLayer alloc] initWithURL:[NSURL URLWithString:tpkFilePath]];
-//    detailViewController.layers = layers;
-//    detailViewController.baseMapLayer = baseMapLayer;
-    //    MapEnvelope *mapEnvelope = [MobileConfig sharedMobileConfig].mapConfig.envelope;
-    //    NSInteger wkid = [MobileConfig sharedMobileConfig].appConfig.wkid;
-    //    if(mapEnvelope) {
-    //        AGSSpatialReference *spatialReference = [[AGSSpatialReference alloc] initWithWKID:wkid];
-    //        AGSEnvelope* env = [[AGSEnvelope alloc]initWithXMin:mapEnvelope.xmin yMin:mapEnvelope.ymin xMax:mapEnvelope.xmax yMax:mapEnvelope.ymax spatialReference:spatialReference];
-    //        detailViewController.initialEnvelop = env;
-    //    }
+- (void)toUser:(NSDictionary *)json {
+    NSString *username = [json valueForKey:@"username"];
+    NSInteger identifier = [[json valueForKey:@"gid"] integerValue];
+    NSString * email = [json valueForKey:@"email"];
+    NSString *phone = [json valueForKey:@"phone"];
+    NSString *company = [json valueForKey:@"company"];
+    NSString *ecode = [json valueForKey:@"ecode"];
+    NSInteger groupId = [[json valueForKey:@"groupId"] integerValue];
+    NSInteger groupLev = [[json valueForKey:@"groupLev"] integerValue];
+    NSString  *groupCode = [json valueForKey:@"groupCode"];
+    NSString *groupName = [json valueForKey:@"groupName"];
+    NSString *role = [json valueForKey:@"role"];
+    NSString *roleCode = [json valueForKey:@"roleCode"];
+    NSString *trueName = [json valueForKey:@"trueName"];
     
-//    CATransition *transition = [[CATransition alloc] init];
-//    transition.duration = 0.25;
-//    transition.type = kCATransitionPush;
-//    transition.subtype = kCATransitionFromRight;
-//    [window.layer addAnimation:transition forKey:@"transition"];
-//    window.rootViewController = splitViewController;
+    [[Z3User shareInstance] setUsername:username ?:@""];
+    [[Z3User shareInstance] setUid:identifier];
+    [[Z3User shareInstance] setEmail:email ?:@""];
+    [[Z3User shareInstance] setPhone:phone ?:@""];
+    [[Z3User shareInstance] setCompany:company ?:@""];
+    [[Z3User shareInstance] setEcode:ecode ?:@""];
+    [[Z3User shareInstance] setGroupId:groupId];
+    [[Z3User shareInstance] setGroupLev:groupLev];
+    [[Z3User shareInstance] setGroupName:groupName ?:@""];
+    [[Z3User shareInstance] setGroupCode:groupCode ?:@""];
+    [[Z3User shareInstance] setRole:role ?:@""];
+    [[Z3User shareInstance] setRoleCode:roleCode ?:@""];
+    [[Z3User shareInstance] setTrueName:trueName ?:@""];
+    
+}
+
+- (void)internal_loadOfflineMapConfig {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"TransParams.xml" ofType:nil];
+    CoorTranUtil *coorTranUtil = [[CoorTranUtil alloc] initWithTransParamFilePath:path];
+    [Z3MobileConfig shareConfig].coorTrans = coorTranUtil;
 }
 #pragma mark -request
 - (void)requestLogin {
@@ -270,6 +217,7 @@
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
         [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
     [self.request start];
 }
@@ -310,6 +258,11 @@
         }else {
             if (weakSelf.success) {
                 weakSelf.success(response.responseJSONObject);
+                //保存登录信息
+                [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:Z3KEY_USER_NAME];
+                [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:Z3KEY_USER_PASSWORD];
+                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:Z3KEY_USER_LOGIN_FLAG];
+                [[NSUserDefaults standardUserDefaults] synchronize];
             }
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
@@ -322,16 +275,16 @@
 #pragma mark - action
 - (IBAction)loginBtnClicked:(id)sender {
     if (![self internal_check]) return;
-//    if ([AFNetworkReachabilityManager sharedManager].isReachable) {
-         [self requestLogin];
-//    }else {
-//         [self internal_offlineLogin];
-//    }
+    if ([AFNetworkReachabilityManager sharedManager].isReachable) {
+        [self requestLogin];
+    }else {
+         [self internal_offlineLogin];
+    }
    
     
 }
 - (IBAction)savePwdBtnClicked:(id)sender {
-    [self updateUserDefault:self.rememberPwdBtn withKey:KEY_AUTO_FILL_PWD];
+    [self updateUserDefault:self.rememberPwdBtn withKey:Z3KEY_AUTO_FILL_PWD];
     
 }
 - (IBAction)autoLoginBtnClicked:(id)sender {
