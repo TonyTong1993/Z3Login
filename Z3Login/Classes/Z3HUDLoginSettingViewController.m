@@ -7,7 +7,7 @@
 //
 
 #import "Z3HUDLoginSettingViewController.h"
-#import "UIKit+AFNetworking.h"
+#import <AFNetworking/UIKit+AFNetworking.h>
 #import "MBProgressHUD+Z3.h"
 #import "Z3Network.h"
 #import "Z3MobileConfig.h"

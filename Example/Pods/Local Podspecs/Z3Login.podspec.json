@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "Z3Network": [
-      "~> 0.0.1"
+      "~> 0.0.2"
     ],
     "Z3CommonLib": [
-      "~> 0.1.1"
+      "~> 0.1.3"
     ],
     "CoordinateTransform": [
-      "~> 0.1.1"
+      "~> 0.1.2"
     ]
   }
 }
