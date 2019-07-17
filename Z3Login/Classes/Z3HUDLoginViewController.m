@@ -72,6 +72,8 @@
     self.accountField.text = @"admin";
     self.pwdField.text = @"123456";
 #endif
+    self.accountField.placeholder = NSLocalizedString(@"login_username_empty",@"请输入账号");
+    self.pwdField.placeholder = NSLocalizedString(@"login_username_empty",@"请输入密码");
     //是否自动填充密码
     [self internal_autoFillPwd];
     //是否自动登录

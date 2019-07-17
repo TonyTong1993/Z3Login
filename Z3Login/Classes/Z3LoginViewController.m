@@ -101,7 +101,7 @@
 }
 - (void)autoLogin {
     BOOL isAutoLogin = false;
-    [[NSUserDefaults standardUserDefaults] boolForKey:KEY_AUTO_LOGIN];
+    [[NSUserDefaults standardUserDefaults] boolForKey:Z3KEY_AUTO_LOGIN];
     if (isAutoLogin && [self check]) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self login];
@@ -111,10 +111,10 @@
     
 }
 - (void)autoFillPwd {
-    BOOL isAutoFillPWD = [[NSUserDefaults standardUserDefaults] boolForKey:KEY_AUTO_FILL_PWD];
+    BOOL isAutoFillPWD = [[NSUserDefaults standardUserDefaults] boolForKey:Z3KEY_AUTO_FILL_PWD];
     if (isAutoFillPWD ) {
-        NSString *pwd = [[NSUserDefaults standardUserDefaults] valueForKey:KEY_USER_PASSWORD];
-        NSString *account = [[NSUserDefaults standardUserDefaults] valueForKey:KEY_USER_NAME];
+        NSString *pwd = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_PASSWORD];
+        NSString *account = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_NAME];
         self.accountField.text = account;
         self.pwdField.text = pwd;
     }
@@ -149,8 +149,8 @@
             }
               [MBProgressHUD showError:msg];
         }else {
-            [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:KEY_USER_PASSWORD];
-            [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:KEY_USER_NAME];
+            [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:Z3KEY_USER_PASSWORD];
+            [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:Z3KEY_USER_NAME];
             [[NSUserDefaults standardUserDefaults] synchronize];
             [weakSelf requestMapXMLConfiguration];
         }
@@ -233,11 +233,11 @@
     
 }
 - (IBAction)savePwdBtnClicked:(id)sender {
-    [self updateUserDefault:self.rememberPwdBtn withKey:KEY_AUTO_FILL_PWD];
+    [self updateUserDefault:self.rememberPwdBtn withKey:Z3KEY_AUTO_FILL_PWD];
     
 }
 - (IBAction)autoLoginBtnClicked:(id)sender {
-    [self updateUserDefault:self.autoLoginBtn withKey:KEY_AUTO_LOGIN];
+    [self updateUserDefault:self.autoLoginBtn withKey:Z3KEY_AUTO_LOGIN];
     
 }
 - (IBAction)loginSettingBtnClicked:(id)sender {
