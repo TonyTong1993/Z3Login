@@ -7,7 +7,7 @@
 //
 
 #import "Z3TabBarViewController.h"
-#import <Z3LoginComponent.h>
+#import <Z3Login/Z3LoginComponent.h>
 #import "Z3Theme.h"
 
 #define HEXCOLOR(hexValue)              [UIColor colorWithRed : ((CGFloat)((hexValue & 0xFF0000) >> 16)) / 255.0 green : ((CGFloat)((hexValue & 0xFF00) >> 8)) / 255.0 blue : ((CGFloat)(hexValue & 0xFF)) / 255.0 alpha : 1.0]

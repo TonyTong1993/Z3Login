@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; placeholder = "請輸入帳號"; ObjectID = "9CG-QR-vGU"; */
+"9CG-QR-vGU.placeholder" = "請輸入帳號";
+
+/* Class = "UIButton"; normalTitle = "登 錄"; ObjectID = "Oz2-K6-DF3"; */
+"Oz2-K6-DF3.normalTitle" = "登 錄";
+
+/* Class = "UIButton"; normalTitle = "記住密碼"; ObjectID = "UHk-Gj-hx5"; */
+"UHk-Gj-hx5.normalTitle" = "記住密碼";
+
+/* Class = "UILabel"; text = "Copyright@2016 WUHAN HopeTop TECHNOLOGY Co,Ltd.All Rights Reserved"; ObjectID = "d1I-Xj-6J1"; */
+"d1I-Xj-6J1.text" = "Copyright@2016 WUHAN HopeTop TECHNOLOGY Co,Ltd.All Rights Reserved";
+
+/* Class = "UILabel"; text = "v1.0.43"; ObjectID = "h74-zU-ddJ"; */
+"h74-zU-ddJ.text" = "v1.0.43";
+
+/* Class = "UILabel"; text = "武漢衆智鴻圖科技有限公司 版權所有"; ObjectID = "ptv-QL-jZe"; */
+"ptv-QL-jZe.text" = "武漢衆智鴻圖科技有限公司 版權所有";
+
+/* Class = "UITextField"; placeholder = "請輸入密碼"; ObjectID = "uJn-ZP-bps"; */
+"uJn-ZP-bps.placeholder" = "請輸入密碼";

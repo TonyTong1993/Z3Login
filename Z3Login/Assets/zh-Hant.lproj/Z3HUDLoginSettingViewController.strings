@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "端口号"; ObjectID = "KID-bE-Bbt"; */
+"KID-bE-Bbt.text" = "端口号";
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "M2K-S1-YK3"; */
+"M2K-S1-YK3.normalTitle" = "完成";
+
+/* Class = "UILabel"; text = "端口"; ObjectID = "N3i-Lp-3Ps"; */
+"N3i-Lp-3Ps.text" = "端口";
+
+/* Class = "UITextField"; text = "api"; ObjectID = "TXC-ju-VGC"; */
+"TXC-ju-VGC.text" = "api";
+
+/* Class = "UILabel"; text = "虚拟目录"; ObjectID = "VLS-wR-Dzt"; */
+"VLS-wR-Dzt.text" = "虛擬目錄";
+
+/* Class = "UILabel"; text = "环境切换"; ObjectID = "iCm-k8-R6z"; */
+"iCm-k8-R6z.text" = "環境切換";
+
+/* Class = "UITextField"; text = "8080"; ObjectID = "jB4-49-KPY"; */
+"jB4-49-KPY.text" = "8080";
+
+/* Class = "UISegmentedControl"; ncm-D4-mtQ.segmentTitles[0] = "联通"; ObjectID = "ncm-D4-mtQ"; */
+"ncm-D4-mtQ.segmentTitles[0]" = "聯通";
+
+/* Class = "UISegmentedControl"; ncm-D4-mtQ.segmentTitles[1] = "电信"; ObjectID = "ncm-D4-mtQ"; */
+"ncm-D4-mtQ.segmentTitles[1]" = "電信";
+
+/* Class = "UILabel"; text = "IP地址"; ObjectID = "q5B-vx-cgg"; */
+"q5B-vx-cgg.text" = "IP地址";
+
+/* Class = "UITextField"; text = "192.168.8.93"; ObjectID = "uTx-wZ-yv3"; */
+"uTx-wZ-yv3.text" = "192.168.8.93";
+
+/* Class = "UIButton"; normalTitle = "测试链接"; ObjectID = "v2Q-se-Ku9"; */
+"v2Q-se-Ku9.normalTitle" = "測試鍊接";
+
+/* Class = "UISegmentedControl"; zDZ-AC-gr0.segmentTitles[0] = "常规"; ObjectID = "zDZ-AC-gr0"; */
+"zDZ-AC-gr0.segmentTitles[0]" = "常規";
+
+/* Class = "UISegmentedControl"; zDZ-AC-gr0.segmentTitles[1] = "自定义"; ObjectID = "zDZ-AC-gr0"; */
+"zDZ-AC-gr0.segmentTitles[1]" = "自定義";

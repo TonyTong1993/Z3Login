@@ -36,6 +36,9 @@
     NSString *path = [bundle pathForResource:@"Z3Login" ofType:@"bundle"];
     bundle = [NSBundle bundleWithPath:path];
     self = [super initWithNibName:NSStringFromClass([Z3HUDLoginSettingViewController class]) bundle:bundle];
+    if (self == nil) {
+        self = [super init];
+    }
     if (self) {
         
     }
@@ -139,15 +142,18 @@
     }
     [testURL appendString:@"/rest/userService/login"];
     NSString *url = [testURL copy];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.request = [[Z3BaseRequest alloc] initWithAbsoluteURL:url method:GET parameter:@{} success:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [self showToast:NSLocalizedString(@"net_connect_success", @"连接成功")];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self showToast:NSLocalizedString(@"setting_test_connection_success", @"连接成功")];
         
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [self showToast:NSLocalizedString(@"net_connect_failure", @"连接失败")];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self showToast:NSLocalizedString(@"setting_test_connection_failed", @"连接失败")];
         NSLog(@"error = %@",[response.error localizedDescription]);
     }];
     [self.request start];
-    [self.indicatorView setAnimatingWithStateOfTask:self.request.requestTask];
+   
     
 }
 - (BOOL)validateTextFields {
