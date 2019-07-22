@@ -28,10 +28,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *pwdField;
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 @property (weak, nonatomic) IBOutlet UIButton *rememberPwdBtn;
-@property (weak, nonatomic) IBOutlet UILabel *copyrightTipLabel;
-@property (weak, nonatomic) IBOutlet UILabel *copyrightLabel;
 @property (weak, nonatomic) IBOutlet UIButton *remenberPwdLabel;
-@property (weak, nonatomic) IBOutlet UIButton *loginSettingButton;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *cachepwdBtn;
+@property (weak, nonatomic) IBOutlet UIButton *forgetpwdBtn;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (weak, nonatomic) IBOutlet UIView *accountContainer;
+@property (weak, nonatomic) IBOutlet UIView *pwdContainer;
+@property (weak, nonatomic) IBOutlet UIView *loginContainer;
+
 @property (nonatomic,strong) Z3BaseRequest *request;
 @property (nonatomic,strong) UIActivityIndicatorView *indicatorView;
 @property (nonatomic,copy) LoginSuccessBlock success;
@@ -72,8 +77,12 @@
     self.accountField.text = @"admin";
     self.pwdField.text = @"123456";
 #endif
-    self.accountField.placeholder = NSLocalizedString(@"login_username_empty",@"请输入账号");
-    self.pwdField.placeholder = NSLocalizedString(@"login_username_empty",@"请输入密码");
+    self.accountField.placeholder = NSLocalizedString(@"login_username_placeholder",@"请输入账号");
+    self.pwdField.placeholder = NSLocalizedString(@"login_password_placeholder",@"请输入密码");
+    self.titleLabel.text = NSLocalizedString(@"login_title",@"澳门自来水地理信息系统");
+    [self.cachepwdBtn setTitle:NSLocalizedString(@"login_remember_pwd",@"记住密码") forState:UIControlStateNormal];
+    [self.forgetpwdBtn setTitle:NSLocalizedString(@"login_forget_pwd",@"忘记密码？") forState:UIControlStateNormal];
+     [self.loginBtn setTitle:NSLocalizedString(@"login_btn_login",@"登录") forState:UIControlStateNormal];
     //是否自动填充密码
     [self internal_autoFillPwd];
     //是否自动登录
@@ -85,10 +94,37 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
 #pragma mark - public method
 
 #pragma mark - private metod
 - (void)internal_initSubView {
+    self.loginContainer.layer.cornerRadius = 6.0f;
+    CALayer *shadowLayer =  self.loginContainer.layer;
+    shadowLayer.shadowColor = [UIColor colorWithRed:182.0f/255.0f green:183.0f/255.0f blue:195.0f/255.0f alpha:0.35f].CGColor;
+    shadowLayer.shadowOpacity = 1;
+    shadowLayer.shadowOffset = CGSizeMake(0, 3);
+    shadowLayer.shadowRadius = 5;
+    self.loginContainer.clipsToBounds = false;
+    
+    self.accountContainer.layer.cornerRadius =22.5f;
+    self.accountContainer.layer.masksToBounds = YES;
+    self.accountContainer.layer.borderColor = [[UIColor colorWithRed:0.0f/255.0f green:91.0f/255.0f blue:174.0f/255.0f alpha:1.0f] CGColor];
+    self.accountContainer.layer.borderWidth = 1;
+    self.accountContainer.alpha = 1;
+    
+    self.pwdContainer.layer.cornerRadius =22.5f;
+    self.pwdContainer.layer.masksToBounds = YES;
+    self.pwdContainer.layer.borderColor = [[UIColor colorWithRed:0.0f/255.0f green:91.0f/255.0f blue:174.0f/255.0f alpha:1.0f] CGColor];
+    self.pwdContainer.layer.borderWidth = 1;
+    self.pwdContainer.alpha = 1;
+    
+    self.loginBtn.layer.cornerRadius =22;
+    self.loginBtn.layer.masksToBounds = YES;
+    
     self.versionLabel.userInteractionEnabled = YES;
     UITapGestureRecognizer *labelTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(appVersionLabelTouchUpInside:)];
     [self.versionLabel addGestureRecognizer:labelTapGestureRecognizer];
@@ -139,8 +175,6 @@
         self.success(@{});
     });
 }
-
-
 - (void)internal_loadOfflineUserInfo {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"admin.json" ofType:nil];
     NSError *error = nil;
