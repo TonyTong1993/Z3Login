@@ -67,6 +67,10 @@
     }
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 #pragma mark - view life circle
 - (void)viewDidLoad {
     [super viewDidLoad];
