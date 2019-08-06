@@ -37,7 +37,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iM-2G-4HY">
                     <rect key="frame" x="337" y="175" width="350" height="350"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAg-5x-JCF">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAg-5x-JCF">
                             <rect key="frame" x="40" y="232" width="14" height="14"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -60,7 +60,7 @@
                                 <action selector="savePwdBtnClicked:" destination="-1" eventType="touchUpInside" id="M13-QU-NnH"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHk-Gj-hx5">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHk-Gj-hx5">
                             <rect key="frame" x="58" y="225" width="54" height="28"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="記住密碼">
@@ -98,7 +98,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz2-K6-DF3">
-                            <rect key="frame" x="43" y="278" width="264" height="44"/>
+                            <rect key="frame" x="43" y="253" width="264" height="44"/>
                             <color key="backgroundColor" red="0.18823529410000001" green="0.56862745100000001" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="WXZ-eb-9Td"/>
@@ -144,7 +144,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVK-f1-x2i">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVK-f1-x2i">
                             <rect key="frame" x="243" y="225" width="67" height="28"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="忘记密码？">
@@ -170,7 +170,7 @@
                         <constraint firstItem="Cwh-fg-tFy" firstAttribute="top" secondItem="0iM-2G-4HY" secondAttribute="top" constant="36" id="N5C-9R-6TE"/>
                         <constraint firstAttribute="trailing" secondItem="xJl-WQ-utL" secondAttribute="trailing" constant="40" id="QW7-f5-rHT"/>
                         <constraint firstItem="uAg-5x-JCF" firstAttribute="leading" secondItem="xJl-WQ-utL" secondAttribute="leading" id="RLx-0i-ebK"/>
-                        <constraint firstItem="Oz2-K6-DF3" firstAttribute="top" secondItem="UHk-Gj-hx5" secondAttribute="bottom" constant="25" id="RzH-jg-3Gv"/>
+                        <constraint firstItem="Oz2-K6-DF3" firstAttribute="top" secondItem="UHk-Gj-hx5" secondAttribute="bottom" id="RzH-jg-3Gv"/>
                         <constraint firstItem="xJl-WQ-utL" firstAttribute="top" secondItem="L0c-Vn-EoT" secondAttribute="bottom" constant="21" id="Ww2-3j-11L"/>
                         <constraint firstAttribute="width" secondItem="0iM-2G-4HY" secondAttribute="height" multiplier="1:1" id="Y8U-4g-vhl"/>
                         <constraint firstItem="L0c-Vn-EoT" firstAttribute="leading" secondItem="0iM-2G-4HY" secondAttribute="leading" constant="40" id="dDT-ma-nvy"/>
