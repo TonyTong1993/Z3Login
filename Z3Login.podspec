@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
      'Z3Login' => ['Z3Login/Assets/*']
    }
   # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.dependency 'Z3Network','~> 0.0.2'
+   s.dependency 'Z3Network','~> 0.0.3'
    s.dependency 'Z3CommonLib', '~> 0.1.3'
    s.dependency 'CoordinateTransform', '~> 0.1.2'
 end

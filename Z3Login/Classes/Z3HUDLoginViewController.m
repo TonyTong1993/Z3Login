@@ -77,12 +77,12 @@
     self.accountField.text = @"admin";
     self.pwdField.text = @"123456";
 #endif
-    self.accountField.placeholder = NSLocalizedString(@"login_username_placeholder",@"请输入账号");
-    self.pwdField.placeholder = NSLocalizedString(@"login_password_placeholder",@"请输入密码");
+    self.accountField.placeholder = NSLocalizedString(@"str_username_placeholder",@"请输入账号");
+    self.pwdField.placeholder = NSLocalizedString(@"str_password_placeholder",@"请输入密码");
     self.titleLabel.text = NSLocalizedString(@"login_title",@"澳门自来水地理信息系统");
-    [self.cachepwdBtn setTitle:NSLocalizedString(@"login_remember_pwd",@"记住密码") forState:UIControlStateNormal];
-    [self.forgetpwdBtn setTitle:NSLocalizedString(@"login_forget_pwd",@"忘记密码？") forState:UIControlStateNormal];
-     [self.loginBtn setTitle:NSLocalizedString(@"login_btn_login",@"登录") forState:UIControlStateNormal];
+    [self.cachepwdBtn setTitle:NSLocalizedString(@"str_remember_password",@"记住密码") forState:UIControlStateNormal];
+    [self.forgetpwdBtn setTitle:NSLocalizedString(@"str_login_forget_pwd",@"忘记密码？") forState:UIControlStateNormal];
+     [self.loginBtn setTitle:NSLocalizedString(@"str_signin",@"登  录") forState:UIControlStateNormal];
     //是否自动填充密码
     [self internal_autoFillPwd];
     //是否自动登录

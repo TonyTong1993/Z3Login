@@ -22,7 +22,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *virtualTF;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *portBgViewHeightConstraint;
 @property (nonatomic,strong) Z3LoginRequest *request;
-@property (nonatomic,strong) UIActivityIndicatorView *indicatorView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *safeAreaTopConstraint;
 @property (weak, nonatomic) IBOutlet UIButton *doneBtn;
 
@@ -142,15 +141,16 @@
     }
     [testURL appendString:@"/rest/userService/login"];
     NSString *url = [testURL copy];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.request = [[Z3LoginRequest alloc] initWithAbsoluteURL:url method:GET parameter:@{} success:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self showToast:NSLocalizedString(@"net_connect_success", @"连接成功")];
         
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self showToast:NSLocalizedString(@"net_connect_failure", @"连接失败")];
-        NSLog(@"error = %@",[response.error localizedDescription]);
     }];
     [self.request start];
-    [self.indicatorView setAnimatingWithStateOfTask:self.request.requestTask];
     
 }
 - (BOOL)validateTextFields {
@@ -181,17 +181,5 @@
 }
 
 #pragma mark - delegate
-
-#pragma mark - getter and setter method
-- (UIActivityIndicatorView *)indicatorView {
-    if (!_indicatorView) {
-        _indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        [self.view addSubview:_indicatorView];
-        _indicatorView.center = self.view.center;
-    }
-    return _indicatorView;
-}
-
-
 
 @end
