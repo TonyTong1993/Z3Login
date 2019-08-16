@@ -8,4 +8,6 @@ target 'Z3Login_Example' do
   pod 'Z3Network', :path => '../../Z3Network'
   #source "/Users/tongwanhua/.cocoapods/repos/myspec"
   pod 'CoordinateTransform', :path => '../../CoordinateTransform'
+  pod 'PromiseKit', '~> 1.7'
+  pod 'CTMediator', '~> 25'
 end
