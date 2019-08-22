@@ -10,6 +10,7 @@
 #import "Z3LoginSettingViewController.h"
 #import "Z3LoginRequest.h"
 #import "Z3MapConfigRequest.h"
+#import "Z3PostCoorTransConfigRequest.h"
 #import <AFNetworking/UIKit+AFNetworking.h>
 #import "AFNetworkReachabilityManager.h"
 #import "MBProgressHUD+Z3.h"
@@ -17,6 +18,7 @@
 #import "Z3Network.h"
 #import "Z3MobileConfig.h"
 #import "CoorTranUtil.h"
+#import "NSDictionary+YYAdd.h"
 #define TIMEINTERVAL_LIMIT 60      //时间限制 60秒
 #define CLICKTIMES_LIMIT 5         //点击次数限制 至少5次
 @interface Z3LoginViewController () {
@@ -177,7 +179,9 @@
              [MBProgressHUD hideHUDForView:self.view animated:YES];
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
-            [weakSelf requestCoordinate2dTransformXMLConfiguration];
+            //TODO:工管GIS
+            [weakSelf requstCoorTransToken];
+//            [weakSelf requestCoordinate2dTransformXMLConfiguration];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
          [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -210,7 +214,36 @@
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
     }];
     [self.request start];
-    [self.indicatorView setAnimatingWithStateOfTask:self.request.requestTask];
+}
+
+/**
+ 请求坐标转换的token
+ */
+- (void)requstCoorTransToken {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"converter"] = @"MIDDLELINE";
+    dict[@"ellipseType"] = @"WGS84";
+    dict[@"srcEllipseType"] = @"WGS84";
+    dict[@"middleLine"] = @(120);
+    dict[@"rev"] = @(true);
+    NSString *url = @"http://z3pipe.com:2436/api/v1/coordinate/createConfig";
+     __weak typeof(self) weakSelf = self;
+    self.request = [[Z3PostCoorTransConfigRequest alloc] initWithAbsoluteURL:url method:POST parameter:[dict copy] success:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        NSInteger code = [response.responseJSONObject[@"code"] intValue];
+        if (code == 200) {
+            [Z3MobileConfig shareConfig].coorTransToken = response.responseJSONObject[@"data"];
+             weakSelf.success(nil);
+        }else {
+            [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+        }
+    } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+    }];
+    
+    [self.request start];
+    
 }
 
 - (void)updateUserDefault:(UIButton *)sender withKey:(NSString *)key {
