@@ -13,17 +13,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
         // Override point for customization after application launch.
-    CGRect frame = [UIScreen mainScreen].bounds;
-    self.window = [[UIWindow alloc] initWithFrame:frame];
-    UIViewController *rootViewController;
-    __weak typeof(self) weakSelf = self;
-    Z3LoginViewController *loginVC = [[Z3LoginViewController alloc] initWithLoginSuccessBlock:^(id result) {
-//        [weakSelf launchMainViewController];
-    }];
-    
-    rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVC];
-    self.window.rootViewController = rootViewController;
-    [self.window makeKeyAndVisible];
+//    CGRect frame = [UIScreen mainScreen].bounds;
+//    self.window = [[UIWindow alloc] initWithFrame:frame];
+//    UIViewController *rootViewController;
+//    __weak typeof(self) weakSelf = self;
+//    Z3LoginViewController *loginVC = [[Z3LoginViewController alloc] initWithLoginSuccessBlock:^(id result) {
+////        [weakSelf launchMainViewController];
+//    }];
+//
+//    rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVC];
+//    self.window.rootViewController = rootViewController;
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 
