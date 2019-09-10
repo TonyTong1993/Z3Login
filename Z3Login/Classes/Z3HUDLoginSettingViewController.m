@@ -132,10 +132,16 @@
     NSString *port = self.protTF.text;
     NSString *virtualPath = self.virtualTF.text;
     NSMutableString *testURL = @"".mutableCopy;
-    [testURL appendString:@"http://"];
-    [testURL appendString:ip];
+   
+    if ([ip hasPrefix:@"http"]) {
+         [testURL appendString:ip];
+    }else {
+         [testURL appendString:@"http://"];
+         [testURL appendString:ip];
+    }
     [testURL appendString:@":"];
     [testURL appendString:port];
+//    testURL = [[NSMutableString alloc] initWithString:@"https://test_gismobile.macaowatercloud.com:443"];
     if (virtualPath.length) {
         [testURL appendString:@"/"];
         [testURL appendString:virtualPath];

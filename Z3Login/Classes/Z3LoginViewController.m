@@ -225,7 +225,9 @@
     dict[@"ellipseType"] = @"WGS84";
     dict[@"srcEllipseType"] = @"WGS84";
     dict[@"middleLine"] = @(120);
-    dict[@"rev"] = @(true);
+    dict[@"rev"] = @(0);
+    dict[@"xConstant"] = @(0.0);
+    dict[@"yConstant"] = @(500000.0);
     NSString *url = @"http://z3pipe.com:2436/api/v1/coordinate/createConfig";
      __weak typeof(self) weakSelf = self;
     self.request = [[Z3PostCoorTransConfigRequest alloc] initWithAbsoluteURL:url method:POST parameter:[dict copy] success:^(__kindof Z3BaseResponse * _Nonnull response) {

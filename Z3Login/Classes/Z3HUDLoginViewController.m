@@ -11,6 +11,7 @@
 #import "Z3LoginRequest.h"
 #import "Z3MapConfigRequest.h"
 #import <AFNetworking/UIKit+AFNetworking.h>
+#import <PromiseKit/PromiseKit.h>
 #import "AFNetworkReachabilityManager.h"
 #import "MBProgressHUD+Z3.h"
 #import "Z3User.h"
@@ -143,7 +144,21 @@
 //            });
 //        }
 //    self.autoLoginBtn.selected = isAutoLogin;
-    
+    __weak typeof(self) weakSelf = self;
+    [self login].then(^(NSDictionary *data){
+        return [self concurentGetMobileMapAndTransParams];
+    }).catch(^(NSError *error){
+        [MBProgressHUD showError:[error localizedDescription]];
+    }).finally(^{
+        if (weakSelf.success) {
+            weakSelf.success(@"登录成功");
+            //保存登录信息
+            [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:Z3KEY_USER_NAME];
+            [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:Z3KEY_USER_PASSWORD];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:Z3KEY_USER_LOGIN_FLAG];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
+    });
 }
 - (void)internal_autoFillPwd {
     BOOL isAutoFillPWD = [[NSUserDefaults standardUserDefaults] boolForKey:Z3KEY_AUTO_FILL_PWD];
@@ -261,13 +276,54 @@
     }];
     [self.request start];
 }
+
+- (PMKPromise *)login {
+    [self.accountField resignFirstResponder];
+    [self.pwdField resignFirstResponder];
+    return [PMKPromise new:^(PMKFulfiller fulfill, PMKRejecter reject) {
+         NSDictionary *parameters = @{@"username":self.accountField.text,@"password":self.pwdField.text};
+        self.request = [[Z3LoginRequest alloc] initWithRelativeToURL:@"rest/userService/login" method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
+//            [MBProgressHUD hideHUDForView:self.view animated:YES];
+//            if (response.error) {
+//                NSDictionary *userInfo = [response.error userInfo];
+//                NSString *msg = userInfo[@"msg"];
+//                if (!msg) {
+//                    msg = NSLocalizedString(@"user_login_failure", @"登录失败");
+//                }
+//                [MBProgressHUD showError:msg];
+//            }
+        } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+//            [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
+//            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        }];
+        [self.request start];
+    }];
+}
+
+- (PMKPromise *)concurentGetMobileMapAndTransParams {
+    return [PMKPromise when:@[[self getMobileMap],[self getTransParams]]];
+}
+
+- (PMKPromise *)getMobileMap {
+    return [PMKPromise new:^(PMKFulfiller fulfill, PMKRejecter reject) {
+        
+    }];
+}
+
+- (PMKPromise *)getTransParams {
+    return [PMKPromise new:^(PMKFulfiller fulfill, PMKRejecter reject) {
+        
+    }];
+}
 /**
  获取地图配置文件
  */
 - (void)requestMapXMLConfiguration {
     NSDictionary *parameters = @{};
     __weak typeof(self) weakSelf = self;
-    NSString *absoluteURL = [Z3MobileConfig shareConfig].mobileMapURL;
+    NSString *rootURL = [Z3NetworkConfig shareConfig].urlConfig.rootURLPath;
+    NSString *mobileMapURL = [Z3MobileConfig shareConfig].mobileMapURL;
+    NSString *absoluteURL = [NSString stringWithFormat:@"%@/%@",rootURL,mobileMapURL];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.request = [[Z3MapConfigRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
          [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -290,7 +346,9 @@
 - (void)requestCoordinate2dTransformXMLConfiguration {
     NSDictionary *parameters = @{};
     __weak typeof(self) weakSelf = self;
-    NSString *absoluteURL = [Z3MobileConfig shareConfig].transParamsURL;
+    NSString *transParamsURL = [Z3MobileConfig shareConfig].transParamsURL;
+    NSString *rootURL = [Z3NetworkConfig shareConfig].urlConfig.rootURLPath;
+    NSString *absoluteURL = [NSString stringWithFormat:@"%@/%@",rootURL,transParamsURL];
     self.request = [[Z3XmllRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (response.error) {
@@ -321,7 +379,6 @@
          [self internal_offlineLogin];
     }
    
-    
 }
 - (IBAction)savePwdBtnClicked:(id)sender {
     [self updateUserDefault:self.rememberPwdBtn withKey:Z3KEY_AUTO_FILL_PWD];

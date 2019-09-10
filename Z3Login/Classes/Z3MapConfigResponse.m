@@ -11,6 +11,7 @@
 #import "Z3MobileConfig.h"
 #import "Z3MapConfig.h"
 #import "Z3MobileTask.h"
+#import "Z3URLConfig.h"
 @interface Z3MapConfigResponse ()<NSXMLParserDelegate>
 @property (nonatomic,strong) NSXMLParser *xmlParser;
 @property (nonatomic,strong) NSMutableString *xmlValue;
@@ -123,7 +124,13 @@
         }else if ([elementName isEqualToString:@"key"]){
             [_task setName:value];
         }else if ([elementName isEqualToString:@"value"]){
-            [_task setBaseURL:value];
+            if ([value hasPrefix:@"http"]) {
+                 [_task setBaseURL:value];
+            }else {
+                NSString *rootURL = [Z3URLConfig configration].rootURLPath;
+                NSString *url = [NSString stringWithFormat:@"%@/%@",rootURL,value];
+                [_task setBaseURL:url];
+            }
         }
         
     }
