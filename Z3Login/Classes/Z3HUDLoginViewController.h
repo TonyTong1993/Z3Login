@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void (^LoginSuccessBlock)(id result);
+typedef void (^LoginSuccessBlock)(id _Nullable result);
 @interface Z3HUDLoginViewController : UIViewController
 - (instancetype)initWithLoginSuccessBlock:(LoginSuccessBlock)success;
 + (instancetype)new NS_UNAVAILABLE;
