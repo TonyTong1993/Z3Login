@@ -79,10 +79,8 @@
     // Do any additional setup after loading the view from its nib.
     [self internal_initSubView];
     //开发阶段默认填充
-#if DEBUG
-    self.accountField.text = @"admin";
-    self.pwdField.text = @"123456";
-#endif
+    NSString *account = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_NAME];
+    self.accountField.text = account;
     self.accountField.placeholder = NSLocalizedString(@"str_username_placeholder",@"请输入账号");
     self.pwdField.placeholder = NSLocalizedString(@"str_password_placeholder",@"请输入密码");
     self.titleLabel.text = NSLocalizedString(@"login_title",@"澳门自来水地理信息系统");
@@ -166,8 +164,6 @@
     BOOL isAutoFillPWD = [[NSUserDefaults standardUserDefaults] boolForKey:Z3KEY_AUTO_FILL_PWD];
     if (isAutoFillPWD ) {
         NSString *pwd = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_PASSWORD];
-        NSString *account = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_NAME];
-        self.accountField.text = account;
         self.pwdField.text = pwd;
     }
     self.rememberPwdBtn.selected = isAutoFillPWD;
@@ -185,6 +181,13 @@
     }
     return true;
     
+}
+
+//离线登录时,检测登录用户名和密码
+- (BOOL)internal_offlineCheck {
+    
+    
+    return YES;
 }
 
 - (void)internal_offlineLogin {
@@ -276,12 +279,18 @@
             [MBProgressHUD showError:msg];
         }else {
             [weakSelf requestMapXMLConfiguration];
+            [kUserDefaults setObject:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
+            [kUserDefaults setObject:weakSelf.pwdField.text forKey:Z3KEY_USER_PASSWORD];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
         [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
     [self.request start];
+}
+
+- (void)requestApplicationUseToken {
+    
 }
 
 - (PMKPromise *)login {
