@@ -19,7 +19,9 @@
 #import "Z3Network.h"
 #import "Z3MobileConfig.h"
 #import "Z3MapConfig.h"
+#import "Z3MobileTask.h"
 #import "CoorTranUtil.h"
+#import "Z3GISMetaRequest.h"
 #define TIMEINTERVAL_LIMIT 10      //时间限制 60秒
 #define CLICKTIMES_LIMIT 5         //点击次数限制 至少5次
 @interface Z3HUDLoginViewController (){
@@ -425,7 +427,7 @@
         NSInteger code = [response.responseJSONObject[@"code"] intValue];
         if (code == 200) {
             [Z3MobileConfig shareConfig].coorTransToken = response.responseJSONObject[@"data"];
-            weakSelf.success(nil);
+            [weakSelf loadGISMetas];
         }else {
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }
@@ -436,6 +438,37 @@
     
     [self.request start];
     
+}
+
+/**
+ 获取管网元数据
+ */
+- (void)loadGISMetas {
+    __block NSString *metaUrl = @"";
+    NSArray *tasks = [Z3MobileConfig shareConfig].tasks;
+    [tasks enumerateObjectsUsingBlock:^(Z3MobileTask *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *name = obj.name;
+        if ([name isEqualToString:@"SpacialSearchUrl"]) {
+            metaUrl = obj.baseURL;
+            *stop = YES;
+        }
+    }];
+    if (!metaUrl.length) {
+        return;
+    }
+    NSString *absoluteURL = [metaUrl stringByAppendingPathComponent:@"metas"];
+    NSDictionary *params = @{@"f":@"json",@"sys":@"android"};
+     __weak typeof(self) weakSelf = self;
+    self.request = [[Z3GISMetaRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:params success:^(__kindof Z3BaseResponse * _Nonnull response) {
+        NSArray *metas = response.data;
+        [[Z3MobileConfig shareConfig] setGisMetas:metas];
+        weakSelf.success(nil);
+    } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+    }];
+    
+    [self.request start];
 }
 
 #pragma mark - action

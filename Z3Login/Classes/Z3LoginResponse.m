@@ -47,6 +47,7 @@
     NSString *role = [json valueForKey:@"role"];
     NSString *roleCode = [json valueForKey:@"roleCode"];
     NSString *trueName = [json valueForKey:@"trueName"];
+    NSString *token = [json valueForKey:@"token"];
     
     [[Z3User shareInstance] setUsername:username ?:@""];
     [[Z3User shareInstance] setUid:identifier];
@@ -61,6 +62,7 @@
     [[Z3User shareInstance] setRole:role ?:@""];
     [[Z3User shareInstance] setRoleCode:roleCode ?:@""];
     [[Z3User shareInstance] setTrueName:trueName ?:@""];
+    [[Z3User shareInstance] setToken:token ?:@""];
     
 }
 
