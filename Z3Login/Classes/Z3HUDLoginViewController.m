@@ -22,6 +22,7 @@
 #import "Z3MobileTask.h"
 #import "CoorTranUtil.h"
 #import "Z3GISMetaRequest.h"
+#import <SAMKeychain/SAMKeychain.h>
 #define TIMEINTERVAL_LIMIT 10      //时间限制 60秒
 #define CLICKTIMES_LIMIT 5         //点击次数限制 至少5次
 @interface Z3HUDLoginViewController (){
@@ -186,26 +187,39 @@
 }
 
 //离线登录时,检测登录用户名和密码
+ static NSString *SERVICE = @"com.zzht.pipenet";
 - (BOOL)internal_offlineCheck {
-    
-    
-    return YES;
+    NSString *account = self.accountField.text;
+    if (!account.length) return NO;
+    NSString *pwd = [SAMKeychain passwordForService:SERVICE account:account];
+    NSString *ipwd = self.pwdField.text;
+    if (!ipwd.length) return NO;
+    if ([pwd isEqualToString:ipwd]) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)internal_offlineLogin {
+    if (![self internal_offlineCheck]) {
+        [self showToast:NSLocalizedString(@"offline_login_failure",@"离线登录失败,密码验证错误")];
+        return;
+    }
     MBProgressHUD *hud  = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeText;
     hud.label.text = NSLocalizedString(@"login_getting_init_paramters",@"正在初始化参数");
     [self internal_loadOfflineUserInfo];
     [self internal_loadOfflineMapConfig];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         self.success(@{});
     });
 }
 
 - (void)internal_loadOfflineUserInfo {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"admin.json" ofType:nil];
+    NSString *documentsPath = [UIApplication sharedApplication].documentsPath;
+    NSString *pathComponent = [NSString stringWithFormat:@"%@.json",self.accountField.text];
+    NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
     NSError *error = nil;
     NSData *jsonData = [[NSData alloc] initWithContentsOfFile:path];
     id result = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:&error];
@@ -281,8 +295,20 @@
             [MBProgressHUD showError:msg];
         }else {
             [weakSelf requestMapXMLConfiguration];
+            NSString *account = weakSelf.accountField.text;
+            NSString *pwd = weakSelf.pwdField.text;
             [kUserDefaults setObject:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
-            [kUserDefaults setObject:weakSelf.pwdField.text forKey:Z3KEY_USER_PASSWORD];
+            //TODO:保存离线用户信息
+            [SAMKeychain setPassword:pwd forService:SERVICE account:account];
+            NSDictionary *userInfo = response.responseJSONObject;
+            NSError * __autoreleasing error = nil;
+            NSData *data = [NSJSONSerialization dataWithJSONObject:userInfo options:NSJSONWritingPrettyPrinted error:&error];
+            NSString *documentsPath = [UIApplication sharedApplication].documentsPath;
+            NSString *pathComponent = [NSString stringWithFormat:@"%@.json",account];
+            NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
+            BOOL success = [data writeToFile:path atomically:YES];
+            NSAssert(success, @"save user info failure");
+            
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
         [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
@@ -463,6 +489,7 @@
         NSArray *metas = response.data;
         [[Z3MobileConfig shareConfig] setGisMetas:metas];
         weakSelf.success(nil);
+        //缓存元数据
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
@@ -476,8 +503,10 @@
     if (![self internal_check]) return;
     if ([AFNetworkReachabilityManager sharedManager].isReachable) {
         [self requestLogin];
+        [Z3MobileConfig shareConfig].offlineLogin = false;
     }else {
          [self internal_offlineLogin];
+         [Z3MobileConfig shareConfig].offlineLogin = YES;
     }
    
 }
@@ -523,5 +552,11 @@
     
 }
 
+- (void)showToast:(NSString *)message {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.label.text = message;
+    [hud hideAnimated:YES afterDelay:1.0];
+}
 
 @end
