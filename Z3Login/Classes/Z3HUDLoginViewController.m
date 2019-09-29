@@ -83,6 +83,9 @@
     [self internal_initSubView];
     //开发阶段默认填充
     NSString *account = [[NSUserDefaults standardUserDefaults] valueForKey:Z3KEY_USER_NAME];
+#if DEBUG
+    self.pwdField.text = @"123456";
+#endif
     self.accountField.text = account;
     self.accountField.placeholder = NSLocalizedString(@"str_username_placeholder",@"请输入账号");
     self.pwdField.placeholder = NSLocalizedString(@"str_password_placeholder",@"请输入密码");
