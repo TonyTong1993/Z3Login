@@ -220,7 +220,7 @@
 }
 
 - (void)internal_loadOfflineUserInfo {
-    NSString *documentsPath = [UIApplication sharedApplication].documentsPath;
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *pathComponent = [NSString stringWithFormat:@"%@.json",self.accountField.text];
     NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
     NSError *error = nil;
@@ -300,13 +300,13 @@
             [weakSelf requestMapXMLConfiguration];
             NSString *account = weakSelf.accountField.text;
             NSString *pwd = weakSelf.pwdField.text;
-            [kUserDefaults setObject:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
+            [[NSUserDefaults standardUserDefaults] setObject:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
             //TODO:保存离线用户信息
             [SAMKeychain setPassword:pwd forService:SERVICE account:account];
             NSDictionary *userInfo = response.responseJSONObject;
             NSError * __autoreleasing error = nil;
             NSData *data = [NSJSONSerialization dataWithJSONObject:userInfo options:NSJSONWritingPrettyPrinted error:&error];
-            NSString *documentsPath = [UIApplication sharedApplication].documentsPath;
+            NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
             NSString *pathComponent = [NSString stringWithFormat:@"%@.json",account];
             NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
             BOOL success = [data writeToFile:path atomically:YES];
