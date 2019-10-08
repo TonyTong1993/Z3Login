@@ -23,6 +23,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		EB9FE14522EA8C1A00176A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9FE14422EA8C1A00176A77 /* Main.storyboard */; };
 		EB9FE14822EA8C8000176A77 /* Z3MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9FE14722EA8C8000176A77 /* Z3MainViewController.m */; };
+		EBA9C8FA232BEA9400CCC286 /* Z3Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA9C8F9232BEA9400CCC286 /* Z3Person.m */; };
 		EBF03BFF22C0B7F000EFD9DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0122C0B7F000EFD9DD /* Localizable.strings */; };
 		EBF03C0B22C0CE5900EFD9DD /* appmenulist.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBF03C0A22C0CE5800EFD9DD /* appmenulist.plist */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,8 @@
 		EB9FE14622EA8C8000176A77 /* Z3MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3MainViewController.h; sourceTree = "<group>"; };
 		EB9FE14722EA8C8000176A77 /* Z3MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3MainViewController.m; sourceTree = "<group>"; };
 		EB9FE15B22EFBAF900176A77 /* Z3Login_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Z3Login_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBA9C8F8232BEA9400CCC286 /* Z3Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Z3Person.h; sourceTree = "<group>"; };
+		EBA9C8F9232BEA9400CCC286 /* Z3Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Z3Person.m; sourceTree = "<group>"; };
 		EBF03BFB22C0B73B00EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EBF03BFC22C0B73C00EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EBF03C0022C0B7F000EFD9DD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				6003F59D195388D20070C39A /* Z3AppDelegate.m */,
 				EB9FE14622EA8C8000176A77 /* Z3MainViewController.h */,
 				EB9FE14722EA8C8000176A77 /* Z3MainViewController.m */,
+				EBA9C8F8232BEA9400CCC286 /* Z3Person.h */,
+				EBA9C8F9232BEA9400CCC286 /* Z3Person.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				EB9FE14422EA8C1A00176A77 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -380,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* Z3AppDelegate.m in Sources */,
+				EBA9C8FA232BEA9400CCC286 /* Z3Person.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				EB9FE14822EA8C8000176A77 /* Z3MainViewController.m in Sources */,
 			);
