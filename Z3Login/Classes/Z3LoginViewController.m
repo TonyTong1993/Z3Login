@@ -173,7 +173,8 @@
     NSDictionary *parameters = @{};
     __weak typeof(self) weakSelf = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    NSString *absoluteURL = [Z3MobileConfig shareConfig].mobileMapURL;
+    NSString *urlString = [Z3MobileConfig shareConfig].mobileMapURL;
+    NSString *absoluteURL = (NSString*)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)urlString, (CFStringRef)@"!NULL,'()*+,-./:;=?@_~%#[]", NULL, kCFStringEncodingUTF8));
     self.request = [[Z3MapConfigRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
         if (response.error) {
              [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -220,14 +221,9 @@
  请求坐标转换的token
  */
 - (void)requstCoorTransToken {
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[@"converter"] = @"MIDDLELINE";
-    dict[@"ellipseType"] = @"WGS84";
-    dict[@"srcEllipseType"] = @"WGS84";
-    dict[@"middleLine"] = @(120);
-    dict[@"rev"] = @(0);
-    dict[@"xConstant"] = @(0.0);
-    dict[@"yConstant"] = @(500000.0);
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"trans_params" ofType:@"json"];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
     NSString *url = @"http://z3pipe.com:2436/api/v1/coordinate/createConfig";
      __weak typeof(self) weakSelf = self;
     self.request = [[Z3PostCoorTransConfigRequest alloc] initWithAbsoluteURL:url method:POST parameter:[dict copy] success:^(__kindof Z3BaseResponse * _Nonnull response) {
