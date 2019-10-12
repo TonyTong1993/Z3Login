@@ -12,6 +12,7 @@
 #import "Z3MobileConfig.h"
 #import "YYKit.h"
 #import "Z3LoginPrivate.h"
+#import "Z3NetworkConfig.h"
 @implementation Z3LoginResponse
 @synthesize error = _error;
 - (void)toModel {
@@ -62,8 +63,7 @@
     [[Z3User shareInstance] setRole:role ?:@""];
     [[Z3User shareInstance] setRoleCode:roleCode ?:@""];
     [[Z3User shareInstance] setTrueName:trueName ?:@""];
-    [[Z3User shareInstance] setToken:token ?:@""];
-    
+    [[Z3NetworkConfig shareConfig] setToken:token ?:@""];
 }
 
 - (void)toAppMenus:(NSArray *)menus {
