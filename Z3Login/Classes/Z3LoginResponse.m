@@ -63,7 +63,7 @@
     [[Z3User shareInstance] setRole:role ?:@""];
     [[Z3User shareInstance] setRoleCode:roleCode ?:@""];
     [[Z3User shareInstance] setTrueName:trueName ?:@""];
-//    [[Z3NetworkConfig shareConfig] setToken:token ?:@""];
+    [[Z3NetworkConfig shareConfig] setToken:token ?:@""];
 }
 
 - (void)toAppMenus:(NSArray *)menus {
