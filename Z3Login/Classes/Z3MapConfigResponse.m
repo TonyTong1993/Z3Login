@@ -1,10 +1,10 @@
-//
-//  Z3MapConfigResponse.m
-//  Z3Newwork_Example
-//
-//  Created by 童万华 on 2019/6/4.
-//  Copyright © 2019 Tony Tony. All rights reserved.
-//
+    //
+    //  Z3MapConfigResponse.m
+    //  Z3Newwork_Example
+    //
+    //  Created by 童万华 on 2019/6/4.
+    //  Copyright © 2019 Tony Tony. All rights reserved.
+    //
 
 #import "Z3MapConfigResponse.h"
 #import "Z3LoginPrivate.h"
@@ -17,9 +17,11 @@
 @property (nonatomic,strong) NSMutableString *xmlValue;
 @property (nonatomic,assign) BOOL storingFlag;
 @property (nonatomic,copy) NSArray *storeElements;
+@property (nonatomic,strong) NSMutableArray *basemaps;
 @property (nonatomic,strong) NSMutableArray *sources;
 @property (nonatomic,strong) NSMutableArray *tasks;
 @property (nonatomic,strong) Z3MapConfig *mapConfig;
+@property (nonatomic,strong) Z3Basemap *basemap;
 @property (nonatomic,strong) Z3MapLayer *mapLayer;
 @property (nonatomic,strong) Z3MobileTask *task;
 @end
@@ -27,26 +29,26 @@
 @synthesize error = _error;
 - (void)toModel {
     if (self.responseJSONObject) {
-       self.xmlParser = self.responseJSONObject;
-       self.xmlParser.delegate = self;
-       _storeElements = [[NSArray alloc] initWithObjects:@"initExtent",
-                         @"SourceType",
-                         @"ID",
-                         @"Name",
-                         @"Description",
-                         @"URL",
-                         @"visible",
-                         @"dispMaxScale",
-                         @"dispMinScale",
-                         @"dispRect",
-                         @"mapLoadType",
-                         @"dispMaxResolution",
-                         @"dispMinResolution",
-                         @"AddressSearchType",
-                         @"key",
-                         @"value",nil];
-
-       [self.xmlParser parse];
+        self.xmlParser = self.responseJSONObject;
+        self.xmlParser.delegate = self;
+        _storeElements = [[NSArray alloc] initWithObjects:@"initExtent",
+                          @"SourceType",
+                          @"ID",
+                          @"Name",
+                          @"Description",
+                          @"URL",
+                          @"visible",
+                          @"dispMaxScale",
+                          @"dispMinScale",
+                          @"dispRect",
+                          @"mapLoadType",
+                          @"dispMaxResolution",
+                          @"dispMinResolution",
+                          @"AddressSearchType",
+                          @"key",
+                          @"value",nil];
+        
+        [self.xmlParser parse];
     }
 }
 
@@ -60,13 +62,19 @@
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
     
 }
-// sent when the parser has completed parsing. If this is encountered, the parse was successful.
+    // sent when the parser has completed parsing. If this is encountered, the parse was successful.
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(nullable NSString *)namespaceURI qualifiedName:(nullable NSString *)qName attributes:(NSDictionary<NSString *, NSString *> *)attributeDict {
     if ([elementName isEqualToString:@"Map"]) {
             //初始化mapConfiguration
         _mapConfig = [[Z3MapConfig alloc] init];
+    }else if ([elementName isEqualToString:@"Basemaps"]) {
+            //初始化taskConfiguration
+        _basemaps = [[NSMutableArray alloc] init];
+    }else if ([elementName isEqualToString:@"basemap"]) {
+            //初始化taskConfiguration
+        _basemap  = [[Z3Basemap alloc] init];
     }else if ([elementName isEqualToString:@"Sources"]) {
-         //初始化taskConfiguration
+            //初始化taskConfiguration
         _sources = [NSMutableArray array];
     }else if ([elementName isEqualToString:@"Source"]) {
             //初始化taskConfiguration
@@ -84,14 +92,20 @@
     if ([elementName isEqualToString:@"Map"]){
         [[Z3MobileConfig shareConfig] setMapConfig:_mapConfig];
     }else if ([elementName isEqualToString:@"tasks"]) {
-         [[Z3MobileConfig shareConfig] setTasks:[_tasks copy]];
+        [[Z3MobileConfig shareConfig] setTasks:[_tasks copy]];
         _tasks = nil;
+    }else if ([elementName isEqualToString:@"Basemaps"]) {
+        [_mapConfig setBasemaps:[_basemaps copy]];
+        _basemaps = nil;
     }else if ([elementName isEqualToString:@"Sources"]) {
         [_mapConfig setSources:[_sources copy]];
         _sources = nil;
+    }else if ([elementName isEqualToString:@"basemap"]){
+        [_basemaps addObject:_basemap];
+        _basemap = nil;
     }else if ([elementName isEqualToString:@"Source"]){
-            [_sources addObject:_mapLayer];
-            _mapLayer = nil;
+        [_sources addObject:_mapLayer];
+        _mapLayer = nil;
     }else if ([elementName isEqualToString:@"task"]) {
         [_tasks addObject:_task];
         _task = nil;
@@ -104,28 +118,67 @@
         if ([elementName isEqualToString:@"initExtent"]) {
             [_mapConfig setInitialExtent:value];
         }else if ([elementName isEqualToString:@"SourceType"]){
-            [_mapLayer setSourceType:value];
+            if (_basemap) {
+                [_basemap setSourceType:value];
+            }else {
+                [_mapLayer setSourceType:value];
+            }
         }else if ([elementName isEqualToString:@"ID"]){
-            [_mapLayer setID:value];
+            if (_basemap) {
+                [_basemap setID:value];
+            }else {
+                [_mapLayer setID:value];
+            }
+            
         }else if ([elementName isEqualToString:@"Name"]){
-             [_mapLayer setName:value];
+            if (_basemap) {
+                [_basemap setName:value];
+            }else {
+                [_mapLayer setName:value];
+            }
         }else if ([elementName isEqualToString:@"Description"]){
-             [_mapLayer setDesc:value];
+            if (_basemap) {
+                [_basemap setDesc:value];
+            }else {
+                [_mapLayer setDesc:value];
+            }
         }else if ([elementName isEqualToString:@"URL"]){
-             [_mapLayer setUrl:value];
+            if (_basemap) {
+                [_basemap setUrl:value];
+            }else {
+                [_mapLayer setUrl:value];
+            }
         }else if ([elementName isEqualToString:@"visible"]){
-             [_mapLayer setVisible:[value boolValue]];
+            if (_basemap) {
+                [_basemap setVisible:value];
+            }else {
+                [_mapLayer setVisible:value];
+            }
         }else if ([elementName isEqualToString:@"dispMaxScale"]){
-             [_mapLayer setDispMaxScale:value];
+            if (_basemap) {
+                [_basemap setDispMaxScale:value];
+            }else {
+                [_mapLayer setDispMaxScale:value];
+            }
         }else if ([elementName isEqualToString:@"dispMinScale"]){
-             [_mapLayer setDispMinScale:value];
+            if (_basemap) {
+                [_basemap setDispMinScale:value];
+            }else {
+                [_mapLayer setDispMinScale:value];
+            }
         }else if ([elementName isEqualToString:@"dispRect"]){
-             [_mapLayer setDispRect:value];
+            if (_basemap) {
+                [_basemap setDispRect:value];
+            }else {
+                [_mapLayer setDispRect:value];
+            }
+            
         }else if ([elementName isEqualToString:@"key"]){
             [_task setName:value];
         }else if ([elementName isEqualToString:@"value"]){
+            
             if ([value hasPrefix:@"http"]) {
-                 [_task setBaseURL:value];
+                [_task setBaseURL:value];
             }else {
                 NSString *rootURL = [Z3URLConfig configration].rootURLPath;
                 NSString *url = [NSString stringWithFormat:@"%@/%@",rootURL,value];
@@ -148,12 +201,12 @@
 }
 
 - (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
-    //TODO: handle error
+        //TODO: handle error
     _error = parseError;
 }
 
 - (void)parser:(NSXMLParser *)parser validationErrorOccurred:(NSError *)validationError {
-    //TODO: handle error
+        //TODO: handle error
     _error = validationError;
 }
 

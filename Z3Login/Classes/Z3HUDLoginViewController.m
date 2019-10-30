@@ -93,6 +93,7 @@
     [self.cachepwdBtn setTitle:NSLocalizedString(@"str_remember_password",@"记住密码") forState:UIControlStateNormal];
     [self.forgetpwdBtn setTitle:NSLocalizedString(@"str_login_forget_pwd",@"忘记密码？") forState:UIControlStateNormal];
      [self.loginBtn setTitle:NSLocalizedString(@"str_signin",@"登  录") forState:UIControlStateNormal];
+    [self.loginBtn addTarget:self action:@selector(loginBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     //是否自动填充密码
     [self internal_autoFillPwd];
     //是否自动登录
@@ -282,19 +283,19 @@
 
 #pragma mark -request
 - (void)requestLogin {
+    [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
     [self.accountField resignFirstResponder];
     [self.pwdField resignFirstResponder];
     NSDictionary *parameters = @{@"username":self.accountField.text,@"password":self.pwdField.text};
     __weak typeof(self) weakSelf = self;
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.request = [[Z3LoginRequest alloc] initWithRelativeToURL:@"rest/userService/login" method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (response.error) {
             NSDictionary *userInfo = [response.error userInfo];
             NSString *msg = userInfo[@"msg"];
             if (!msg) {
                 msg = NSLocalizedString(@"user_login_failure", @"登录失败");
             }
+            [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
             [MBProgressHUD showError:msg];
         }else {
             [weakSelf requestMapXMLConfiguration];
@@ -311,11 +312,11 @@
             NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
             BOOL success = [data writeToFile:path atomically:YES];
             NSAssert(success, @"save user info failure");
-            
+
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
     [self.request start];
 }
@@ -371,10 +372,9 @@
     NSString *rootURL = [Z3NetworkConfig shareConfig].urlConfig.rootURLPath;
     NSString *mobileMapURL = [Z3MobileConfig shareConfig].mobileMapURL;
     NSString *absoluteURL = [NSString stringWithFormat:@"%@/%@",rootURL,mobileMapURL];
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.request = [[Z3MapConfigRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
-         [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (response.error) {
+            [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
 //            [weakSelf requestCoordinate2dTransformXMLConfiguration];
@@ -382,7 +382,7 @@
             [weakSelf requstCoorTransToken];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
     }];
     [self.request start];
@@ -399,21 +399,21 @@
     NSString *rootURL = [Z3NetworkConfig shareConfig].urlConfig.rootURLPath;
     NSString *absoluteURL = [NSString stringWithFormat:@"%@/%@",rootURL,transParamsURL];
     self.request = [[Z3XmllRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (response.error) {
+             [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
             if (weakSelf.success) {
                 weakSelf.success(response.responseJSONObject);
                 //保存登录信息
-                [[NSUserDefaults standardUserDefaults] setValue:self.accountField.text forKey:Z3KEY_USER_NAME];
-                [[NSUserDefaults standardUserDefaults] setValue:self.pwdField.text forKey:Z3KEY_USER_PASSWORD];
+                [[NSUserDefaults standardUserDefaults] setValue:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
+                [[NSUserDefaults standardUserDefaults] setValue:weakSelf.pwdField.text forKey:Z3KEY_USER_PASSWORD];
                 [[NSUserDefaults standardUserDefaults] setBool:YES forKey:Z3KEY_USER_LOGIN_FLAG];
                 [[NSUserDefaults standardUserDefaults] synchronize];
             }
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
     }];
     [self.request start];
@@ -452,16 +452,16 @@
     NSString *url = @"http://z3pipe.com:2436/api/v1/coordinate/createConfig";
     __weak typeof(self) weakSelf = self;
     self.request = [[Z3PostCoorTransConfigRequest alloc] initWithAbsoluteURL:url method:POST parameter:[dict copy] success:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
         NSInteger code = [response.responseJSONObject[@"code"] intValue];
         if (code == 200) {
             [Z3MobileConfig shareConfig].coorTransToken = response.responseJSONObject[@"data"];
             [weakSelf loadGISMetas];
         }else {
+            [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
     }];
     
@@ -489,12 +489,13 @@
     NSDictionary *params = @{@"f":@"json",@"sys":@"android"};
      __weak typeof(self) weakSelf = self;
     self.request = [[Z3GISMetaRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:params success:^(__kindof Z3BaseResponse * _Nonnull response) {
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         NSArray *metas = response.data;
         [[Z3MobileConfig shareConfig] setGisMetas:metas];
         weakSelf.success(nil);
         //缓存元数据
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
         [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
     }];
     
@@ -502,7 +503,7 @@
 }
 
 #pragma mark - action
-- (IBAction)loginBtnClicked:(id)sender {
+- (void)loginBtnClicked:(id)sender {
     if (![self internal_check]) return;
     if ([AFNetworkReachabilityManager sharedManager].isReachable) {
         [self requestLogin];
@@ -511,7 +512,7 @@
          [self internal_offlineLogin];
          [Z3MobileConfig shareConfig].offlineLogin = YES;
     }
-   
+
 }
 - (IBAction)savePwdBtnClicked:(id)sender {
     [self updateUserDefault:self.rememberPwdBtn withKey:Z3KEY_AUTO_FILL_PWD];
