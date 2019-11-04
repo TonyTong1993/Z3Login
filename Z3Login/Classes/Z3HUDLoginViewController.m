@@ -377,9 +377,7 @@
             [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
-//            [weakSelf requestCoordinate2dTransformXMLConfiguration];
-//在线坐标转换
-            [weakSelf requstCoorTransToken];
+            [weakSelf requestCoordinate2dTransformXMLConfiguration];
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
         [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
@@ -393,30 +391,33 @@
  获取坐标转换参数
  */
 - (void)requestCoordinate2dTransformXMLConfiguration {
-    NSDictionary *parameters = @{};
-    __weak typeof(self) weakSelf = self;
-    NSString *transParamsURL = [Z3MobileConfig shareConfig].transParamsURL;
-    NSString *rootURL = [Z3NetworkConfig shareConfig].urlConfig.rootURLPath;
-    NSString *absoluteURL = [NSString stringWithFormat:@"%@/%@",rootURL,transParamsURL];
-    self.request = [[Z3XmllRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
-        if (response.error) {
-             [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
-            [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
-        }else {
-            if (weakSelf.success) {
-                weakSelf.success(response.responseJSONObject);
-                //保存登录信息
-                [[NSUserDefaults standardUserDefaults] setValue:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
-                [[NSUserDefaults standardUserDefaults] setValue:weakSelf.pwdField.text forKey:Z3KEY_USER_PASSWORD];
-                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:Z3KEY_USER_LOGIN_FLAG];
-                [[NSUserDefaults standardUserDefaults] synchronize];
-            }
-        }
-    } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
-        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
-        [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
-    }];
-    [self.request start];
+        //    NSDictionary *parameters = @{};
+        //    __weak typeof(self) weakSelf = self;
+        //    NSString *transParamsURL = [Z3MobileConfig shareConfig].transParamsURL;
+        //    NSString *rootURL = [Z3NetworkConfig shareConfig].urlConfig.rootURLPath;
+        //    NSString *absoluteURL = [NSString stringWithFormat:@"%@/%@",rootURL,transParamsURL];
+        //    self.request = [[Z3XmllRequest alloc] initWithAbsoluteURL:absoluteURL method:GET parameter:parameters success:^(__kindof Z3BaseResponse * _Nonnull response) {
+        //        if (response.error) {
+        //             [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+        //            [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+        //        }else {
+        //            if (weakSelf.success) {
+        //                weakSelf.success(response.responseJSONObject);
+        //                //保存登录信息
+        //                [[NSUserDefaults standardUserDefaults] setValue:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
+        //                [[NSUserDefaults standardUserDefaults] setValue:weakSelf.pwdField.text forKey:Z3KEY_USER_PASSWORD];
+        //                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:Z3KEY_USER_LOGIN_FLAG];
+        //                [[NSUserDefaults standardUserDefaults] synchronize];
+        //            }
+        //        }
+        //    } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
+        //        [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+        //        [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
+        //    }];
+        //    [self.request start];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"TransParams_mc" ofType:@"json"];
+    [Z3MobileConfig shareConfig].coorTrans = [[CoorTranUtil alloc] initWithTransParamFilePath:path];
+    [self loadGISMetas];
 }
 
 /**
