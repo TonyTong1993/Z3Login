@@ -415,7 +415,7 @@
         //        [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         //    }];
         //    [self.request start];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"TransParams_mc" ofType:@"json"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"TransParams_mc" ofType:@"xml"];
     [Z3MobileConfig shareConfig].coorTrans = [[CoorTranUtil alloc] initWithTransParamFilePath:path];
     [self loadGISMetas];
 }
