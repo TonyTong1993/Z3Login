@@ -181,7 +181,7 @@
                 [_task setBaseURL:value];
             }else {
                 NSString *rootURL = [Z3URLConfig configration].rootURLPath;
-                NSString *url = [NSString stringWithFormat:@"%@/%@",rootURL,value];
+                NSString *url = [NSString stringWithFormat:@"%@%@",rootURL,value];
                 [_task setBaseURL:url];
             }
         }

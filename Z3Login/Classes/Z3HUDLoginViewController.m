@@ -198,6 +198,7 @@
     NSString *pwd = [SAMKeychain passwordForService:SERVICE account:account];
     NSString *ipwd = self.pwdField.text;
     if (!ipwd.length) return NO;
+    if (!pwd.length) return NO;
     if ([pwd isEqualToString:ipwd]) {
         return YES;
     }
@@ -283,7 +284,7 @@
 
 #pragma mark -request
 - (void)requestLogin {
-    [MBProgressHUD showHUDAddedTo:self.view.window animated:YES];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [self.accountField resignFirstResponder];
     [self.pwdField resignFirstResponder];
     NSDictionary *parameters = @{@"username":self.accountField.text,@"password":self.pwdField.text};
@@ -298,21 +299,26 @@
             [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
             [MBProgressHUD showError:msg];
         }else {
-            [weakSelf requestMapXMLConfiguration];
-            NSString *account = weakSelf.accountField.text;
-            NSString *pwd = weakSelf.pwdField.text;
-            [[NSUserDefaults standardUserDefaults] setObject:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
-            //TODO:保存离线用户信息
-            [SAMKeychain setPassword:pwd forService:SERVICE account:account];
-            NSDictionary *userInfo = response.responseJSONObject;
-            NSError * __autoreleasing error = nil;
-            NSData *data = [NSJSONSerialization dataWithJSONObject:userInfo options:NSJSONWritingPrettyPrinted error:&error];
-            NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-            NSString *pathComponent = [NSString stringWithFormat:@"%@.json",account];
-            NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
-            BOOL success = [data writeToFile:path atomically:YES];
-            NSAssert(success, @"save user info failure");
-
+             NSDictionary *userInfo = response.responseJSONObject;
+            if (userInfo) {
+                [weakSelf requestMapXMLConfiguration];
+                NSString *account = weakSelf.accountField.text;
+                NSString *pwd = weakSelf.pwdField.text;
+                [[NSUserDefaults standardUserDefaults] setObject:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
+                //TODO:保存离线用户信息
+                [SAMKeychain setPassword:pwd forService:SERVICE account:account];
+                NSError * __autoreleasing error = nil;
+                //TODO: 安全性问题
+                NSData *data = [NSJSONSerialization dataWithJSONObject:userInfo options:NSJSONWritingPrettyPrinted error:&error];
+                NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+                NSString *pathComponent = [NSString stringWithFormat:@"%@.json",account];
+                NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
+                BOOL success = [data writeToFile:path atomically:YES];
+                NSAssert(success, @"save user info failure");
+            }else {
+                [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
+               [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
+            }
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
          [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];

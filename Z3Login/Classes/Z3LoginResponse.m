@@ -99,16 +99,16 @@
             }
             [tabs addObject:tab];
         }else {
-            NSAssert(false, @"tab menu not config");
+            
         }
     }];
     
     //合并metas与appmenus中相同的数据
     predicate = [NSPredicate predicateWithFormat:@"pageUrl BEGINSWITH[c] 'app:'"];
-    NSArray *appmenus = menus; //[menus filteredArrayUsingPredicate:predicate];
-    if (!appmenus.count) return;
-    NSAssert(appCenter, @"don`t have app center");
-    NSAssert(appdicts, @"don`t have apps");
+    NSArray *appmenus = menus;
+    if (!appmenus.count) {
+        return;
+    };
     names = [appdicts valueForKey:@"name"];
     NSMutableArray *apps = [NSMutableArray array];
     [appmenus enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -122,12 +122,13 @@
 //            NSAssert(false, @"tab menu not config");
         }
     }];
-    
-    NSMutableDictionary *mappcenter = [appCenter mutableCopy];
-    [mappcenter setObject:[apps copy] forKey:@"menus"];
-    NSUInteger index = [tabs indexOfObject:appCenter];
-    [tabs replaceObjectAtIndex:index withObject:mappcenter];
-    
+
+    if (appCenter) {
+        NSMutableDictionary *mappcenter = [appCenter mutableCopy];
+        [mappcenter setObject:[apps copy] forKey:@"menus"];
+        NSUInteger index = [tabs indexOfObject:appCenter];
+        [tabs replaceObjectAtIndex:index withObject:mappcenter];
+    }
     NSMutableArray *mmenus = [NSMutableArray arrayWithCapacity:5];
     for (NSDictionary *json in tabs) {
         Z3AppMenu *menu = [Z3AppMenu modelWithJSON:json];

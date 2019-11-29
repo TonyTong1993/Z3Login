@@ -205,8 +205,8 @@
            [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
             if (weakSelf.success) {
-              CoorTranUtil *coorTrans =  [[CoorTranUtil alloc] initWithParser:response.responseJSONObject];
-                [[Z3MobileConfig shareConfig] setCoorTrans:coorTrans];
+//              CoorTranUtil *coorTrans =  [[CoorTranUtil alloc] initWithParser:response.responseJSONObject];
+//                [[Z3MobileConfig shareConfig] setCoorTrans:coorTrans];
                  weakSelf.success(nil);
             }
         }
