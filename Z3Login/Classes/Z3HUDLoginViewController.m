@@ -45,6 +45,8 @@
 @property (nonatomic,strong) Z3BaseRequest *request;
 @property (nonatomic,strong) UIActivityIndicatorView *indicatorView;
 @property (nonatomic,copy) LoginSuccessBlock success;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topConstraint;
+
 @end
 
 @implementation Z3HUDLoginViewController
@@ -70,6 +72,8 @@
     if ([self.request isExecuting]) {
         [self.request stop];
     }
+    //取消键盘的监听方法
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillChangeFrameNotification object:nil];
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -96,8 +100,8 @@
     [self.loginBtn addTarget:self action:@selector(loginBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     //是否自动填充密码
     [self internal_autoFillPwd];
-    //是否自动登录
-    //    [self autoLogin];
+    //KVO
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onKeyBoardFrameWillChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
 }
 - (void)viewWillAppear:(BOOL)animated {
@@ -108,6 +112,7 @@
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskLandscape;
 }
+
 
 #pragma mark - public method
 
@@ -143,13 +148,6 @@
 }
 
 - (void)internal_autoLogin {
-//        BOOL isAutoLogin = [[NSUserDefaults standardUserDefaults] boolForKey:KEY_AUTO_LOGIN];
-//        if (isAutoLogin && [self check]) {
-//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//                [self login];
-//            });
-//        }
-//    self.autoLoginBtn.selected = isAutoLogin;
     __weak typeof(self) weakSelf = self;
     [self login].then(^(NSDictionary *data){
         return [self concurentGetMobileMapAndTransParams];
@@ -222,16 +220,7 @@
 }
 
 - (void)internal_loadOfflineUserInfo {
-    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *pathComponent = [NSString stringWithFormat:@"%@.json",self.accountField.text];
-    NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
-    NSError *error = nil;
-    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:path];
-    id result = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:&error];
-    if (error != nil) {
-        return;
-    }
-    [self internal_adapt2UserModel:result];
+    [self internal_adapt2UserModel:nil];
 }
 
 - (void)internal_adapt2UserModel:(NSDictionary *)data {
@@ -307,14 +296,14 @@
                 [[NSUserDefaults standardUserDefaults] setObject:weakSelf.accountField.text forKey:Z3KEY_USER_NAME];
                 //TODO:保存离线用户信息
                 [SAMKeychain setPassword:pwd forService:SERVICE account:account];
-                NSError * __autoreleasing error = nil;
+//                NSError * __autoreleasing error = nil;
                 //TODO: 安全性问题
-                NSData *data = [NSJSONSerialization dataWithJSONObject:userInfo options:NSJSONWritingPrettyPrinted error:&error];
-                NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-                NSString *pathComponent = [NSString stringWithFormat:@"%@.json",account];
-                NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
-                BOOL success = [data writeToFile:path atomically:YES];
-                NSAssert(success, @"save user info failure");
+//                NSData *data = [NSJSONSerialization dataWithJSONObject:userInfo options:NSJSONWritingPrettyPrinted error:&error];
+//                NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+//                NSString *pathComponent = [NSString stringWithFormat:@"%@.json",account];
+//                NSString *path = [documentsPath stringByAppendingPathComponent:pathComponent];
+//                BOOL success = [data writeToFile:path atomically:YES];
+//                NSAssert(success, @"save user info failure");
             }else {
                 [MBProgressHUD hideHUDForView:weakSelf.view animated:YES];
                [MBProgressHUD showError:NSLocalizedString(@"user_login_failure", @"登录失败")];
@@ -507,6 +496,24 @@
     }];
     
     [self.request start];
+}
+
+- (void)onKeyBoardFrameWillChange:(NSNotification *)notification {
+    NSLog(@"userInfo = %@",notification.userInfo);
+    NSDictionary *userInfo = notification.userInfo;
+    NSValue *nsRect = userInfo[UIKeyboardFrameEndUserInfoKey];
+    CGRect rect = [nsRect CGRectValue];
+    CGFloat minY = rect.origin.y;
+    CGRect convertRect = [_loginContainer convertRect:_pwdContainer.frame toView:self.view];
+    CGFloat maxPwdY = CGRectGetMaxY(convertRect);
+    CGFloat daltaY = (maxPwdY - minY);
+    if (daltaY > 0) {
+       CGFloat newConstant =  _topConstraint.constant - daltaY - 10;
+        [_topConstraint setConstant:newConstant];
+    }else {
+         [_topConstraint setConstant:90.0f];
+    }
+    NSLog(@"maxPwdY = %f",maxPwdY);
 }
 
 #pragma mark - action
