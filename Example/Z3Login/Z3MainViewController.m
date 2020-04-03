@@ -21,8 +21,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   
+    PMKPromise *promise = [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
+        [self resolver:resolve];
+    }];
     
+    promise.then(^(NSString *message){
+        NSLog(@"resolver: %@",message);
+    }).finally(^{
+         NSLog(@"finally");
+    });
+    
+}
+
+- (void)resolver:(PMKResolver)resolve {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        resolve(@"把问题解决了");
+    });
 }
 
 

@@ -39,4 +39,5 @@ TODO: Add long description of the pod here.
    s.dependency 'Z3Network','~> 0.0.3'
    s.dependency 'Z3CommonLib', '~> 0.1.3'
    s.dependency 'CoordinateTransform', '~> 0.1.2'
+   s.dependency 'PromiseKit', '~> 1.7'
 end

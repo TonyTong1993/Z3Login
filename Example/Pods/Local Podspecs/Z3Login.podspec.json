@@ -26,13 +26,16 @@
   },
   "dependencies": {
     "Z3Network": [
-      "~> 0.0.2"
+      "~> 0.0.3"
     ],
     "Z3CommonLib": [
       "~> 0.1.3"
     ],
     "CoordinateTransform": [
       "~> 0.1.2"
+    ],
+    "PromiseKit": [
+      "~> 1.7"
     ]
   }
 }
