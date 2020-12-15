@@ -23,6 +23,7 @@
 #import "CoorTranUtil.h"
 #import "Z3GISMetaRequest.h"
 #import <SAMKeychain/SAMKeychain.h>
+#import "UIApplication+YYAdd.h"
 #define TIMEINTERVAL_LIMIT 10      //时间限制 60秒
 #define CLICKTIMES_LIMIT 5         //点击次数限制 至少5次
 @interface Z3HUDLoginViewController (){
@@ -142,6 +143,7 @@
     self.loginBtn.layer.masksToBounds = YES;
     
     self.versionLabel.userInteractionEnabled = YES;
+    self.versionLabel.text = [UIApplication sharedApplication].appVersion;
     UITapGestureRecognizer *labelTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(appVersionLabelTouchUpInside:)];
     [self.versionLabel addGestureRecognizer:labelTapGestureRecognizer];
     

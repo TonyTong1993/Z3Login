@@ -46,7 +46,8 @@
                           @"dispMinResolution",
                           @"AddressSearchType",
                           @"key",
-                          @"value",nil];
+                          @"value",
+                          @"opacity",nil];
         
         [self.xmlParser parse];
     }
@@ -173,6 +174,12 @@
                 [_mapLayer setDispRect:value];
             }
             
+        }else if ([elementName isEqualToString:@"opacity"]){
+            if (_basemap) {
+                [_basemap setOpacity:[value floatValue]];
+            }else {
+                [_mapLayer setOpacity:[value floatValue]];
+            }
         }else if ([elementName isEqualToString:@"key"]){
             [_task setName:value];
         }else if ([elementName isEqualToString:@"value"]){

@@ -180,9 +180,11 @@
              [MBProgressHUD hideHUDForView:self.view animated:YES];
             [MBProgressHUD showError:NSLocalizedString(@"get_configuration_failure", @"配置文件获取失败")];
         }else {
-            //TODO:工管GIS
-            [weakSelf requstCoorTransToken];
-//            [weakSelf requestCoordinate2dTransformXMLConfiguration];
+#if SZSL
+     [weakSelf requstCoorTransToken];
+#else
+    [weakSelf requestCoordinate2dTransformXMLConfiguration];
+#endif
         }
     } failure:^(__kindof Z3BaseResponse * _Nonnull response) {
          [MBProgressHUD hideHUDForView:self.view animated:YES];
